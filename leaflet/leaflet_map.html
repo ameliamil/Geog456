@@ -1,0 +1,44 @@
+<!-- paste in document info -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- give title -->
+    <title> Leaflet Map </title>
+</head>
+<!-- paste in leaflet script -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+<!--style the map, the # is saying "ID". The . is class, for CSS-->
+
+<style>
+    #mapid{height: 500px; width: 500px}
+</style>
+
+ <body>
+    <!-- add map div -->
+    <div id="mapid"></div>
+    <!-- add map script - this can be outside of the body -->
+    <script>
+        var ChapelHill_map = L.map('mapid').setView([35.9136620141175, -79.0554714202881], 15);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(ChapelHill_map);
+        
+        /// create marker that can be clicked and display a message
+        var carolinahall_marker = L.marker([35.91130717779021, -79.04997289180757]).addTo(ChapelHill_map);
+        /// in below code, <br> means break, which makes a second line
+        carolinahall_marker.bindPopup("<b>Carolina Hall</b><br>This is Carolina Hall!").openPopup();
+    </script>
+    <!-- in console of html webpage, if the map is scrolled around, you can
+        retrieve the location you've scrolled to using ChapelHill_map.getCenter() -->
+ </body>
+</html>
