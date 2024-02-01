@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assessment 2 Amelia Milano </title>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+crossorigin=""></script>
+<style>
+    #map { height: 500px;  }
+</style>
+<body>
+
+<h1> <a href = "https://en.wikipedia.org/wiki/2021_Atlantic_hurricane_season#Tropical_Storm_Ana"> Tropical Storm Ana  </a></h1>
+<h2>By Amelia Milano</h2>
+
+    <div id="map"></div>
+    <script src="./TropicalStormAna.js"></script>
+    <script>
+    
+        var View = [35.3,-65.5]
+        var map = L.map('map').setView(View, 5.2);
+        var OSM = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        maxZoom: 19,
+                        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+        var Esri_OceanBasemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles &copy; Esri &mdash; Sources: GEBCO, NOAA, CHS, OSU, UNH, CSUMB, National Geographic, DeLorme, NAVTEQ, and Esri',
+                maxZoom: 13
+            }).addTo(map);
+
+        var geojsonMarkerOptions = {
+            radius: 8,
+             fillColor: "#FF0000",
+            color: "#000",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+        };
+
+var myWaypoints = L.geoJSON(TropicalStormAnaPoints, {
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, geojsonMarkerOptions);
+        }
+    }).addTo(map);
+
+    var coordinate = [40.3,-75];
+    var possible_landing = L.marker(coordinate).bindPopup("<b>If it had made it's way to land, it may have landed here</b>").addTo(map);
+
+
+        var baseMaps = {
+            "OpenStreetMap": OSM,
+            "ESRI Ocean Basemap": Esri_OceanBasemap
+        };
+
+        var overlayMaps = {
+            "Tropical Storm Ana": myWaypoints
+        };
+        
+        var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+    </script>
+    
+    <a href="https://en.wikipedia.org/wiki/2021_Atlantic_hurricane_season#Tropical_Storm_Ana">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Ana_2021-05-22_1505Z.jpg/720px-Ana_2021-05-22_1505Z.jpg
+        "></img>
+    </a>
+</body>
+</html>
