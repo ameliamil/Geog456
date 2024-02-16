@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <script src="data.js"> </script>
+    <script>   
+    var fire_locations = data.features.map(e => e.geometry.coordinates.slice().reverse())
+    </script>
+    <h1> Fire Incident Locations of All US Fires To Date 2024</h1>
+    <h2> Data from National Interagency Fire Center </h2>
+    <button onclick="console.log(fire_locations)"> Click me for coordinates! </button>
+</body>
+</html>
