@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <script src="data.js"></script>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Wildfires Table</h2>
+
+<table id = "wildfire_table">
+  <tr>
+    <th>Wildfire ID</th>
+    <th>Coordinates</th>
+  </tr>
+</table>
+</body>
+<script>
+    var table_elements = document.getElementById('wildfire_table')
+   
+    for (var i = 0; i<wildfire_data.features.length; i++){
+        var new_row = document.createElement('tr');
+        var new_cell_fireid = document.createElement('td');
+        var new_cell_coords = document.createElement('td');
+        new_cell_fireid.innerText = wildfire_data.features[i].properties.UniqueFireIdentifier;
+        new_cell_coords.innerText = wildfire_data.features[i].geometry.coordinates.slice().reverse();
+        new_row.append(new_cell_fireid)
+        new_row.append(new_cell_coords)
+        table_elements.append(new_row)
+    }
+
+</script>
+</html>
+
