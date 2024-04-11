@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let myResult;
+        const myURL = 'https://raw.githubusercontent.com/ameliamil/Geog456/main/assignment_4/NABBS_Dataset1966_2019-R1NWR.csv'
+        const myObj = {
+            download: true,
+            header: true,
+            complete: function(result){
+                myResult = result.data
+            }
+        }
+    Papa.parse(myURL, myObj)
+    </script>
+</body>
+</html>
