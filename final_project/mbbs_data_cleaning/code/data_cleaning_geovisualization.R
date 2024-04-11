@@ -45,6 +45,8 @@ mbbs_durham_sorted$County <- c("Durham")
 
 mbbs_sorted <- rbind(mbbs_chat_sorted, mbbs_orange_sorted, mbbs_durham_sorted)
 
+mbbs_sorted$Species_Scientific <- paste(mbbs_sorted$common_name, " (", mbbs_sorted$sci_name, ")", sep ="")
+
 
 # write out CSVs of data
 

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <script src="data_counties_csv.js"></script>
+    <script src="ODC_counties_geojson.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final Project Geog 456 </title>
+</head>
+<!-- leaflet script -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+<style>
+    #mapid{height: 400px; width: 1000px}
+
+    /* Slider style generated with the assistance of ChatGPT */
+    .slider {
+        width: 300px;
+        appearance: none;
+        height: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    /* Style for the slider thumb */
+    .slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+    /* Style for the ticks */
+    .ticks {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .tick {
+        height: 5px;
+        width: 2px;
+        background-color: black;
+    }
+</style>
+</head>
+<body>
+<h1>Final Project</h1>
+<h2>Amelia Milano</h2>
+<!-- species selection !!! This was written using ChatGPT !! -->
+<h3><label for="speciesSelection">Select a species:</label>
+<select id="speciesSelection">
+    <option value="">Select a species...</option>
+        <option value="Acadian Flycatcher">Acadian Flycatcher (Empidonax virescens)</option>
+        <option value="American Crow">American Crow (Corvus brachyrhynchos)</option>
+        <option value="American Goldfinch">American Goldfinch (Spinus tristis)</option>
+        <option value="American Redstart">American Redstart (Setophaga ruticilla)</option>
+        <option value="American Robin">American Robin (Turdus migratorius)</option>
+        <option value="Bald Eagle">Bald Eagle (Haliaeetus leucocephalus)</option>
+        <option value="Baltimore Oriole">Baltimore Oriole (Icterus galbula)</option>
+        <option value="Barn Swallow">Barn Swallow (Hirundo rustica)</option>
+        <option value="Barred Owl">Barred Owl (Strix varia)</option>
+        <option value="Belted Kingfisher">Belted Kingfisher (Megaceryle alcyon)</option>
+        <option value="Black Vulture">Black Vulture (Coragyps atratus)</option>
+        <option value="Black-and-white Warbler">Black-and-white Warbler (Mniotilta varia)</option>
+        <option value="Black-throated Blue Warbler">Black-throated Blue Warbler (Setophaga caerulescens)</option>
+        <option value="Blackpoll Warbler">Blackpoll Warbler (Setophaga striata)</option>
+        <option value="Blue Grosbeak">Blue Grosbeak (Passerina caerulea)</option>
+        <option value="Blue Jay">Blue Jay (Cyanocitta cristata)</option>
+        <option value="Blue-gray Gnatcatcher">Blue-gray Gnatcatcher (Polioptila caerulea)</option>
+        <option value="Blue-headed Vireo">Blue-headed Vireo (Vireo solitarius)</option>
+        <option value="Broad-winged Hawk">Broad-winged Hawk (Buteo platypterus)</option>
+        <option value="Brown Thrasher">Brown Thrasher (Toxostoma rufum)</option>
+        <option value="Brown-headed Cowbird">Brown-headed Cowbird (Molothrus ater)</option>
+        <option value="Brown-headed Nuthatch">Brown-headed Nuthatch (Sitta pusilla)</option>
+        <option value="Canada Goose">Canada Goose (Branta canadensis)</option>
+        <option value="Carolina Chickadee">Carolina Chickadee (Poecile carolinensis)</option>
+        <option value="Carolina Wren">Carolina Wren (Thryothorus ludovicianus)</option>
+        <option value="Cedar Waxwing">Cedar Waxwing (Bombycilla cedrorum)</option>
+        <option value="Chimney Swift">Chimney Swift (Chaetura pelagica)</option>
+        <option value="Chipping Sparrow">Chipping Sparrow (Spizella passerina)</option>
+        <option value="Chuck-will's-widow">Chuck-will's-widow (Antrostomus carolinensis)</option>
+        <option value="Cliff Swallow">Cliff Swallow (Petrochelidon pyrrhonota)</option>
+        <option value="Common Grackle">Common Grackle (Quiscalus quiscula)</option>
+        <option value="Common Nighthawk">Common Nighthawk (Chordeiles minor)</option>
+        <option value="Common Yellowthroat">Common Yellowthroat (Geothlypis trichas)</option>
+        <option value="Cooper's Hawk">Cooper's Hawk (Accipiter cooperii)</option>
+        <option value="Dickcissel">Dickcissel (Spiza americana)</option>
+        <option value="Double-crested Cormorant">Double-crested Cormorant (Phalacrocorax auritus)</option>
+        <option value="Downy Woodpecker">Downy Woodpecker (Dryobates pubescens)</option>
+        <option value="Eastern Bluebird">Eastern Bluebird (Sialia sialis)</option>
+        <option value="Eastern Kingbird">Eastern Kingbird (Tyrannus tyrannus)</option>
+        <option value="Eastern Meadowlark">Eastern Meadowlark (Sturnella magna)</option>
+        <option value="Eastern Phoebe">Eastern Phoebe (Sayornis phoebe)</option>
+        <option value="Eastern Screech-Owl">Eastern Screech-Owl (Megascops asio)</option>
+        <option value="Eastern Towhee">Eastern Towhee (Pipilo erythrophthalmus)</option>
+        <option value="Eastern Whip-poor-will">Eastern Whip-poor-will (Antrostomus vociferus)</option>
+        <option value="Eastern Wood-Pewee">Eastern Wood-Pewee (Contopus virens)</option>
+        <option value="European Starling">European Starling (Sturnus vulgaris)</option>
+        <option value="Field Sparrow">Field Sparrow (Spizella pusilla)</option>
+        <option value="Fish Crow">Fish Crow (Corvus ossifragus)</option>
+        <option value="Glossy Ibis">Glossy Ibis (Plegadis falcinellus)</option>
+        <option value="Grasshopper Sparrow">Grasshopper Sparrow (Ammodramus savannarum)</option>
+        <option value="Gray Catbird">Gray Catbird (Dumetella carolinensis)</option>
+        <option value="Great Blue Heron">Great Blue Heron (Ardea herodias)</option>
+        <option value="Great Crested Flycatcher">Great Crested Flycatcher (Myiarchus crinitus)</option>
+        <option value="Great Egret">Great Egret (Ardea alba)</option>
+        <option value="Great Horned Owl">Great Horned Owl (Bubo virginianus)</option>
+        <option value="Green Heron">Green Heron (Butorides virescens)</option>
+        <option value="Hairy Woodpecker">Hairy Woodpecker (Leuconotopicus villosus)</option>
+        <option value="Hooded Warbler">Hooded Warbler (Setophaga citrina)</option>
+        <option value="House Finch">House Finch (Haemorhous mexicanus)</option>
+        <option value="House Sparrow">House Sparrow (Passer domesticus)</option>
+        <option value="House Wren">House Wren (Troglodytes aedon)</option>
+        <option value="Indigo Bunting">Indigo Bunting (Passerina cyanea)</option>
+        <option value="Kentucky Warbler">Kentucky Warbler (Geothlypis formosa)</option>
+        <option value="Killdeer">Killdeer (Charadrius vociferus)</option>
+        <option value="Loggerhead Shrike">Loggerhead Shrike (Lanius ludovicianus)</option>
+        <option value="Louisiana Waterthrush">Louisiana Waterthrush (Parkesia motacilla)</option>
+        <option value="Magnolia Warbler">Magnolia Warbler (Setophaga magnolia)</option>
+        <option value="Mallard">Mallard (Anas platyrhynchos)</option>
+        <option value="Mourning Dove">Mourning Dove (Zenaida macroura)</option>
+        <option value="Muscovy Duck">Muscovy Duck (Cairina moschata)</option>
+        <option value="Mute Swan">Mute Swan (Cygnus olor)</option>
+        <option value="Northern Bobwhite">Northern Bobwhite (Colinus virginianus)</option>
+        <option value="Northern Cardinal">Northern Cardinal (Cardinalis cardinalis)</option>
+        <option value="Northern Flicker">Northern Flicker (Colaptes auratus)</option>
+        <option value="Northern Mockingbird">Northern Mockingbird (Mimus polyglottos)</option>
+        <option value="Northern Parula">Northern Parula (Setophaga americana)</option>
+        <option value="Northern Rough-winged Swallow">Northern Rough-winged Swallow (Stelgidopteryx serripennis)</option>
+        <option value="Ovenbird">Ovenbird (Seiurus aurocapilla)</option>
+        <option value="Pileated Woodpecker">Pileated Woodpecker (Dryocopus pileatus)</option>
+        <option value="Pine Warbler">Pine Warbler (Setophaga pinus)</option>
+        <option value="Prairie Warbler">Prairie Warbler (Setophaga discolor)</option>
+        <option value="Prothonotary Warbler">Prothonotary Warbler (Protonotaria citrea)</option>
+        <option value="Purple Martin">Purple Martin (Progne subis)</option>
+        <option value="Red-bellied Woodpecker">Red-bellied Woodpecker (Melanerpes carolinus)</option>
+        <option value="Red-eyed Vireo">Red-eyed Vireo (Vireo olivaceus)</option>
+        <option value="Red-headed Woodpecker">Red-headed Woodpecker (Melanerpes erythrocephalus)</option>
+        <option value="Red-shouldered Hawk">Red-shouldered Hawk (Buteo lineatus)</option>
+        <option value="Red-tailed Hawk">Red-tailed Hawk (Buteo jamaicensis)</option>
+        <option value="Red-winged Blackbird">Red-winged Blackbird (Agelaius phoeniceus)</option>
+        <option value="Ring-billed Gull">Ring-billed Gull (Larus delawarensis)</option>
+        <option value="Rock Pigeon">Rock Pigeon (Columba livia)</option>
+        <option value="Ruby-throated Hummingbird">Ruby-throated Hummingbird (Archilochus colubris)</option>
+        <option value="Scarlet Tanager">Scarlet Tanager (Piranga olivacea)</option>
+        <option value="Sharp-shinned Hawk">Sharp-shinned Hawk (Accipiter striatus)</option>
+        <option value="Summer Tanager">Summer Tanager (Piranga rubra)</option>
+        <option value="Swainson's Thrush">Swainson's Thrush (Catharus ustulatus)</option>
+        <option value="Tree Swallow">Tree Swallow (Tachycineta bicolor)</option>
+        <option value="Tufted Titmouse">Tufted Titmouse (Baeolophus bicolor)</option>
+        <option value="Turkey Vulture">Turkey Vulture (Cathartes aura)</option>
+        <option value="Warbling Vireo">Warbling Vireo (Vireo gilvus)</option>
+        <option value="White-breasted Nuthatch">White-breasted Nuthatch (Sitta carolinensis)</option>
+        <option value="White-eyed Vireo">White-eyed Vireo (Vireo griseus)</option>
+        <option value="Wild Turkey">Wild Turkey (Meleagris gallopavo)</option>
+        <option value="Wood Thrush">Wood Thrush (Hylocichla mustelina)</option>
+        <option value="Yellow Warbler">Yellow Warbler (Setophaga petechia)</option>
+        <option value="Yellow-billed Cuckoo">Yellow-billed Cuckoo (Coccyzus americanus)</option>
+        <option value="Yellow-breasted Chat">Yellow-breasted Chat (Icteria virens)</option>
+        <option value="Yellow-crowned Night-Heron">Yellow-crowned Night-Heron (Nyctanassa violacea)</option>
+        <option value="Yellow-throated Vireo">Yellow-throated Vireo (Vireo flavifrons)</option>
+        <option value="Yellow-throated Warbler">Yellow-throated Warbler (Setophaga dominica)</option>
+        <option value="American Woodcock">American Woodcock (Scolopax minor)</option>
+        <option value="Horned Lark">Horned Lark (Eremophila alpestris)</option>
+        <option value="Northern Waterthrush">Northern Waterthrush (Parkesia noveboracensis)</option>
+        <option value="Willow Flycatcher">Willow Flycatcher (Empidonax traillii)</option>
+        <option value="Mississippi Kite">Mississippi Kite (Ictinia mississippiensis)</option>
+        <option value="Worm-eating Warbler">Worm-eating Warbler (Helmitheros vermivorum)</option>
+</select>
+</h3>
+<!-- Slider -->
+<input type="range" min="1999" max="2023" value="1999" class="slider" id="yearSlider" onchange="slider_val(this.value)">
+<!-- default starting value 1999 -->
+<span id="yearValue">1999</span>
+
+
+
+
+<!-- add map -->
+<!-- the goal of this map is to have 1 base map with all of the counties displaying data on a specific
+    species when given the year and species. Then, when a county is clicked, a new map is loaded
+    which allows for the user to see the routes of the map. -->
+
+<!-- !! NOTE: functions for highlighting the map and generating a new map when clicked were generated
+    by ChatGPT! -->
+
+<div id="mapid"></div>
+<script>
+
+// SORT DATA
+// !! this section was written with the help of ChatGPT to build functions !!
+
+    // Function to filter JSON data based on selected species and year
+
+    // Filter for YEAR
+
+// Function to filter data based on the selected year
+function filterDataByYear(year) {
+    return data_counties_csv.filter(function (item) {
+        return item.year === year;
+    });
+}
+
+// Get the current value of the year slider
+var selectedYear = document.getElementById('yearValue').textContent;
+
+// Filter data based on the selected year
+var dataForSelectedYear = filterDataByYear(selectedYear);
+
+    // Filter for SPECIES
+    
+function filterDataBySpecies(species) {
+    return dataForSelectedYear.filter(function (item) {
+        return item.common_name === species;
+    });
+}
+
+// Get the selected species from the dropdown
+var selectedSpecies = document.getElementById('speciesSelection').value;
+
+// Filter data based on the selected species
+var dataForSelectedSpecies = filterDataBySpecies(selectedSpecies);
+
+// MAP
+// !! NOTE: functions for highlighting the map and generating a new map when clicked were generated
+// by ChatGPT!
+
+     var ODC_map = L.map('mapid').setView([35.8796, -79.1382], 9);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          }).addTo(ODC_map);
+
+// Function to style GeoJSON feature on hover
+function highlightFeature(e) {
+            var layer = e.target;
+
+            layer.setStyle({
+                weight: 3,
+                color: '#666',
+                dashArray: '',
+                fillOpacity: 0.7
+            });
+        }
+
+        // Function to reset style on mouseout
+        function resetHighlight(e) {
+            var layer = e.target;
+            layer.setStyle({
+                weight: 1,
+                color: 'black',
+                fillOpacity: 0.2
+            });
+        }
+
+        // Function to load a new map on feature click
+        // This function will be updated once I figure out how to make the new maps!
+        function loadNewMap(e) {
+            // Load your new map here
+            alert('Loading new map for ' + e.target.feature.properties.NAME); // For demonstration
+        }
+
+        // Add GeoJSON layer for county boundaries
+            L.geoJSON(ODC_counties_geojson, {
+                style: function (feature) {
+                    return {
+                        color: 'black',
+                        weight: 1,
+                        fillOpacity: 0.2
+                    };
+                },
+                onEachFeature: function (feature, layer) {
+                    layer.on({
+                        mouseover: highlightFeature,
+                        mouseout: resetHighlight,
+                        click: loadNewMap
+                    });
+                }
+            }).addTo(ODC_map);
+
+// SPECIES SELECTION DROP DOWN
+// Generated with ChatGPT
+
+        // Function to handle species selection
+        function handleSpeciesSelection() {
+            // Get the selected species name
+            var selectedSpecies = document.getElementById('speciesSelection').value;
+
+            // Assign the selected species to an object
+            var selectedSpeciesObj = {
+                speciesName: selectedSpecies
+            };
+
+            // Console log to show species object
+            console.log(selectedSpeciesObj);
+        }
+        document.getElementById('speciesSelection').addEventListener('change', handleSpeciesSelection);
+
+///// Slider 
+
+function slider_val(value) { 
+    document.getElementById('yearValue').innerHTML = value;
+}
+
+  </script>
+</body>
+</html>
