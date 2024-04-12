@@ -15,6 +15,9 @@
  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+
+
+
 <style>
     #mapid{height: 400px; width: 1000px}
 
@@ -45,21 +48,11 @@
         background: #4CAF50;
         cursor: pointer;
     }
-
-    /* Style for the ticks */
-    .ticks {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 10px;
-    }
-
-    .tick {
-        height: 5px;
-        width: 2px;
-        background-color: black;
-    }
 </style>
 </head>
+
+
+
 <body>
 <h1>Final Project</h1>
 <h2>Amelia Milano</h2>
@@ -189,23 +182,31 @@
 <input type="range" min="1999" max="2023" value="1999" class="slider" id="yearSlider" onchange="slider_val(this.value)">
 <!-- default starting value 1999 -->
 <span id="yearValue">1999</span>
-
-
-
-
-<!-- add map -->
-<!-- the goal of this map is to have 1 base map with all of the counties displaying data on a specific
-    species when given the year and species. Then, when a county is clicked, a new map is loaded
-    which allows for the user to see the routes of the map. -->
-
-<!-- !! NOTE: functions for highlighting the map and generating a new map when clicked were generated
-    by ChatGPT! -->
-
 <div id="mapid"></div>
+
 <script>
 
-// SORT DATA
-// !! this section was written with the help of ChatGPT to build functions !!
+/////////////
+///////////// SORT DATA
+/////////////
+
+// !! this section was written with the help of ChatGPT to help filter the data !!
+
+// Before defining the function, we need to define the variables so they can be called outside of the function
+
+var selectedYear;
+var dataForSelectedYear;
+var selectedSpecies;
+var dataForSelectedSpecies;
+var durhamData;
+var chathamData;
+var orangeData;
+var chathamValue;
+var orangeValue;
+var durhamValue;
+
+function filterData(){
+
 
     // Function to filter JSON data based on selected species and year
 
@@ -219,13 +220,14 @@ function filterDataByYear(year) {
 }
 
 // Get the current value of the year slider
-var selectedYear = document.getElementById('yearValue').textContent;
+selectedYear = document.getElementById('yearValue').textContent;
 
 // Filter data based on the selected year
-var dataForSelectedYear = filterDataByYear(selectedYear);
+dataForSelectedYear = filterDataByYear(selectedYear);
 
     // Filter for SPECIES
-    
+
+// Function to filter data based on the selected species
 function filterDataBySpecies(species) {
     return dataForSelectedYear.filter(function (item) {
         return item.common_name === species;
@@ -233,10 +235,33 @@ function filterDataBySpecies(species) {
 }
 
 // Get the selected species from the dropdown
-var selectedSpecies = document.getElementById('speciesSelection').value;
+selectedSpecies = document.getElementById('speciesSelection').value;
 
 // Filter data based on the selected species
-var dataForSelectedSpecies = filterDataBySpecies(selectedSpecies);
+dataForSelectedSpecies = filterDataBySpecies(selectedSpecies);
+
+    // Filter by COUNTY
+
+durhamData = dataForSelectedSpecies.filter(function (item) {
+    return item.County === "Durham";
+});
+
+// Filter data for Orange county
+orangeData = dataForSelectedSpecies.filter(function (item) {
+    return item.County === "Orange";
+});
+
+// Filter data for Chatham county
+chathamData = dataForSelectedSpecies.filter(function (item) {
+    return item.County === "Chatham";
+});
+
+     // Retrieve values by county and store as a variable
+durhamValue = durhamData.length > 0 ? durhamData[0].count : 0;
+orangeValue = orangeData.length > 0 ? orangeData[0].count : 0;
+chathamValue = chathamData.length > 0 ? chathamData[0].count : 0;
+
+}
 
 // MAP
 // !! NOTE: functions for highlighting the map and generating a new map when clicked were generated
@@ -310,6 +335,7 @@ function highlightFeature(e) {
 
             // Console log to show species object
             console.log(selectedSpeciesObj);
+            filterData()
         }
         document.getElementById('speciesSelection').addEventListener('change', handleSpeciesSelection);
 
@@ -317,7 +343,14 @@ function highlightFeature(e) {
 
 function slider_val(value) { 
     document.getElementById('yearValue').innerHTML = value;
+    filterData()
 }
+
+// starting value is 0, first fire 
+window.onload = function() {
+  document.getElementById('yearSlider').value = 1999;  
+    }; 
+
 
   </script>
 </body>

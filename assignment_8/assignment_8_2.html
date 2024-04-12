@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 Part 2</title>
+</head>
+<style>
+    div#image_container{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 80px;
+        
+    }
+    img{
+        width: 100%;
+        position: absolute;
+    }
+    #before{
+        z-index: 1;
+        opacity: 1;
+    }
+    #middle{
+        z-index: 2;
+        opacity: 0;
+    }
+    #after{
+        z-index: 3;
+        opacity: 0;
+    }
+#Text{
+    color: aliceblue;
+    top: 80px;
+    display: grid;
+    width: 200px;
+    height: 700px;
+    grid-template-rows: 100%;
+    position: absolute;
+    right: 0%;
+    margin-left: 50%;
+}
+
+#myP{
+    top:0;
+    position: fixed;
+    color: aliceblue;
+}
+h3{
+    color: white;
+    position: fixed;
+    font-size: 20px;
+    top: 30px;
+}
+</style>
+<body>
+    <h1> Scrollbar Changes Opacity </h1>
+
+    <div id="image_container">
+        <img id="before" src="2012_img.png">
+        <img id="after" src="2020_img.png">
+
+    </div>
+    <div id = "Text">
+    <div>
+        <h1>2012</h1>
+        <p> This image is from 2012! </p>
+    </div>
+    <div>
+        <h1>2020</h1>
+        <p> This image is from 2020! </p>
+        
+    </div>
+    </div>
+<script>
+
+    var maxY = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    // The previous is a good way of calculating the maximum vertical scrolling. 
+
+    window.onscroll = function() {myFunction()}; // when you scroll the myFunction will be called. 
+    
+    // myFunction changes the opacity of the image based on the scroll
+    function myFunction() {
+        var opacity = window.scrollY/maxY
+        document.getElementById('after').style.opacity = opacity
+    }
+    </script>
+</body>
+</html>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 Part 4</title>
+</head>
+<body>
+    <style>
+        img{
+            position: absolute;
+        }
+
+        .visible {
+            visibility: visible;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Button that selects images & changes text </h1>
+    <h2 id="h2_variable"> Select a button below to view that year </h2>
+    <div>
+        <button  onclick="myFunction(2004)"> 2004 </button>
+        <button  onclick="myFunction(2012)"> 2012 </button>
+        <button onclick="myFunction(2020)"> 2020 </button>
+    </div>
+    <img id="2004" class="hidden" src="2004_img.png" alt="" height="400px">
+    <img id="2012" class="hidden" src="2012_img.png" alt="" height="400px">
+    <img id="2020" class="hidden" src="2020_img.png" alt="" height="400px">
+    </div>
+    <script>
+        function myFunction(ID_number){
+            document.getElementById('h2_variable').innerHTML = 'Currently viewing ' + ID_number // changes text
+            visibleImgs = document.querySelector('.visible') // gets the img that is visible and saves it in a variable named visibleImgs
+            hiddenImgs = document.getElementById(ID_number).className = 'visible' // makes its class visible
+            visibleImgs.className = 'hidden' // makes the img that was class visible, class hidden
+            
+        }
+    </script>
+</body>
+</html>
