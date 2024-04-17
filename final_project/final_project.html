@@ -16,10 +16,12 @@
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
 
-
-
 <style>
     #mapid{height: 400px; width: 1000px}
+
+    #legend{position: absolute; bottom: 160px; right: 50px; background-color: white; padding: 10px; border: 1px solid black;}
+
+    #data_information{position: absolute; bottom: 420px; right: 300px; background-color: white; padding: 10px; border: 1px solid black;}
 
     /* Slider style generated with the assistance of ChatGPT */
     .slider {
@@ -51,10 +53,8 @@
 </style>
 </head>
 
-
-
 <body>
-<h1>Final Project</h1>
+<h1> NC MBBS </h1>
 <h2>Amelia Milano</h2>
 <!-- species selection !!! This was written using ChatGPT !! -->
 <h3><label for="speciesSelection">Select a species:</label>
@@ -184,13 +184,38 @@
 <span id="yearValue">1999</span>
 <div id="mapid"></div>
 
+<!-- LEGEND DIV, generated using ChatGPT -->
+<div id="legend">
+    <h4>Legend</h4>
+    <h5>% Change from Previous Year</h5>
+    <div style="background-color: #008C6E; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>50%+ increase </span><br>
+    <div style="background-color: #7DFFE3; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>0% - 50% increase</span><br>
+    <div style="background-color: #FFFFFF; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>No Change</span><br>
+    <div style="background-color: #FF9595; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>0% - 50% decrease</span><br>
+    <div style="background-color: #791C32; width: 20px; height: 20px; display: inline-block;"></div>
+    <span> 50%+ decrease</span><br>
+</div>
+
+<!-- Data information -->
+
+<div id="data_information">
+    <h4 id ="data_h4">Currently Viewing: </h4>
+    <span id="orange_county_text">Orange County Count: </span><br>
+    <span id="durham_county_text">Durham County Count: </span><br>
+    <span id="chatham_county_text">Chatham County Count:</span><br>
+</div>
+
 <script>
 
 /////////////
 ///////////// SORT DATA
 /////////////
 
-// !! this section was written with the help of ChatGPT to help filter the data !!
+// !! this function was written with the help of ChatGPT to help filter the data !!
 
 // Before defining the function, we need to define the variables so they can be called outside of the function
 
@@ -201,9 +226,19 @@ var dataForSelectedSpecies;
 var durhamData;
 var chathamData;
 var orangeData;
-var chathamValue;
-var orangeValue;
-var durhamValue;
+var chathamPChange;
+var orangePChange;
+var durhamPChange;
+var chathamCount;
+var orangeCount;
+var durhamCount;
+var durhamColor;
+var orangeColor;
+var chathamColor;
+
+/////////////////
+// FUNCTION TO FILTER DATA
+/////////////////
 
 function filterData(){
 
@@ -256,69 +291,223 @@ chathamData = dataForSelectedSpecies.filter(function (item) {
     return item.County === "Chatham";
 });
 
-     // Retrieve values by county and store as a variable
-durhamValue = durhamData.length > 0 ? durhamData[0].Percent_change_from_previous_year : 0;
-orangeValue = orangeData.length > 0 ? orangeData[0].Percent_change_from_previous_year : 0;
-chathamValue = chathamData.length > 0 ? chathamData[0].Percent_change_from_previous_year : 0;
+     // Retrieve percent change values by county and store as a variable
+durhamPChange = durhamData.length > 0 ? durhamData[0].Percent_change_from_previous_year : 0;
+orangePChange = orangeData.length > 0 ? orangeData[0].Percent_change_from_previous_year : 0;
+chathamPChange = chathamData.length > 0 ? chathamData[0].Percent_change_from_previous_year : 0;
+durhamCount = durhamData.length > 0 ? durhamData[0].count : 0;
+orangeCount = orangeData.length > 0 ? orangeData[0].count : 0;
+chathamCount = chathamData.length > 0 ? chathamData[0].count : 0;
+
+    // Change values of html to display count, species, & year
+document.getElementById('orange_county_text').innerHTML = "Orange County Count: " + orangeCount;
+document.getElementById('durham_county_text').innerHTML = "Durham County Count: " + durhamCount;
+document.getElementById('chatham_county_text').innerHTML = "Chatham County Count: " + chathamCount;
+document.getElementById('data_h4').innerHTML = "Currently viewing: " + selectedSpecies + " " + selectedYear
 
 }
+/// END OF FILTER FUNCTION
 
-// MAP
-// !! NOTE: functions for highlighting the map and generating a new map when clicked were generated
-// by ChatGPT!
+///////////////////////////////////////
+// FUNCTION TO FIND COLOR BASED ON DATA
+///////////////////////////////////////
 
-     var ODC_map = L.map('mapid').setView([35.8796, -79.1382], 9);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+// I would like to add more bins, however for now these are the bins we're using
+function countyColors() {
+    // Based on percent change, lets find the color for each county
+    function getColor(percentChange) {
+        if (percentChange > 0 && percentChange < 50) {
+        return '#7DFFE3'; // 0 - 0.5 increase bin, slight increase
+
+        } else if (percentChange > 50) {
+            return '#008C6E'; // 0.5 + increase bin, large increase
+
+        } else if (percentChange < 0 && percentChange > -50 ) {
+            return '#FF9595'; // -0.5 - 0 decrease bin, small decrease
+            
+        } else if (percentChange < -50) {
+            return '#791C32'; // < -0.5 decrease bin, large decrease
+            
+        } else {
+            return '#ffffff'; // White = no change
+        }
+    }
+
+    // Assign colors to Durham, Orange, and Chatham based on percent change
+    durhamColor = getColor(durhamPChange);
+    orangeColor = getColor(orangePChange);
+    chathamColor = getColor(chathamPChange);
+}
+/////////////////////////////
+////////////// MAP
+/////////////////////////////
+
+// !! NOTE: Functions were written with the assistance of ChatGPT
+
+ var ODC_map = L.map('mapid').setView([35.8796, -79.1382], 9);
+       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
           maxZoom: 19,
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           }).addTo(ODC_map);
 
-// Function to style GeoJSON feature on hover
-function highlightFeature(e) {
-            var layer = e.target;
+// Base layer geojson
 
-            layer.setStyle({
-                weight: 3,
-                color: '#666',
-                dashArray: '',
-                fillOpacity: 0.7
-            });
+L.geoJSON(ODC_counties_geojson, {
+        style: function (feature) {
+            return {
+                color: 'black', // Outline color
+                weight: 1,      // Outline weight
+                fillOpacity: 0.5  // Fill opacity
+            };
         }
+    }).addTo(ODC_map);
 
-        // Function to reset style on mouseout
-        function resetHighlight(e) {
-            var layer = e.target;
-            layer.setStyle({
-                weight: 1,
-                color: 'black',
-                fillOpacity: 0.2
-            });
+// Because every species and year have a different combo
+// function to add layer so it can be executed every time there is a change
+// to year and species
+function addLayer() {
+    // remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
         }
+    });
+    
+    // Add GeoJSON layer to the map
+    L.geoJSON(ODC_counties_geojson, {
+        style: function (feature) {
+            // Initialize color variable
+            var color;
+            // Get the county name from the feature properties
+            var countyName = feature.properties.County;
 
-        // Function to load a new map on feature click
-        // This function will be updated once I figure out how to make the new maps!
-        function loadNewMap(e) {
-            // Load your new map here
-            alert('Loading new map for ' + e.target.feature.properties.NAME); // For demonstration
+            // Set color based on county name
+            if (countyName === "Durham") {
+                color = durhamColor;
+            } else if (countyName === "Orange") {
+                color = orangeColor;
+            } else if (countyName === "Chatham") {
+                color = chathamColor;
+            } else {
+                color = 'black'; // Default color
+            }
+            // Return style object
+            return {
+                color: 'black', // Outline color
+                weight: 1,      // Outline weight
+                fillOpacity: 0.5, // Fill opacity
+                fillColor: color // Fill color
+            };
+        },
+    }).addTo(ODC_map);
+
+    // Add click event listener to each feature
+    // to generate new maps when clicked
+    // GENERATED WITH CHATGPT
+    ODC_map.eachLayer(function(layer) {
+        layer.on('click', function(e) {
+            // Get the clicked feature properties
+            var countyName = e.target.feature.properties.County;
+            // Determine which feature was clicked and execute corresponding function
+            if (countyName === "Durham") {
+                durhamMap();
+            } else if (countyName === "Orange") {
+                orangeMap();
+            } else if (countyName === "Chatham") {
+                chathamMap();
+            }
+        });
+    });
+}
+
+////////////////////////////
+// NEW MAPS FOR EACH COUNTY
+// Functions made with assistance from ChatGPT
+////////////////////////////
+
+function durhamMap() {
+    // Change map view to focus on Durham County
+    ODC_map.setView([36.051, -78.8986], 10); // Adjust latitude and longitude values as needed for Durham County
+
+    // Remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
         }
+    });
 
-        // Add GeoJSON layer for county boundaries
-            L.geoJSON(ODC_counties_geojson, {
-                style: function (feature) {
-                    return {
-                        color: 'black',
-                        weight: 1,
-                        fillOpacity: 0.2
-                    };
-                },
-                onEachFeature: function (feature, layer) {
-                    layer.on({
-                        mouseover: highlightFeature,
-                        mouseout: resetHighlight,
-                        click: loadNewMap
-                    });
-                }
-            }).addTo(ODC_map);
+    // Extract the first feature from the GeoJSON data (Durham County)
+    var durhamCounty = ODC_counties_geojson.features[0];
+
+    // Add GeoJSON layer to the map with only the first feature (Durham County)
+    L.geoJSON(durhamCounty, {
+        style: {
+            color: 'black', // Outline color
+            weight: 1,      // Outline weight
+            fillOpacity: 0.5, // Fill opacity
+            fillColor: durhamColor // Fill color for Durham County (you can adjust the color as needed)
+        }
+    }).addTo(ODC_map);
+}
+
+function orangeMap() {
+    // Change map view to focus on Orange County
+    ODC_map.setView([36.051, -79.01], 10); // Adjust latitude and longitude values as needed for Orange County
+
+    // Remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
+        }
+    });
+
+    // Extract the first feature from the GeoJSON data (Orange County)
+    var orangeCounty = ODC_counties_geojson.features[1];
+
+    // Add GeoJSON layer to the map with only the first feature (Orange County)
+    L.geoJSON(orangeCounty, {
+        style: {
+            color: 'black', // Outline color
+            weight: 1,      // Outline weight
+            fillOpacity: 0.5, // Fill opacity
+            fillColor: orangeColor // Fill color for Orange County
+        }
+    }).addTo(ODC_map);
+}
+
+function chathamMap() {
+    // Change map view to focus on Chatham County
+    ODC_map.setView([35.711, -79.121], 10); // Adjust latitude and longitude values
+
+    // Remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
+        }
+    });
+
+    // Extract the first feature from the GeoJSON data (Chatham County)
+    var chathamCounty = ODC_counties_geojson.features[2];
+
+    // Add GeoJSON layer to the map with only the first feature (Chatham County)
+    L.geoJSON(chathamCounty, {
+        style: {
+            color: 'black', // Outline color
+            weight: 1,      // Outline weight
+            fillOpacity: 0.5, // Fill opacity
+            fillColor: chathamColor // Fill color for Chatham County 
+        }
+    }).addTo(ODC_map);
+}
+
 
 // SPECIES SELECTION DROP DOWN
 // Generated with ChatGPT
@@ -335,7 +524,9 @@ function highlightFeature(e) {
 
             // Console log to show species object
             console.log(selectedSpeciesObj);
-            filterData()
+            filterData();
+            countyColors();
+            addLayer();
         }
         document.getElementById('speciesSelection').addEventListener('change', handleSpeciesSelection);
 
@@ -343,15 +534,18 @@ function highlightFeature(e) {
 
 function slider_val(value) { 
     document.getElementById('yearValue').innerHTML = value;
-    filterData()
+    filterData();
+    countyColors();
+    addLayer();
 }
 
-// starting value is 0, first fire 
+// starting value is 1999
 window.onload = function() {
   document.getElementById('yearSlider').value = 1999;  
     }; 
 
 
   </script>
+
 </body>
 </html>
