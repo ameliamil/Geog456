@@ -47,6 +47,14 @@ mbbs_sorted <- rbind(mbbs_chat_sorted, mbbs_orange_sorted, mbbs_durham_sorted)
 
 mbbs_sorted$Species_Scientific <- paste(mbbs_sorted$common_name, " (", mbbs_sorted$sci_name, ")", sep ="")
 
+mbbs_sorted <- mbbs_sorted %>%
+  group_by(common_name) %>%
+  mutate(Percent_change_from_previous_year = (count - lag(count)) / lag(count) * 100,
+         Percent_change_from_previous_year = ifelse(year == min(year), NA, Percent_change_from_previous_year))
+
+
+
+
 
 # write out CSVs of data
 
