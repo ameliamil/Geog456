@@ -533,7 +533,7 @@ function durhamMap() {
     durhamCoords.forEach(function(coord) {
     L.circle([parseFloat(coord.lat), parseFloat(coord.lon)], {
         radius: 400, 
-        color: 'black', // black
+        color: '#696160', 
         fillOpacity: 0.9
     }).addTo(ODC_map)
       .bindPopup("Route " + coord.route_num); 
@@ -580,7 +580,7 @@ function orangeMap() {
     orangeCoords.forEach(function(coord) {
     L.circle([parseFloat(coord.lat), parseFloat(coord.lon)], {
         radius: 400, 
-        color: 'black', // black
+        color: '#696160', 
         fillOpacity: 0.9
     }).addTo(ODC_map)
       .bindPopup("Route " + coord.route_num); 
@@ -622,7 +622,7 @@ function chathamMap() {
     chathamCoords.forEach(function(coord) {
     L.circle([parseFloat(coord.lat), parseFloat(coord.lon)], {
         radius: 400, 
-        color: 'black', // black
+        color: '#696160', 
         fillOpacity: 0.9
     }).addTo(ODC_map)
       .bindPopup("Route " + coord.route_num); 
