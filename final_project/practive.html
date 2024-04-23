@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+    <script src="data_counties_csv.js"></script>
+    <script src="ODC_counties_geojson.js"></script>
+    <script src="route_coords.js"></script>
+    <script src="data_routes.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final Project Geog 456 </title>
+</head>
+<!-- leaflet script -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+<style>
+    #mapid{height: 390px; width: 800px}
+
+    #legend{position: absolute; bottom: 160px; left: 830px; background-color: white; padding: 10px; border: 1px solid black;}
+
+    #data_information{position: absolute; bottom: 405px; left:830px; background-color: white; padding: 10px; border: 1px solid black;}
+
+    /* Slider style generated with the assistance of ChatGPT */
+    .slider {
+        width: 300px;
+        appearance: none;
+        height: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+
+    /* Style for the slider thumb */
+    .slider::-webkit-slider-thumb {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+<h1> NC MBBS </h1>
+<h2>Amelia Milano</h2>
+<!-- species selection !!! This was written using ChatGPT !! -->
+<h3><label for="speciesSelection">Select a species:</label>
+<select id="speciesSelection">
+    <option value="">Select a species...</option>
+        <option value="Acadian Flycatcher">Acadian Flycatcher (Empidonax virescens)</option>
+        <option value="American Crow">American Crow (Corvus brachyrhynchos)</option>
+        <option value="American Goldfinch">American Goldfinch (Spinus tristis)</option>
+        <option value="American Redstart">American Redstart (Setophaga ruticilla)</option>
+        <option value="American Robin">American Robin (Turdus migratorius)</option>
+        <option value="Bald Eagle">Bald Eagle (Haliaeetus leucocephalus)</option>
+        <option value="Baltimore Oriole">Baltimore Oriole (Icterus galbula)</option>
+        <option value="Barn Swallow">Barn Swallow (Hirundo rustica)</option>
+        <option value="Barred Owl">Barred Owl (Strix varia)</option>
+        <option value="Belted Kingfisher">Belted Kingfisher (Megaceryle alcyon)</option>
+        <option value="Black Vulture">Black Vulture (Coragyps atratus)</option>
+        <option value="Black-and-white Warbler">Black-and-white Warbler (Mniotilta varia)</option>
+        <option value="Black-throated Blue Warbler">Black-throated Blue Warbler (Setophaga caerulescens)</option>
+        <option value="Blackpoll Warbler">Blackpoll Warbler (Setophaga striata)</option>
+        <option value="Blue Grosbeak">Blue Grosbeak (Passerina caerulea)</option>
+        <option value="Blue Jay">Blue Jay (Cyanocitta cristata)</option>
+        <option value="Blue-gray Gnatcatcher">Blue-gray Gnatcatcher (Polioptila caerulea)</option>
+        <option value="Blue-headed Vireo">Blue-headed Vireo (Vireo solitarius)</option>
+        <option value="Broad-winged Hawk">Broad-winged Hawk (Buteo platypterus)</option>
+        <option value="Brown Thrasher">Brown Thrasher (Toxostoma rufum)</option>
+        <option value="Brown-headed Cowbird">Brown-headed Cowbird (Molothrus ater)</option>
+        <option value="Brown-headed Nuthatch">Brown-headed Nuthatch (Sitta pusilla)</option>
+        <option value="Canada Goose">Canada Goose (Branta canadensis)</option>
+        <option value="Carolina Chickadee">Carolina Chickadee (Poecile carolinensis)</option>
+        <option value="Carolina Wren">Carolina Wren (Thryothorus ludovicianus)</option>
+        <option value="Cedar Waxwing">Cedar Waxwing (Bombycilla cedrorum)</option>
+        <option value="Chimney Swift">Chimney Swift (Chaetura pelagica)</option>
+        <option value="Chipping Sparrow">Chipping Sparrow (Spizella passerina)</option>
+        <option value="Chuck-will's-widow">Chuck-will's-widow (Antrostomus carolinensis)</option>
+        <option value="Cliff Swallow">Cliff Swallow (Petrochelidon pyrrhonota)</option>
+        <option value="Common Grackle">Common Grackle (Quiscalus quiscula)</option>
+        <option value="Common Nighthawk">Common Nighthawk (Chordeiles minor)</option>
+        <option value="Common Yellowthroat">Common Yellowthroat (Geothlypis trichas)</option>
+        <option value="Cooper's Hawk">Cooper's Hawk (Accipiter cooperii)</option>
+        <option value="Dickcissel">Dickcissel (Spiza americana)</option>
+        <option value="Double-crested Cormorant">Double-crested Cormorant (Phalacrocorax auritus)</option>
+        <option value="Downy Woodpecker">Downy Woodpecker (Dryobates pubescens)</option>
+        <option value="Eastern Bluebird">Eastern Bluebird (Sialia sialis)</option>
+        <option value="Eastern Kingbird">Eastern Kingbird (Tyrannus tyrannus)</option>
+        <option value="Eastern Meadowlark">Eastern Meadowlark (Sturnella magna)</option>
+        <option value="Eastern Phoebe">Eastern Phoebe (Sayornis phoebe)</option>
+        <option value="Eastern Screech-Owl">Eastern Screech-Owl (Megascops asio)</option>
+        <option value="Eastern Towhee">Eastern Towhee (Pipilo erythrophthalmus)</option>
+        <option value="Eastern Whip-poor-will">Eastern Whip-poor-will (Antrostomus vociferus)</option>
+        <option value="Eastern Wood-Pewee">Eastern Wood-Pewee (Contopus virens)</option>
+        <option value="European Starling">European Starling (Sturnus vulgaris)</option>
+        <option value="Field Sparrow">Field Sparrow (Spizella pusilla)</option>
+        <option value="Fish Crow">Fish Crow (Corvus ossifragus)</option>
+        <option value="Glossy Ibis">Glossy Ibis (Plegadis falcinellus)</option>
+        <option value="Grasshopper Sparrow">Grasshopper Sparrow (Ammodramus savannarum)</option>
+        <option value="Gray Catbird">Gray Catbird (Dumetella carolinensis)</option>
+        <option value="Great Blue Heron">Great Blue Heron (Ardea herodias)</option>
+        <option value="Great Crested Flycatcher">Great Crested Flycatcher (Myiarchus crinitus)</option>
+        <option value="Great Egret">Great Egret (Ardea alba)</option>
+        <option value="Great Horned Owl">Great Horned Owl (Bubo virginianus)</option>
+        <option value="Green Heron">Green Heron (Butorides virescens)</option>
+        <option value="Hairy Woodpecker">Hairy Woodpecker (Leuconotopicus villosus)</option>
+        <option value="Hooded Warbler">Hooded Warbler (Setophaga citrina)</option>
+        <option value="House Finch">House Finch (Haemorhous mexicanus)</option>
+        <option value="House Sparrow">House Sparrow (Passer domesticus)</option>
+        <option value="House Wren">House Wren (Troglodytes aedon)</option>
+        <option value="Indigo Bunting">Indigo Bunting (Passerina cyanea)</option>
+        <option value="Kentucky Warbler">Kentucky Warbler (Geothlypis formosa)</option>
+        <option value="Killdeer">Killdeer (Charadrius vociferus)</option>
+        <option value="Loggerhead Shrike">Loggerhead Shrike (Lanius ludovicianus)</option>
+        <option value="Louisiana Waterthrush">Louisiana Waterthrush (Parkesia motacilla)</option>
+        <option value="Magnolia Warbler">Magnolia Warbler (Setophaga magnolia)</option>
+        <option value="Mallard">Mallard (Anas platyrhynchos)</option>
+        <option value="Mourning Dove">Mourning Dove (Zenaida macroura)</option>
+        <option value="Muscovy Duck">Muscovy Duck (Cairina moschata)</option>
+        <option value="Mute Swan">Mute Swan (Cygnus olor)</option>
+        <option value="Northern Bobwhite">Northern Bobwhite (Colinus virginianus)</option>
+        <option value="Northern Cardinal">Northern Cardinal (Cardinalis cardinalis)</option>
+        <option value="Northern Flicker">Northern Flicker (Colaptes auratus)</option>
+        <option value="Northern Mockingbird">Northern Mockingbird (Mimus polyglottos)</option>
+        <option value="Northern Parula">Northern Parula (Setophaga americana)</option>
+        <option value="Northern Rough-winged Swallow">Northern Rough-winged Swallow (Stelgidopteryx serripennis)</option>
+        <option value="Ovenbird">Ovenbird (Seiurus aurocapilla)</option>
+        <option value="Pileated Woodpecker">Pileated Woodpecker (Dryocopus pileatus)</option>
+        <option value="Pine Warbler">Pine Warbler (Setophaga pinus)</option>
+        <option value="Prairie Warbler">Prairie Warbler (Setophaga discolor)</option>
+        <option value="Prothonotary Warbler">Prothonotary Warbler (Protonotaria citrea)</option>
+        <option value="Purple Martin">Purple Martin (Progne subis)</option>
+        <option value="Red-bellied Woodpecker">Red-bellied Woodpecker (Melanerpes carolinus)</option>
+        <option value="Red-eyed Vireo">Red-eyed Vireo (Vireo olivaceus)</option>
+        <option value="Red-headed Woodpecker">Red-headed Woodpecker (Melanerpes erythrocephalus)</option>
+        <option value="Red-shouldered Hawk">Red-shouldered Hawk (Buteo lineatus)</option>
+        <option value="Red-tailed Hawk">Red-tailed Hawk (Buteo jamaicensis)</option>
+        <option value="Red-winged Blackbird">Red-winged Blackbird (Agelaius phoeniceus)</option>
+        <option value="Ring-billed Gull">Ring-billed Gull (Larus delawarensis)</option>
+        <option value="Rock Pigeon">Rock Pigeon (Columba livia)</option>
+        <option value="Ruby-throated Hummingbird">Ruby-throated Hummingbird (Archilochus colubris)</option>
+        <option value="Scarlet Tanager">Scarlet Tanager (Piranga olivacea)</option>
+        <option value="Sharp-shinned Hawk">Sharp-shinned Hawk (Accipiter striatus)</option>
+        <option value="Summer Tanager">Summer Tanager (Piranga rubra)</option>
+        <option value="Swainson's Thrush">Swainson's Thrush (Catharus ustulatus)</option>
+        <option value="Tree Swallow">Tree Swallow (Tachycineta bicolor)</option>
+        <option value="Tufted Titmouse">Tufted Titmouse (Baeolophus bicolor)</option>
+        <option value="Turkey Vulture">Turkey Vulture (Cathartes aura)</option>
+        <option value="Warbling Vireo">Warbling Vireo (Vireo gilvus)</option>
+        <option value="White-breasted Nuthatch">White-breasted Nuthatch (Sitta carolinensis)</option>
+        <option value="White-eyed Vireo">White-eyed Vireo (Vireo griseus)</option>
+        <option value="Wild Turkey">Wild Turkey (Meleagris gallopavo)</option>
+        <option value="Wood Thrush">Wood Thrush (Hylocichla mustelina)</option>
+        <option value="Yellow Warbler">Yellow Warbler (Setophaga petechia)</option>
+        <option value="Yellow-billed Cuckoo">Yellow-billed Cuckoo (Coccyzus americanus)</option>
+        <option value="Yellow-breasted Chat">Yellow-breasted Chat (Icteria virens)</option>
+        <option value="Yellow-crowned Night-Heron">Yellow-crowned Night-Heron (Nyctanassa violacea)</option>
+        <option value="Yellow-throated Vireo">Yellow-throated Vireo (Vireo flavifrons)</option>
+        <option value="Yellow-throated Warbler">Yellow-throated Warbler (Setophaga dominica)</option>
+        <option value="American Woodcock">American Woodcock (Scolopax minor)</option>
+        <option value="Horned Lark">Horned Lark (Eremophila alpestris)</option>
+        <option value="Northern Waterthrush">Northern Waterthrush (Parkesia noveboracensis)</option>
+        <option value="Willow Flycatcher">Willow Flycatcher (Empidonax traillii)</option>
+        <option value="Mississippi Kite">Mississippi Kite (Ictinia mississippiensis)</option>
+        <option value="Worm-eating Warbler">Worm-eating Warbler (Helmitheros vermivorum)</option>
+</select>
+</h3>
+<!-- Slider -->
+<input type="range" min="1999" max="2023" value="1999" class="slider" id="yearSlider" onchange="slider_val(this.value)">
+<!-- default starting value 1999 -->
+<span id="yearValue">1999</span>
+<div id="mapid"></div>
+
+<!-- LEGEND DIV, generated using ChatGPT -->
+<div id="legend">
+    <h4>Legend</h4>
+    <h5>% Change from Previous Year</h5>
+    <div style="background-color: #008C6E; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>50%+ increase </span><br>
+    <div style="background-color: #7DFFE3; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>0% - 50% increase</span><br>
+    <div style="background-color: #FFFFFF; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>No Change</span><br>
+    <div style="background-color: #FF9595; width: 20px; height: 20px; display: inline-block;"></div>
+    <span>0% - 50% decrease</span><br>
+    <div style="background-color: #791C32; width: 20px; height: 20px; display: inline-block;"></div>
+    <span> 50%+ decrease</span><br>
+</div>
+
+<!-- Data information -->
+
+<div id="data_information">
+    <h4 id ="data_h4">Currently Viewing: </h4>
+    <h5 id="learn_more_h5">Learn More About the ... </h5>
+    <span id="orange_county_text">Orange County Count: </span><br>
+    <span id="durham_county_text">Durham County Count: </span><br>
+    <span id="chatham_county_text">Chatham County Count: </span><br>
+</div>
+
+<script>
+
+/////////////
+///////////// SORT DATA
+/////////////
+
+// !! this function was written with the help of ChatGPT to help filter the data !!
+
+// Before defining the function, we need to define the variables so they can be called outside of the function
+
+var selectedYear;
+var dataForSelectedYear;
+var selectedSpecies;
+var dataForSelectedSpecies;
+var durhamData;
+var chathamData;
+var orangeData;
+var chathamPChange;
+var orangePChange;
+var durhamPChange;
+var chathamCount;
+var orangeCount;
+var durhamCount;
+var durhamColor;
+var orangeColor;
+var chathamColor;
+var speciesLink;
+var learnMoreLink;
+var durhamRTData;
+var orangeRTData;
+var chathamRTData;
+
+/////////////////
+// FUNCTION TO FILTER DATA
+/////////////////
+
+function filterData(){
+
+
+    // Function to filter JSON data based on selected species and year
+
+    // Filter for YEAR
+
+// Function to filter data based on the selected year
+function filterDataByYear(year) {
+    return data_counties_csv.filter(function (item) {
+        return item.year === year;
+    });
+}
+
+// Get the current value of the year slider
+selectedYear = document.getElementById('yearValue').textContent;
+
+// Filter data based on the selected year
+dataForSelectedYear = filterDataByYear(selectedYear);
+
+    // Filter for SPECIES
+
+// Function to filter data based on the selected species
+function filterDataBySpecies(species) {
+    return dataForSelectedYear.filter(function (item) {
+        return item.common_name === species;
+    });
+}
+
+// Get the selected species from the dropdown
+selectedSpecies = document.getElementById('speciesSelection').value;
+
+// Filter data based on the selected species
+dataForSelectedSpecies = filterDataBySpecies(selectedSpecies);
+
+    // Filter by COUNTY
+
+durhamData = dataForSelectedSpecies.filter(function (item) {
+    return item.County === "Durham";
+});
+
+// Filter data for Orange county
+orangeData = dataForSelectedSpecies.filter(function (item) {
+    return item.County === "Orange";
+});
+
+// Filter data for Chatham county
+chathamData = dataForSelectedSpecies.filter(function (item) {
+    return item.County === "Chatham";
+});
+
+     // Retrieve percent change values by county and store as a variable
+durhamPChange = durhamData.length > 0 ? durhamData[0].Percent_change_from_previous_year : 0;
+orangePChange = orangeData.length > 0 ? orangeData[0].Percent_change_from_previous_year : 0;
+chathamPChange = chathamData.length > 0 ? chathamData[0].Percent_change_from_previous_year : 0;
+durhamCount = durhamData.length > 0 ? durhamData[0].count : 0;
+orangeCount = orangeData.length > 0 ? orangeData[0].count : 0;
+chathamCount = chathamData.length > 0 ? chathamData[0].count : 0;
+
+// Change values of html to display count, species, & year
+document.getElementById('orange_county_text').innerHTML = "Orange County Count: " + orangeCount;
+document.getElementById('durham_county_text').innerHTML = "Durham County Count: " + durhamCount;
+document.getElementById('chatham_county_text').innerHTML = "Chatham County Count: " + chathamCount;
+document.getElementById('data_h4').innerHTML = "Currently viewing: " + selectedSpecies + " " + selectedYear
+
+// Learn more link
+speciesLink = selectedSpecies.replace(/\s+/g, "_"); // replace spaces with underscores
+learnMoreLink = document.createElement('a') // create link element
+learnMoreLink.href = "https://www.allaboutbirds.org/guide/" + speciesLink + "/overview" // all about birds format = link + species name + overview
+learnMoreLink.innerHTML = "Learn More About the " + selectedSpecies // words!
+
+// Clear existing content and append the link to the element
+document.getElementById('learn_more_h5').innerHTML = "";
+document.getElementById('learn_more_h5').appendChild(learnMoreLink);
+
+
+
+}
+/// END OF FILTER FUNCTION FOR COUNTY DATA
+
+///////////////////////////////////////
+// FUNCTION TO FIND COLOR BASED ON DATA
+///////////////////////////////////////
+
+// I would like to add more bins, however for now these are the bins we're using
+function countyColors() {
+    // Based on percent change, lets find the color for each county
+    function getColor(percentChange) {
+        if (percentChange > 0 && percentChange < 50) {
+        return '#7DFFE3'; // 0 - 0.5 increase bin, slight increase
+
+        } else if (percentChange > 50) {
+            return '#008C6E'; // 0.5 + increase bin, large increase
+
+        } else if (percentChange < 0 && percentChange > -50 ) {
+            return '#FF9595'; // -0.5 - 0 decrease bin, small decrease
+            
+        } else if (percentChange < -50) {
+            return '#791C32'; // < -0.5 decrease bin, large decrease
+            
+        } else {
+            return '#ffffff'; // White = no change
+        }
+    }
+
+    // Assign colors to Durham, Orange, and Chatham based on percent change
+    durhamColor = getColor(durhamPChange);
+    orangeColor = getColor(orangePChange);
+    chathamColor = getColor(chathamPChange);
+}
+/////////////////////////////
+////////////// MAP
+/////////////////////////////
+
+// !! NOTE: Functions were written with the assistance of ChatGPT
+
+ var ODC_map = L.map('mapid').setView([35.8796, -79.1382], 9);
+       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+          }).addTo(ODC_map);
+
+// Base layer geojson
+
+L.geoJSON(ODC_counties_geojson, {
+        style: function (feature) {
+            return {
+                color: 'black', // Outline color
+                weight: 1,      // Outline weight
+                fillOpacity: 0.5  // Fill opacity
+            };
+        }
+    }).addTo(ODC_map);
+
+// Because every species and year have a different combo
+// function to add layer so it can be executed every time there is a change
+// to year and species
+function addLayer() {
+    // remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
+        }
+    });
+    
+    // Add GeoJSON layer to the map
+    L.geoJSON(ODC_counties_geojson, {
+        style: function (feature) {
+            // Initialize color variable
+            var color;
+            // Get the county name from the feature properties
+            var countyName = feature.properties.County;
+
+            // Set color based on county name
+            if (countyName === "Durham") {
+                color = durhamColor;
+            } else if (countyName === "Orange") {
+                color = orangeColor;
+            } else if (countyName === "Chatham") {
+                color = chathamColor;
+            } else {
+                color = 'black'; // Default color
+            }
+            // Return style object
+            return {
+                color: 'black', // Outline color
+                weight: 1,      // Outline weight
+                fillOpacity: 0.5, // Fill opacity
+                fillColor: color // Fill color
+            };
+        },
+    }).addTo(ODC_map);
+
+    // Add click event listener to each feature
+    // to generate new maps when clicked
+    // GENERATED WITH CHATGPT
+    ODC_map.eachLayer(function(layer) {
+        layer.on('click', function(e) {
+            // Get the clicked feature properties
+            var countyName = e.target.feature.properties.County;
+            // Determine which feature was clicked and execute corresponding function
+            if (countyName === "Durham") {
+                durhamMap();
+            } else if (countyName === "Orange") {
+                orangeMap();
+            } else if (countyName === "Chatham") {
+                chathamMap();
+            }
+        });
+    });
+}
+
+////////////////////////////
+// NEW MAPS FOR EACH COUNTY
+// Functions made with assistance from ChatGPT
+////////////////////////////
+
+function durhamMap() {
+    // Change map view to focus on Durham County
+    ODC_map.setView([36.051, -78.8986], 10); // Adjust latitude and longitude values as needed for Durham County
+
+    // Remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
+        }
+    });
+
+    // Extract the first feature from the GeoJSON data (Durham County)
+    var durhamCounty = ODC_counties_geojson.features[0];
+
+    // Add GeoJSON layer to the map with only the first feature (Durham County)
+    L.geoJSON(durhamCounty, {
+        style: {
+            color: 'black', // Outline color
+            weight: 1,      // Outline weight
+            fillOpacity: 0.5, // Fill opacity
+            fillColor: durhamColor // Fill color for Durham County (you can adjust the color as needed)
+        }
+    }).addTo(ODC_map);
+
+    // Coordinates of Durham Routes
+    var durhamCoords = route_coords.filter(function(coord) {
+        return coord.mbbs_county === "durham";
+    });
+
+    // for each + add to map
+    durhamCoords.forEach(function(coord) {
+    L.circle([parseFloat(coord.lat), parseFloat(coord.lon)], {
+        radius: 400, 
+        color: 'black', // black
+        fillOpacity: 0.9
+    }).addTo(ODC_map)
+      .bindPopup("Route Number: " + coord.route_num); 
+});
+}
+
+function orangeMap() {
+    // Change map view to focus on Orange County
+    ODC_map.setView([36.051, -79.13], 10); // Adjust latitude and longitude values as needed for Orange County
+
+    // Remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
+        }
+    });
+
+    // Extract the first feature from the GeoJSON data (Orange County)
+    var orangeCounty = ODC_counties_geojson.features[1];
+
+    // Add GeoJSON layer to the map with only the first feature (Orange County)
+    L.geoJSON(orangeCounty, {
+        style: {
+            color: 'black', // Outline color
+            weight: 1,      // Outline weight
+            fillOpacity: 0.5, // Fill opacity
+            fillColor: orangeColor // Fill color for Orange County
+        }
+    }).addTo(ODC_map);
+
+     // Coordinates of Durham Routes
+     var orangeCoords = route_coords.filter(function(coord) {
+        return coord.mbbs_county === "orange";
+    });
+
+    // Loop through filtered coordinate points and add them to the map
+    orangeCoords.forEach(function(coord) {
+        L.circle([parseFloat(coord.lat), parseFloat(coord.lon)]).addTo(ODC_map)
+            .bindPopup("Route Number: " + coord.route_num); 
+    });
+}
+
+function chathamMap() {
+    // Change map view to focus on Chatham County
+    ODC_map.setView([35.711, -79.17], 10); // Adjust latitude and longitude values
+
+    // Remove previous layers
+    ODC_map.eachLayer(function(layer) {
+        // Check if the layer is a GeoJSON layer
+        if (layer instanceof L.GeoJSON) {
+            // Remove the layer from the map
+            ODC_map.removeLayer(layer);
+        }
+    });
+
+    // Extract the first feature from the GeoJSON data (Chatham County)
+    var chathamCounty = ODC_counties_geojson.features[2];
+
+    // Add GeoJSON layer to the map with only the first feature (Chatham County)
+    L.geoJSON(chathamCounty, {
+        style: {
+            color: 'black', // Outline color
+            weight: 1,      // Outline weight
+            fillOpacity: 0.5, // Fill opacity
+            fillColor: chathamColor // Fill color for Chatham County 
+        }
+    }).addTo(ODC_map);
+
+    // Coordinates of Durham Routes
+    var chatCoords = route_coords.filter(function(coord) {
+        return coord.mbbs_county === "chatham";
+    });
+
+    // Loop through filtered coordinate points and add them to the map
+    chatCoords.forEach(function(coord) {
+        L.circle([parseFloat(coord.lat), parseFloat(coord.lon)]).addTo(ODC_map)
+            .bindPopup("Route Number: " + coord.route_num); 
+    });
+}
+
+// SPECIES SELECTION DROP DOWN
+// Generated with ChatGPT
+
+        // Function to handle species selection
+        function handleSpeciesSelection() {
+            // Get the selected species name
+            var selectedSpecies = document.getElementById('speciesSelection').value;
+
+            // Assign the selected species to an object
+            var selectedSpeciesObj = {
+                speciesName: selectedSpecies
+            };
+
+            // Console log to show species object
+            console.log(selectedSpeciesObj);
+            filterData();
+            countyColors();
+            addLayer();
+        }
+        document.getElementById('speciesSelection').addEventListener('change', handleSpeciesSelection);
+
+///// Slider 
+
+function slider_val(value) { 
+    document.getElementById('yearValue').innerHTML = value;
+    filterData();
+    countyColors();
+    addLayer();
+}
+
+// starting value is 1999
+window.onload = function() {
+  document.getElementById('yearSlider').value = 1999;  
+    }; 
+
+    <!-- Add this code snippet inside the <script> tag -->
+
+// Function to filter route coordinates based on the clicked county
+function filterRouteCoordsByCounty(county) {
+    return route_coords.filter(function(coord) {
+        return coord.mbbs_county.toLowerCase() === county.toLowerCase();
+    });
+}
+
+// Function to plot route coordinates on the map
+function plotRouteCoordinates(coords, percentChange) {
+    coords.forEach(function(coord) {
+        // Calculate marker size based on percent change
+        var markerSize = Math.abs(percentChange) * 10;
+        // Determine marker color based on percent change
+        var markerColor = percentChange > 0 ? 'green' : 'red';
+        
+        // Add circle marker to the map
+        L.circleMarker([parseFloat(coord.lat), parseFloat(coord.lon)], {
+            radius: markerSize,
+            color: 'black',
+            fillColor: markerColor,
+            fillOpacity: 0.9
+        }).addTo(ODC_map)
+        .bindPopup("Route Number: " + coord.route_num); 
+    });
+}
+
+// Function to handle county click event
+function handleCountyClick(countyName) {
+    // Filter route coordinates based on the clicked county
+    var countyCoords = filterRouteCoordsByCounty(countyName);
+
+    // Retrieve corresponding route data from data_routes
+    var routeData = data_routes.filter(function(route) {
+        return route.county.toLowerCase() === countyName.toLowerCase() &&
+               route.year === parseInt(selectedYear) &&
+               route.species_common_name.toLowerCase() === selectedSpecies.toLowerCase();
+    });
+
+    // Calculate percent change from the retrieved route data
+    var percentChange = routeData.length > 0 ? routeData[0].percent_change : 0;
+
+    // Plot route coordinates on the map
+    plotRouteCoordinates(countyCoords, percentChange);
+}
+
+// Update the click event listener to call handleCountyClick function
+ODC_map.eachLayer(function(layer) {
+    layer.on('click', function(e) {
+        var countyName = e.target.feature.properties.County;
+        handleCountyClick(countyName);
+    });
+});
+
+
+  </script>
+
+</body>
+</html>

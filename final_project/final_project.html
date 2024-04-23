@@ -2,6 +2,8 @@
 <html>
     <script src="data_counties_csv.js"></script>
     <script src="ODC_counties_geojson.js"></script>
+    <script src="route_coords.js"></script>
+    <script src="data_routes.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible", content="IE=edge">
@@ -17,17 +19,26 @@
      crossorigin=""></script>
 
 <style>
-    #mapid{height: 390px; width: 800px}
+    #mapid{height: 400px; width: 800px}
 
-    #legend{position: absolute; bottom: 160px; left: 830px; background-color: white; padding: 10px; border: 1px solid black;}
+    #legend{position: absolute; bottom: 75px; left: 830px; background-color: white; padding: 10px; border: 1px solid black;}
 
-    #data_information{position: absolute; bottom: 405px; left:830px; background-color: white; padding: 10px; border: 1px solid black;}
+    #data_information{position: absolute; bottom: 270px; left:830px; background-color: white; padding: 10px; border: 1px solid black;}
 
-    /* Slider style generated with the assistance of ChatGPT */
-    .slider {
+/* lets make it pretty! */
+/* change background color */
+body {
+        background-color: #fbf5f4;
+    }
+/* change font color for links */
+a {
+      color: #228b4c;
+ }
+     /* Slider style generated with the assistance of ChatGPT */
+     .slider {
         width: 300px;
         appearance: none;
-        height: 5px;
+        height: 8px;
         background: #d3d3d3;
         outline: none;
         opacity: 0.7;
@@ -40,25 +51,71 @@
         appearance: none;
         width: 15px;
         height: 15px;
-        background: #4CAF50;
+        background: #228b4c;
+        border-radius: 50%; /* Makes it more rounded */
         cursor: pointer;
     }
 
     .slider::-moz-range-thumb {
-        width: 15px;
-        height: 15px;
-        background: #4CAF50;
+        width: 18px;
+        height: 18px;
+        background: #000;
+        border-radius: 50%; /* Makes it more rounded */
         cursor: pointer;
     }
+
+            /* Custom select style */
+            /* GENERATED W CHATGPT */
+            .custom-select {
+            position: relative;
+            display: inline-block;
+            width: 350px; 
+            height: 35px; 
+            background-color: #fff;
+            border: 2px solid #9D8189; 
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .custom-select select {
+            width: 100%;
+            height: 100%;
+            padding: 10px; 
+            background-color: transparent;
+            border: none;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            cursor: pointer;
+            font-size: 12px; 
+            color: black;
+        }
+
+        /* Arrow icon */
+        .custom-select::after {
+            content: '\25BC'; /* Unicode character for down arrow */
+            position: absolute;
+            top: 50%;
+            right: 10px; /* Adjust right position as needed */
+            transform: translateY(-50%);
+            font-size: 20px; /* Adjust font size as needed */
+            color: #dcb0bc; 
+        }
+
+        /* Hover effect */
+        .custom-select:hover {
+            border-color: #dcb0bc; /* Lighter pink border on hover */
+        }
 </style>
 </head>
 
-<body>
-<h1> NC MBBS </h1>
-<h2>Amelia Milano</h2>
+<body style = "font-family:Arial, Helvetica, sans-serif">
+<h1><p style="font-family:Arial, Helvetica, sans-serif; font-size: 25px;">Avian Population Change in Chatham, Orange, and Durham Counties</p> </h1>
+<h2><p style="font-family:Arial, Helvetica, sans-serif; font-size: 15px;"> Amelia Milano | Geog 456 | This project uses data from the <a href="https://minibbs.us/">NC Mini Breeding Bird Survey</a>.</p></h2>
 <!-- species selection !!! This was written using ChatGPT !! -->
-<h3><label for="speciesSelection">Select a species:</label>
-<select id="speciesSelection">
+<div class="custom-select">
+    <select id="speciesSelection">
     <option value="">Select a species...</option>
         <option value="Acadian Flycatcher">Acadian Flycatcher (Empidonax virescens)</option>
         <option value="American Crow">American Crow (Corvus brachyrhynchos)</option>
@@ -177,7 +234,7 @@
         <option value="Mississippi Kite">Mississippi Kite (Ictinia mississippiensis)</option>
         <option value="Worm-eating Warbler">Worm-eating Warbler (Helmitheros vermivorum)</option>
 </select>
-</h3>
+</div><br>
 <!-- Slider -->
 <input type="range" min="1999" max="2023" value="1999" class="slider" id="yearSlider" onchange="slider_val(this.value)">
 <!-- default starting value 1999 -->
@@ -185,30 +242,32 @@
 <div id="mapid"></div>
 
 <!-- LEGEND DIV, generated using ChatGPT -->
-<div id="legend">
-    <h4>Legend</h4>
-    <h5>% Change from Previous Year</h5>
-    <div style="background-color: #008C6E; width: 20px; height: 20px; display: inline-block;"></div>
-    <span>50%+ increase </span><br>
-    <div style="background-color: #7DFFE3; width: 20px; height: 20px; display: inline-block;"></div>
-    <span>0% - 50% increase</span><br>
-    <div style="background-color: #FFFFFF; width: 20px; height: 20px; display: inline-block;"></div>
-    <span>No Change</span><br>
-    <div style="background-color: #FF9595; width: 20px; height: 20px; display: inline-block;"></div>
-    <span>0% - 50% decrease</span><br>
-    <div style="background-color: #791C32; width: 20px; height: 20px; display: inline-block;"></div>
-    <span> 50%+ decrease</span><br>
+<div id="legend" style="font-family: Arial, Helvetica, sans-serif;">
+    <h1 style="font-size: 17px; margin-bottom: 5px;padding: 0; line-height: 1;">Legend</h1>
+    <h2 style="font-size: 15px; margin-bottom: 5px;padding: 0; line-height: 1;">% Change from Previous Year</h2>
+    <div style="background-color: #008C6E; width: 15px; height: 15px; display: inline-block;"></div>
+    <span style="font-size: 13px; margin: 0; padding: 0; line-height: 1;">50%+ increase </span><br>
+    <div style="background-color: #7DFFE3; width: 15px; height: 15px; display: inline-block;"></div>
+    <span style="font-size: 13px; margin: 0; padding: 0; line-height: 1;">0% - 50% increase</span><br>
+    <div style="background-color: #FFFFFF; width: 15px; height: 15px; display: inline-block;"></div>
+    <span style="font-size: 13px; margin: 0; padding: 0; line-height: 1;">No Change</span><br>
+    <div style="background-color: #FF9595; width: 15px; height: 15px; display: inline-block;"></div>
+    <span style="font-size: 13px; margin: 0; padding: 0; line-height: 1;">0% - 50% decrease</span><br>
+    <div style="background-color: #791C32; width: 15px; height: 15px; display: inline-block;"></div>
+    <span style="font-size: 13px; margin: 0; padding: 0; line-height: 1;"> 50%+ decrease</span><br>
 </div>
+
 
 <!-- Data information -->
 
-<div id="data_information">
-    <h4 id ="data_h4">Currently Viewing: </h4>
-    <h5 id="learn_more_h5">Learn More About the ... </h5>
-    <span id="orange_county_text">Orange County Count: </span><br>
-    <span id="durham_county_text">Durham County Count: </span><br>
-    <span id="chatham_county_text">Chatham County Count: </span><br>
+<div id="data_information" style="font-family: Arial, Helvetica, sans-serif;">
+    <h1 id ="data_h4" style="font-size: 17px; padding: 0; line-height: 1;">Currently Viewing: </h1>
+    <h2 id="learn_more_h5" style="font-size: 15px; margin-bottom: 5px; padding: 0; line-height: 1;">Learn More About the ... </h2>
+    <span id="orange_county_text" style="font-size: 13px; margin: 0; padding: 0; line-height: 1;">Orange County Count: </span><br>
+    <span id="durham_county_text" style="font-size: 13px; margin: 0; padding: 0; line-height: 1;">Durham County Count: </span><br>
+    <span id="chatham_county_text" style="font-size: 13px; margin: 0; padding: 0; line-height: 1;">Chatham County Count: </span><br>
 </div>
+
 
 <script>
 
@@ -244,7 +303,6 @@ var learnMoreLink;
 /////////////////
 
 function filterData(){
-
 
     // Function to filter JSON data based on selected species and year
 
@@ -318,10 +376,8 @@ learnMoreLink.innerHTML = "Learn More About the " + selectedSpecies // words!
 document.getElementById('learn_more_h5').innerHTML = "";
 document.getElementById('learn_more_h5').appendChild(learnMoreLink);
 
-
-
 }
-/// END OF FILTER FUNCTION
+/// END OF FILTER FUNCTION FOR COUNTY DATA
 
 ///////////////////////////////////////
 // FUNCTION TO FIND COLOR BASED ON DATA
@@ -467,11 +523,26 @@ function durhamMap() {
             fillColor: durhamColor // Fill color for Durham County (you can adjust the color as needed)
         }
     }).addTo(ODC_map);
+
+    // Coordinates of Durham Routes
+    var durhamCoords = route_coords.filter(function(coord) {
+        return coord.mbbs_county === "durham";
+    });
+
+    // for each + add to map
+    durhamCoords.forEach(function(coord) {
+    L.circle([parseFloat(coord.lat), parseFloat(coord.lon)], {
+        radius: 400, 
+        color: 'black', // black
+        fillOpacity: 0.9
+    }).addTo(ODC_map)
+      .bindPopup("Route " + coord.route_num); 
+});
 }
 
 function orangeMap() {
     // Change map view to focus on Orange County
-    ODC_map.setView([36.051, -79.01], 10); // Adjust latitude and longitude values as needed for Orange County
+    ODC_map.setView([36.051, -79.13], 10); // Adjust latitude and longitude values as needed for Orange County
 
     // Remove previous layers
     ODC_map.eachLayer(function(layer) {
@@ -494,11 +565,31 @@ function orangeMap() {
             fillColor: orangeColor // Fill color for Orange County
         }
     }).addTo(ODC_map);
+
+     // Coordinates of Durham Routes
+     var orangeCoords = route_coords.filter(function(coord) {
+        return coord.mbbs_county === "orange";
+    });
+
+    // Coordinates of Durham Routes
+    var orangeCoords = route_coords.filter(function(coord) {
+        return coord.mbbs_county === "orange";
+    });
+
+    // for each + add to map
+    orangeCoords.forEach(function(coord) {
+    L.circle([parseFloat(coord.lat), parseFloat(coord.lon)], {
+        radius: 400, 
+        color: 'black', // black
+        fillOpacity: 0.9
+    }).addTo(ODC_map)
+      .bindPopup("Route " + coord.route_num); 
+});
 }
 
 function chathamMap() {
     // Change map view to focus on Chatham County
-    ODC_map.setView([35.711, -79.121], 10); // Adjust latitude and longitude values
+    ODC_map.setView([35.711, -79.17], 10); // Adjust latitude and longitude values
 
     // Remove previous layers
     ODC_map.eachLayer(function(layer) {
@@ -521,8 +612,22 @@ function chathamMap() {
             fillColor: chathamColor // Fill color for Chatham County 
         }
     }).addTo(ODC_map);
-}
 
+    // Coordinates of Durham Routes
+    var chathamCoords = route_coords.filter(function(coord) {
+        return coord.mbbs_county === "chatham";
+    });
+
+    // for each + add to map
+    chathamCoords.forEach(function(coord) {
+    L.circle([parseFloat(coord.lat), parseFloat(coord.lon)], {
+        radius: 400, 
+        color: 'black', // black
+        fillOpacity: 0.9
+    }).addTo(ODC_map)
+      .bindPopup("Route " + coord.route_num); 
+});
+}
 
 // SPECIES SELECTION DROP DOWN
 // Generated with ChatGPT
