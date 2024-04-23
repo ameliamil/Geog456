@@ -17,11 +17,11 @@
      crossorigin=""></script>
 
 <style>
-    #mapid{height: 400px; width: 800px}
+    #mapid{height: 390px; width: 800px}
 
     #legend{position: absolute; bottom: 160px; left: 830px; background-color: white; padding: 10px; border: 1px solid black;}
 
-    #data_information{position: absolute; bottom: 420px; left:830px; background-color: white; padding: 10px; border: 1px solid black;}
+    #data_information{position: absolute; bottom: 405px; left:830px; background-color: white; padding: 10px; border: 1px solid black;}
 
     /* Slider style generated with the assistance of ChatGPT */
     .slider {
@@ -204,6 +204,7 @@
 
 <div id="data_information">
     <h4 id ="data_h4">Currently Viewing: </h4>
+    <h5 id="learn_more_h5">Learn More About the ... </h5>
     <span id="orange_county_text">Orange County Count: </span><br>
     <span id="durham_county_text">Durham County Count: </span><br>
     <span id="chatham_county_text">Chatham County Count: </span><br>
@@ -235,6 +236,8 @@ var durhamCount;
 var durhamColor;
 var orangeColor;
 var chathamColor;
+var speciesLink;
+var learnMoreLink;
 
 /////////////////
 // FUNCTION TO FILTER DATA
@@ -299,11 +302,23 @@ durhamCount = durhamData.length > 0 ? durhamData[0].count : 0;
 orangeCount = orangeData.length > 0 ? orangeData[0].count : 0;
 chathamCount = chathamData.length > 0 ? chathamData[0].count : 0;
 
-    // Change values of html to display count, species, & year
+// Change values of html to display count, species, & year
 document.getElementById('orange_county_text').innerHTML = "Orange County Count: " + orangeCount;
 document.getElementById('durham_county_text').innerHTML = "Durham County Count: " + durhamCount;
 document.getElementById('chatham_county_text').innerHTML = "Chatham County Count: " + chathamCount;
 document.getElementById('data_h4').innerHTML = "Currently viewing: " + selectedSpecies + " " + selectedYear
+
+// Learn more link
+speciesLink = selectedSpecies.replace(/\s+/g, "_"); // replace spaces with underscores
+learnMoreLink = document.createElement('a') // create link element
+learnMoreLink.href = "https://www.allaboutbirds.org/guide/" + speciesLink + "/overview" // all about birds format = link + species name + overview
+learnMoreLink.innerHTML = "Learn More About the " + selectedSpecies // words!
+
+// Clear existing content and append the link to the element
+document.getElementById('learn_more_h5').innerHTML = "";
+document.getElementById('learn_more_h5').appendChild(learnMoreLink);
+
+
 
 }
 /// END OF FILTER FUNCTION

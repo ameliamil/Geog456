@@ -52,8 +52,59 @@ mbbs_sorted <- mbbs_sorted %>%
   mutate(Percent_change_from_previous_year = (count - lag(count)) / lag(count) * 100,
          Percent_change_from_previous_year = ifelse(year == min(year), NA, Percent_change_from_previous_year))
 
+# for each county route level...
 
+## Chatham 
 
+mbbs_chat_route <- mbbs_chatham %>%
+  group_by(common_name, sci_name, year, route_num, mbbs_county) %>%
+  summarize(count = sum(count)) %>%
+  ungroup()
+
+mbbs_chat_route <- mbbs_chat_route %>%
+  filter(!grepl("sp.", sci_name)) %>%
+  filter(!grepl("sp.", common_name))
+
+mbbs_chat_route_pchange <- mbbs_chat_route %>%
+  group_by(common_name) %>%
+  mutate(Percent_change_from_previous_year = (count - lag(count)) / lag(count) * 100,
+         Percent_change_from_previous_year = ifelse(year == min(year), NA, Percent_change_from_previous_year))
+
+## Orange
+
+mbbs_orange_route <- mbbs_orange %>%
+  group_by(common_name, sci_name, year, route_num, mbbs_county) %>%
+  summarize(count = sum(count)) %>%
+  ungroup()
+
+mbbs_orange_route <- mbbs_orange_route %>%
+  filter(!grepl("sp.", sci_name)) %>%
+  filter(!grepl("sp.", common_name))
+
+mbbs_orange_route_pchange <- mbbs_orange_route %>%
+  group_by(common_name) %>%
+  mutate(Percent_change_from_previous_year = (count - lag(count)) / lag(count) * 100,
+         Percent_change_from_previous_year = ifelse(year == min(year), NA, Percent_change_from_previous_year))
+
+## Durham
+
+mbbs_durham_route <- mbbs_durham %>%
+  group_by(common_name, sci_name, year, route_num, mbbs_county) %>%
+  summarize(count = sum(count)) %>%
+  ungroup()
+
+mbbs_durham_route <- mbbs_durham_route %>%
+  filter(!grepl("sp.", sci_name)) %>%
+  filter(!grepl("sp.", common_name))
+
+mbbs_durham_route_pchange <- mbbs_durham_route %>%
+  group_by(common_name) %>%
+  mutate(Percent_change_from_previous_year = (count - lag(count)) / lag(count) * 100,
+         Percent_change_from_previous_year = ifelse(year == min(year), NA, Percent_change_from_previous_year))
+
+## Compile
+
+mbbs_route_pchange <- rbind(mbbs_chat_route_pchange, mbbs_orange_route_pchange, mbbs_durham_route_pchange)
 
 
 # write out CSVs of data
@@ -62,3 +113,4 @@ write.csv(mbbs_chat_sorted, "../CSV/mbbs_chatham.csv")
 write.csv(mbbs_orange_sorted, "../CSV/mbbs_orange.csv")
 write.csv(mbbs_durham_sorted, "../CSV/mbbs_durham.csv")
 write.csv(mbbs_sorted, "../CSV/mbbs_sorted.csv")
+write.csv(mbbs_route_pchange, "../Desktop/Geog 456/git/Geog456/final_project/mbbs_data_cleaning/CSV/mbbs_route_pchange.csv")
