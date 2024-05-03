@@ -2079,7 +2079,7 @@
 "2078","American Goldfinch","Spinus tristis",2021,35,"Orange","American Goldfinch (Spinus tristis)",29.6296296296296
 "2079","American Goldfinch","Spinus tristis",2022,27,"Orange","American Goldfinch (Spinus tristis)",-22.8571428571429
 "2080","American Goldfinch","Spinus tristis",2023,24,"Orange","American Goldfinch (Spinus tristis)",-11.1111111111111
-"2081","American Redstart","Setophaga ruticilla",2002,1,"Orange","American Redstart (Setophaga ruticilla)",-50
+"2081","American Redstart","Setophaga ruticilla",2002,1,"Orange","American Redstart (Setophaga ruticilla)",NA
 "2082","American Redstart","Setophaga ruticilla",2004,8,"Orange","American Redstart (Setophaga ruticilla)",700
 "2083","American Redstart","Setophaga ruticilla",2010,0,"Orange","American Redstart (Setophaga ruticilla)",-100
 "2084","American Redstart","Setophaga ruticilla",2011,1,"Orange","American Redstart (Setophaga ruticilla)",Inf
@@ -2113,7 +2113,7 @@
 "2112","American Robin","Turdus migratorius",2022,24,"Orange","American Robin (Turdus migratorius)",14.2857142857143
 "2113","American Robin","Turdus migratorius",2023,19,"Orange","American Robin (Turdus migratorius)",-20.8333333333333
 "2114","American Woodcock","Scolopax minor",2008,4,"Orange","American Woodcock (Scolopax minor)",NA
-"2115","Bald Eagle","Haliaeetus leucocephalus",2010,0,"Orange","Bald Eagle (Haliaeetus leucocephalus)",-100
+"2115","Bald Eagle","Haliaeetus leucocephalus",2010,0,"Orange","Bald Eagle (Haliaeetus leucocephalus)",NA
 "2116","Baltimore Oriole","Icterus galbula",1999,1,"Orange","Baltimore Oriole (Icterus galbula)",NA
 "2117","Barn Swallow","Hirundo rustica",1999,48,"Orange","Barn Swallow (Hirundo rustica)",NA
 "2118","Barn Swallow","Hirundo rustica",2000,35,"Orange","Barn Swallow (Hirundo rustica)",-27.0833333333333
@@ -2194,7 +2194,7 @@
 "2193","Black Vulture","Coragyps atratus",2021,9,"Orange","Black Vulture (Coragyps atratus)",800
 "2194","Black Vulture","Coragyps atratus",2022,19,"Orange","Black Vulture (Coragyps atratus)",111.111111111111
 "2195","Black Vulture","Coragyps atratus",2023,2,"Orange","Black Vulture (Coragyps atratus)",-89.4736842105263
-"2196","Black-and-white Warbler","Mniotilta varia",2006,2,"Orange","Black-and-white Warbler (Mniotilta varia)",-77.7777777777778
+"2196","Black-and-white Warbler","Mniotilta varia",2006,2,"Orange","Black-and-white Warbler (Mniotilta varia)",NA
 "2197","Black-and-white Warbler","Mniotilta varia",2010,0,"Orange","Black-and-white Warbler (Mniotilta varia)",-100
 "2198","Black-and-white Warbler","Mniotilta varia",2016,1,"Orange","Black-and-white Warbler (Mniotilta varia)",Inf
 "2199","Black-and-white Warbler","Mniotilta varia",2020,1,"Orange","Black-and-white Warbler (Mniotilta varia)",0
@@ -2274,8 +2274,8 @@
 "2273","Blue-gray Gnatcatcher","Polioptila caerulea",2021,40,"Orange","Blue-gray Gnatcatcher (Polioptila caerulea)",-49.3670886075949
 "2274","Blue-gray Gnatcatcher","Polioptila caerulea",2022,77,"Orange","Blue-gray Gnatcatcher (Polioptila caerulea)",92.5
 "2275","Blue-gray Gnatcatcher","Polioptila caerulea",2023,67,"Orange","Blue-gray Gnatcatcher (Polioptila caerulea)",-12.987012987013
-"2276","Blue-headed Vireo","Vireo solitarius",2010,0,"Orange","Blue-headed Vireo (Vireo solitarius)",-100
-"2277","Broad-winged Hawk","Buteo platypterus",2010,2,"Orange","Broad-winged Hawk (Buteo platypterus)",Inf
+"2276","Blue-headed Vireo","Vireo solitarius",2010,0,"Orange","Blue-headed Vireo (Vireo solitarius)",NA
+"2277","Broad-winged Hawk","Buteo platypterus",2010,2,"Orange","Broad-winged Hawk (Buteo platypterus)",NA
 "2278","Brown Thrasher","Toxostoma rufum",1999,16,"Orange","Brown Thrasher (Toxostoma rufum)",NA
 "2279","Brown Thrasher","Toxostoma rufum",2000,23,"Orange","Brown Thrasher (Toxostoma rufum)",43.75
 "2280","Brown Thrasher","Toxostoma rufum",2001,16,"Orange","Brown Thrasher (Toxostoma rufum)",-30.4347826086957
@@ -2568,7 +2568,7 @@
 "2567","Dickcissel","Spiza americana",2001,1,"Orange","Dickcissel (Spiza americana)",NA
 "2568","Dickcissel","Spiza americana",2010,0,"Orange","Dickcissel (Spiza americana)",-100
 "2569","Dickcissel","Spiza americana",2020,2,"Orange","Dickcissel (Spiza americana)",Inf
-"2570","Double-crested Cormorant","Nannopterum auritum",2010,0,"Orange","Double-crested Cormorant (Nannopterum auritum)",-100
+"2570","Double-crested Cormorant","Nannopterum auritum",2010,0,"Orange","Double-crested Cormorant (Nannopterum auritum)",NA
 "2571","Double-crested Cormorant","Nannopterum auritum",2015,2,"Orange","Double-crested Cormorant (Nannopterum auritum)",Inf
 "2572","Double-crested Cormorant","Nannopterum auritum",2016,1,"Orange","Double-crested Cormorant (Nannopterum auritum)",-50
 "2573","Downy Woodpecker","Dryobates pubescens",1999,21,"Orange","Downy Woodpecker (Dryobates pubescens)",NA
@@ -2694,7 +2694,7 @@
 "2693","Eastern Phoebe","Sayornis phoebe",2021,18,"Orange","Eastern Phoebe (Sayornis phoebe)",63.6363636363636
 "2694","Eastern Phoebe","Sayornis phoebe",2022,14,"Orange","Eastern Phoebe (Sayornis phoebe)",-22.2222222222222
 "2695","Eastern Phoebe","Sayornis phoebe",2023,26,"Orange","Eastern Phoebe (Sayornis phoebe)",85.7142857142857
-"2696","Eastern Screech-Owl","Megascops asio",2010,0,"Orange","Eastern Screech-Owl (Megascops asio)",-100
+"2696","Eastern Screech-Owl","Megascops asio",2010,0,"Orange","Eastern Screech-Owl (Megascops asio)",NA
 "2697","Eastern Towhee","Pipilo erythrophthalmus",1999,55,"Orange","Eastern Towhee (Pipilo erythrophthalmus)",NA
 "2698","Eastern Towhee","Pipilo erythrophthalmus",2000,52,"Orange","Eastern Towhee (Pipilo erythrophthalmus)",-5.45454545454545
 "2699","Eastern Towhee","Pipilo erythrophthalmus",2001,60,"Orange","Eastern Towhee (Pipilo erythrophthalmus)",15.3846153846154
@@ -2936,7 +2936,7 @@
 "2935","Great Crested Flycatcher","Myiarchus crinitus",2021,19,"Orange","Great Crested Flycatcher (Myiarchus crinitus)",-9.52380952380952
 "2936","Great Crested Flycatcher","Myiarchus crinitus",2022,27,"Orange","Great Crested Flycatcher (Myiarchus crinitus)",42.1052631578947
 "2937","Great Crested Flycatcher","Myiarchus crinitus",2023,27,"Orange","Great Crested Flycatcher (Myiarchus crinitus)",0
-"2938","Great Horned Owl","Bubo virginianus",2002,2,"Orange","Great Horned Owl (Bubo virginianus)",100
+"2938","Great Horned Owl","Bubo virginianus",2002,2,"Orange","Great Horned Owl (Bubo virginianus)",NA
 "2939","Great Horned Owl","Bubo virginianus",2003,1,"Orange","Great Horned Owl (Bubo virginianus)",-50
 "2940","Great Horned Owl","Bubo virginianus",2010,0,"Orange","Great Horned Owl (Bubo virginianus)",-100
 "2941","Great Horned Owl","Bubo virginianus",2013,2,"Orange","Great Horned Owl (Bubo virginianus)",Inf
@@ -3423,12 +3423,12 @@
 "3422","Prairie Warbler","Setophaga discolor",2021,3,"Orange","Prairie Warbler (Setophaga discolor)",-25
 "3423","Prairie Warbler","Setophaga discolor",2022,2,"Orange","Prairie Warbler (Setophaga discolor)",-33.3333333333333
 "3424","Prairie Warbler","Setophaga discolor",2023,5,"Orange","Prairie Warbler (Setophaga discolor)",150
-"3425","Prothonotary Warbler","Protonotaria citrea",2009,1,"Orange","Prothonotary Warbler (Protonotaria citrea)",-50
+"3425","Prothonotary Warbler","Protonotaria citrea",2009,1,"Orange","Prothonotary Warbler (Protonotaria citrea)",NA
 "3426","Prothonotary Warbler","Protonotaria citrea",2010,0,"Orange","Prothonotary Warbler (Protonotaria citrea)",-100
 "3427","Prothonotary Warbler","Protonotaria citrea",2012,2,"Orange","Prothonotary Warbler (Protonotaria citrea)",Inf
 "3428","Prothonotary Warbler","Protonotaria citrea",2014,2,"Orange","Prothonotary Warbler (Protonotaria citrea)",0
 "3429","Prothonotary Warbler","Protonotaria citrea",2017,1,"Orange","Prothonotary Warbler (Protonotaria citrea)",-50
-"3430","Purple Martin","Progne subis",2003,2,"Orange","Purple Martin (Progne subis)",-83.3333333333333
+"3430","Purple Martin","Progne subis",2003,2,"Orange","Purple Martin (Progne subis)",NA
 "3431","Purple Martin","Progne subis",2005,1,"Orange","Purple Martin (Progne subis)",-50
 "3432","Purple Martin","Progne subis",2006,1,"Orange","Purple Martin (Progne subis)",0
 "3433","Purple Martin","Progne subis",2008,2,"Orange","Purple Martin (Progne subis)",100
@@ -3670,7 +3670,7 @@
 "3669","Summer Tanager","Piranga rubra",2023,17,"Orange","Summer Tanager (Piranga rubra)",-60.4651162790698
 "3670","Summer/Scarlet Tanager","Piranga rubra/olivacea",2021,1,"Orange","Summer/Scarlet Tanager (Piranga rubra/olivacea)",NA
 "3671","Summer/Scarlet Tanager","Piranga rubra/olivacea",2022,1,"Orange","Summer/Scarlet Tanager (Piranga rubra/olivacea)",0
-"3672","Tree Swallow","Tachycineta bicolor",2010,0,"Orange","Tree Swallow (Tachycineta bicolor)",-100
+"3672","Tree Swallow","Tachycineta bicolor",2010,0,"Orange","Tree Swallow (Tachycineta bicolor)",NA
 "3673","Tree Swallow","Tachycineta bicolor",2013,2,"Orange","Tree Swallow (Tachycineta bicolor)",Inf
 "3674","Tree Swallow","Tachycineta bicolor",2018,2,"Orange","Tree Swallow (Tachycineta bicolor)",0
 "3675","Tree Swallow","Tachycineta bicolor",2019,2,"Orange","Tree Swallow (Tachycineta bicolor)",0
@@ -3830,7 +3830,7 @@
 "3829","Wood Thrush","Hylocichla mustelina",2021,25,"Orange","Wood Thrush (Hylocichla mustelina)",47.0588235294118
 "3830","Wood Thrush","Hylocichla mustelina",2022,17,"Orange","Wood Thrush (Hylocichla mustelina)",-32
 "3831","Wood Thrush","Hylocichla mustelina",2023,10,"Orange","Wood Thrush (Hylocichla mustelina)",-41.1764705882353
-"3832","Yellow Warbler","Setophaga petechia",2007,1,"Orange","Yellow Warbler (Setophaga petechia)",0
+"3832","Yellow Warbler","Setophaga petechia",2007,1,"Orange","Yellow Warbler (Setophaga petechia)",NA
 "3833","Yellow Warbler","Setophaga petechia",2010,0,"Orange","Yellow Warbler (Setophaga petechia)",-100
 "3834","Yellow Warbler","Setophaga petechia",2017,1,"Orange","Yellow Warbler (Setophaga petechia)",Inf
 "3835","Yellow-billed Cuckoo","Coccyzus americanus",1999,5,"Orange","Yellow-billed Cuckoo (Coccyzus americanus)",NA
@@ -3930,7 +3930,7 @@
 "3929","Yellow-throated Warbler","Setophaga dominica",2021,4,"Orange","Yellow-throated Warbler (Setophaga dominica)",-33.3333333333333
 "3930","Yellow-throated Warbler","Setophaga dominica",2022,8,"Orange","Yellow-throated Warbler (Setophaga dominica)",100
 "3931","Yellow-throated Warbler","Setophaga dominica",2023,12,"Orange","Yellow-throated Warbler (Setophaga dominica)",50
-"3932","Acadian Flycatcher","Empidonax virescens",2002,6,"Durham","Acadian Flycatcher (Empidonax virescens)",-73.9130434782609
+"3932","Acadian Flycatcher","Empidonax virescens",2002,6,"Durham","Acadian Flycatcher (Empidonax virescens)",NA
 "3933","Acadian Flycatcher","Empidonax virescens",2003,5,"Durham","Acadian Flycatcher (Empidonax virescens)",-16.6666666666667
 "3934","Acadian Flycatcher","Empidonax virescens",2004,5,"Durham","Acadian Flycatcher (Empidonax virescens)",0
 "3935","Acadian Flycatcher","Empidonax virescens",2005,6,"Durham","Acadian Flycatcher (Empidonax virescens)",20
@@ -3952,7 +3952,7 @@
 "3951","Acadian Flycatcher","Empidonax virescens",2021,22,"Durham","Acadian Flycatcher (Empidonax virescens)",144.444444444444
 "3952","Acadian Flycatcher","Empidonax virescens",2022,14,"Durham","Acadian Flycatcher (Empidonax virescens)",-36.3636363636364
 "3953","Acadian Flycatcher","Empidonax virescens",2023,17,"Durham","Acadian Flycatcher (Empidonax virescens)",21.4285714285714
-"3954","American Crow","Corvus brachyrhynchos",2002,125,"Durham","American Crow (Corvus brachyrhynchos)",-54.3795620437956
+"3954","American Crow","Corvus brachyrhynchos",2002,125,"Durham","American Crow (Corvus brachyrhynchos)",NA
 "3955","American Crow","Corvus brachyrhynchos",2003,124,"Durham","American Crow (Corvus brachyrhynchos)",-0.8
 "3956","American Crow","Corvus brachyrhynchos",2004,112,"Durham","American Crow (Corvus brachyrhynchos)",-9.67741935483871
 "3957","American Crow","Corvus brachyrhynchos",2005,147,"Durham","American Crow (Corvus brachyrhynchos)",31.25
@@ -3974,7 +3974,7 @@
 "3973","American Crow","Corvus brachyrhynchos",2021,120,"Durham","American Crow (Corvus brachyrhynchos)",13.2075471698113
 "3974","American Crow","Corvus brachyrhynchos",2022,193,"Durham","American Crow (Corvus brachyrhynchos)",60.8333333333333
 "3975","American Crow","Corvus brachyrhynchos",2023,149,"Durham","American Crow (Corvus brachyrhynchos)",-22.7979274611399
-"3976","American Goldfinch","Spinus tristis",2002,56,"Durham","American Goldfinch (Spinus tristis)",133.333333333333
+"3976","American Goldfinch","Spinus tristis",2002,56,"Durham","American Goldfinch (Spinus tristis)",NA
 "3977","American Goldfinch","Spinus tristis",2003,34,"Durham","American Goldfinch (Spinus tristis)",-39.2857142857143
 "3978","American Goldfinch","Spinus tristis",2004,31,"Durham","American Goldfinch (Spinus tristis)",-8.82352941176471
 "3979","American Goldfinch","Spinus tristis",2005,49,"Durham","American Goldfinch (Spinus tristis)",58.0645161290323
@@ -3996,7 +3996,7 @@
 "3995","American Goldfinch","Spinus tristis",2021,29,"Durham","American Goldfinch (Spinus tristis)",81.25
 "3996","American Goldfinch","Spinus tristis",2022,30,"Durham","American Goldfinch (Spinus tristis)",3.44827586206897
 "3997","American Goldfinch","Spinus tristis",2023,27,"Durham","American Goldfinch (Spinus tristis)",-10
-"3998","American Redstart","Setophaga ruticilla",2002,1,"Durham","American Redstart (Setophaga ruticilla)",0
+"3998","American Redstart","Setophaga ruticilla",2002,1,"Durham","American Redstart (Setophaga ruticilla)",NA
 "3999","American Redstart","Setophaga ruticilla",2003,1,"Durham","American Redstart (Setophaga ruticilla)",0
 "4000","American Redstart","Setophaga ruticilla",2004,1,"Durham","American Redstart (Setophaga ruticilla)",0
 "4001","American Redstart","Setophaga ruticilla",2006,1,"Durham","American Redstart (Setophaga ruticilla)",0
@@ -4006,7 +4006,7 @@
 "4005","American Redstart","Setophaga ruticilla",2018,1,"Durham","American Redstart (Setophaga ruticilla)",0
 "4006","American Redstart","Setophaga ruticilla",2019,1,"Durham","American Redstart (Setophaga ruticilla)",0
 "4007","American Redstart","Setophaga ruticilla",2022,1,"Durham","American Redstart (Setophaga ruticilla)",0
-"4008","American Robin","Turdus migratorius",2002,82,"Durham","American Robin (Turdus migratorius)",331.578947368421
+"4008","American Robin","Turdus migratorius",2002,82,"Durham","American Robin (Turdus migratorius)",NA
 "4009","American Robin","Turdus migratorius",2003,81,"Durham","American Robin (Turdus migratorius)",-1.21951219512195
 "4010","American Robin","Turdus migratorius",2004,83,"Durham","American Robin (Turdus migratorius)",2.46913580246914
 "4011","American Robin","Turdus migratorius",2005,72,"Durham","American Robin (Turdus migratorius)",-13.2530120481928
@@ -4029,9 +4029,9 @@
 "4028","American Robin","Turdus migratorius",2022,74,"Durham","American Robin (Turdus migratorius)",13.8461538461538
 "4029","American Robin","Turdus migratorius",2023,64,"Durham","American Robin (Turdus migratorius)",-13.5135135135135
 "4030","American/Fish Crow","Corvus brachyrhynchos/ossifragus",2023,3,"Durham","American/Fish Crow (Corvus brachyrhynchos/ossifragus)",NA
-"4031","Bald Eagle","Haliaeetus leucocephalus",2018,1,"Durham","Bald Eagle (Haliaeetus leucocephalus)",Inf
+"4031","Bald Eagle","Haliaeetus leucocephalus",2018,1,"Durham","Bald Eagle (Haliaeetus leucocephalus)",NA
 "4032","Bald Eagle","Haliaeetus leucocephalus",2019,1,"Durham","Bald Eagle (Haliaeetus leucocephalus)",0
-"4033","Barn Swallow","Hirundo rustica",2002,26,"Durham","Barn Swallow (Hirundo rustica)",13.0434782608696
+"4033","Barn Swallow","Hirundo rustica",2002,26,"Durham","Barn Swallow (Hirundo rustica)",NA
 "4034","Barn Swallow","Hirundo rustica",2003,6,"Durham","Barn Swallow (Hirundo rustica)",-76.9230769230769
 "4035","Barn Swallow","Hirundo rustica",2004,18,"Durham","Barn Swallow (Hirundo rustica)",200
 "4036","Barn Swallow","Hirundo rustica",2005,13,"Durham","Barn Swallow (Hirundo rustica)",-27.7777777777778
@@ -4053,7 +4053,7 @@
 "4052","Barn Swallow","Hirundo rustica",2021,8,"Durham","Barn Swallow (Hirundo rustica)",60
 "4053","Barn Swallow","Hirundo rustica",2022,6,"Durham","Barn Swallow (Hirundo rustica)",-25
 "4054","Barn Swallow","Hirundo rustica",2023,4,"Durham","Barn Swallow (Hirundo rustica)",-33.3333333333333
-"4055","Barred Owl","Strix varia",2002,2,"Durham","Barred Owl (Strix varia)",-77.7777777777778
+"4055","Barred Owl","Strix varia",2002,2,"Durham","Barred Owl (Strix varia)",NA
 "4056","Barred Owl","Strix varia",2007,3,"Durham","Barred Owl (Strix varia)",50
 "4057","Barred Owl","Strix varia",2011,3,"Durham","Barred Owl (Strix varia)",0
 "4058","Barred Owl","Strix varia",2012,4,"Durham","Barred Owl (Strix varia)",33.3333333333333
@@ -4064,12 +4064,12 @@
 "4063","Barred Owl","Strix varia",2020,1,"Durham","Barred Owl (Strix varia)",-50
 "4064","Barred Owl","Strix varia",2021,1,"Durham","Barred Owl (Strix varia)",0
 "4065","Barred Owl","Strix varia",2022,2,"Durham","Barred Owl (Strix varia)",100
-"4066","Belted Kingfisher","Megaceryle alcyon",2003,1,"Durham","Belted Kingfisher (Megaceryle alcyon)",0
+"4066","Belted Kingfisher","Megaceryle alcyon",2003,1,"Durham","Belted Kingfisher (Megaceryle alcyon)",NA
 "4067","Belted Kingfisher","Megaceryle alcyon",2006,1,"Durham","Belted Kingfisher (Megaceryle alcyon)",0
 "4068","Belted Kingfisher","Megaceryle alcyon",2011,1,"Durham","Belted Kingfisher (Megaceryle alcyon)",0
 "4069","Belted Kingfisher","Megaceryle alcyon",2012,1,"Durham","Belted Kingfisher (Megaceryle alcyon)",0
 "4070","Belted Kingfisher","Megaceryle alcyon",2022,1,"Durham","Belted Kingfisher (Megaceryle alcyon)",0
-"4071","Black Vulture","Coragyps atratus",2005,6,"Durham","Black Vulture (Coragyps atratus)",200
+"4071","Black Vulture","Coragyps atratus",2005,6,"Durham","Black Vulture (Coragyps atratus)",NA
 "4072","Black Vulture","Coragyps atratus",2007,1,"Durham","Black Vulture (Coragyps atratus)",-83.3333333333333
 "4073","Black Vulture","Coragyps atratus",2016,2,"Durham","Black Vulture (Coragyps atratus)",100
 "4074","Black Vulture","Coragyps atratus",2018,2,"Durham","Black Vulture (Coragyps atratus)",0
@@ -4078,7 +4078,7 @@
 "4077","Black Vulture","Coragyps atratus",2021,4,"Durham","Black Vulture (Coragyps atratus)",-33.3333333333333
 "4078","Black Vulture","Coragyps atratus",2022,2,"Durham","Black Vulture (Coragyps atratus)",-50
 "4079","Black Vulture","Coragyps atratus",2023,3,"Durham","Black Vulture (Coragyps atratus)",50
-"4080","Blue Grosbeak","Passerina caerulea",2002,4,"Durham","Blue Grosbeak (Passerina caerulea)",-89.4736842105263
+"4080","Blue Grosbeak","Passerina caerulea",2002,4,"Durham","Blue Grosbeak (Passerina caerulea)",NA
 "4081","Blue Grosbeak","Passerina caerulea",2003,14,"Durham","Blue Grosbeak (Passerina caerulea)",250
 "4082","Blue Grosbeak","Passerina caerulea",2004,4,"Durham","Blue Grosbeak (Passerina caerulea)",-71.4285714285714
 "4083","Blue Grosbeak","Passerina caerulea",2005,9,"Durham","Blue Grosbeak (Passerina caerulea)",125
@@ -4100,7 +4100,7 @@
 "4099","Blue Grosbeak","Passerina caerulea",2021,19,"Durham","Blue Grosbeak (Passerina caerulea)",0
 "4100","Blue Grosbeak","Passerina caerulea",2022,15,"Durham","Blue Grosbeak (Passerina caerulea)",-21.0526315789474
 "4101","Blue Grosbeak","Passerina caerulea",2023,21,"Durham","Blue Grosbeak (Passerina caerulea)",40
-"4102","Blue Jay","Cyanocitta cristata",2002,43,"Durham","Blue Jay (Cyanocitta cristata)",22.8571428571429
+"4102","Blue Jay","Cyanocitta cristata",2002,43,"Durham","Blue Jay (Cyanocitta cristata)",NA
 "4103","Blue Jay","Cyanocitta cristata",2003,39,"Durham","Blue Jay (Cyanocitta cristata)",-9.30232558139535
 "4104","Blue Jay","Cyanocitta cristata",2004,43,"Durham","Blue Jay (Cyanocitta cristata)",10.2564102564103
 "4105","Blue Jay","Cyanocitta cristata",2005,32,"Durham","Blue Jay (Cyanocitta cristata)",-25.5813953488372
@@ -4122,7 +4122,7 @@
 "4121","Blue Jay","Cyanocitta cristata",2021,25,"Durham","Blue Jay (Cyanocitta cristata)",0
 "4122","Blue Jay","Cyanocitta cristata",2022,24,"Durham","Blue Jay (Cyanocitta cristata)",-4
 "4123","Blue Jay","Cyanocitta cristata",2023,21,"Durham","Blue Jay (Cyanocitta cristata)",-12.5
-"4124","Blue-gray Gnatcatcher","Polioptila caerulea",2002,56,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",-16.4179104477612
+"4124","Blue-gray Gnatcatcher","Polioptila caerulea",2002,56,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",NA
 "4125","Blue-gray Gnatcatcher","Polioptila caerulea",2003,53,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",-5.35714285714286
 "4126","Blue-gray Gnatcatcher","Polioptila caerulea",2004,93,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",75.4716981132076
 "4127","Blue-gray Gnatcatcher","Polioptila caerulea",2005,52,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",-44.0860215053763
@@ -4144,12 +4144,12 @@
 "4143","Blue-gray Gnatcatcher","Polioptila caerulea",2021,47,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",-45.3488372093023
 "4144","Blue-gray Gnatcatcher","Polioptila caerulea",2022,62,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",31.9148936170213
 "4145","Blue-gray Gnatcatcher","Polioptila caerulea",2023,65,"Durham","Blue-gray Gnatcatcher (Polioptila caerulea)",4.83870967741935
-"4146","Blue-headed Vireo","Vireo solitarius",2008,1,"Durham","Blue-headed Vireo (Vireo solitarius)",Inf
+"4146","Blue-headed Vireo","Vireo solitarius",2008,1,"Durham","Blue-headed Vireo (Vireo solitarius)",NA
 "4147","Blue-headed Vireo","Vireo solitarius",2010,1,"Durham","Blue-headed Vireo (Vireo solitarius)",0
 "4148","Blue-headed Vireo","Vireo solitarius",2013,2,"Durham","Blue-headed Vireo (Vireo solitarius)",100
 "4149","Blue-headed Vireo","Vireo solitarius",2015,1,"Durham","Blue-headed Vireo (Vireo solitarius)",-50
-"4150","Broad-winged Hawk","Buteo platypterus",2005,1,"Durham","Broad-winged Hawk (Buteo platypterus)",-50
-"4151","Brown Thrasher","Toxostoma rufum",2002,10,"Durham","Brown Thrasher (Toxostoma rufum)",-33.3333333333333
+"4150","Broad-winged Hawk","Buteo platypterus",2005,1,"Durham","Broad-winged Hawk (Buteo platypterus)",NA
+"4151","Brown Thrasher","Toxostoma rufum",2002,10,"Durham","Brown Thrasher (Toxostoma rufum)",NA
 "4152","Brown Thrasher","Toxostoma rufum",2003,10,"Durham","Brown Thrasher (Toxostoma rufum)",0
 "4153","Brown Thrasher","Toxostoma rufum",2004,11,"Durham","Brown Thrasher (Toxostoma rufum)",10
 "4154","Brown Thrasher","Toxostoma rufum",2005,9,"Durham","Brown Thrasher (Toxostoma rufum)",-18.1818181818182
@@ -4171,7 +4171,7 @@
 "4170","Brown Thrasher","Toxostoma rufum",2021,9,"Durham","Brown Thrasher (Toxostoma rufum)",-18.1818181818182
 "4171","Brown Thrasher","Toxostoma rufum",2022,12,"Durham","Brown Thrasher (Toxostoma rufum)",33.3333333333333
 "4172","Brown Thrasher","Toxostoma rufum",2023,12,"Durham","Brown Thrasher (Toxostoma rufum)",0
-"4173","Brown-headed Cowbird","Molothrus ater",2002,25,"Durham","Brown-headed Cowbird (Molothrus ater)",-19.3548387096774
+"4173","Brown-headed Cowbird","Molothrus ater",2002,25,"Durham","Brown-headed Cowbird (Molothrus ater)",NA
 "4174","Brown-headed Cowbird","Molothrus ater",2003,19,"Durham","Brown-headed Cowbird (Molothrus ater)",-24
 "4175","Brown-headed Cowbird","Molothrus ater",2004,19,"Durham","Brown-headed Cowbird (Molothrus ater)",0
 "4176","Brown-headed Cowbird","Molothrus ater",2005,43,"Durham","Brown-headed Cowbird (Molothrus ater)",126.315789473684
@@ -4193,7 +4193,7 @@
 "4192","Brown-headed Cowbird","Molothrus ater",2021,38,"Durham","Brown-headed Cowbird (Molothrus ater)",-11.6279069767442
 "4193","Brown-headed Cowbird","Molothrus ater",2022,42,"Durham","Brown-headed Cowbird (Molothrus ater)",10.5263157894737
 "4194","Brown-headed Cowbird","Molothrus ater",2023,44,"Durham","Brown-headed Cowbird (Molothrus ater)",4.76190476190476
-"4195","Brown-headed Nuthatch","Sitta pusilla",2002,17,"Durham","Brown-headed Nuthatch (Sitta pusilla)",-15
+"4195","Brown-headed Nuthatch","Sitta pusilla",2002,17,"Durham","Brown-headed Nuthatch (Sitta pusilla)",NA
 "4196","Brown-headed Nuthatch","Sitta pusilla",2003,12,"Durham","Brown-headed Nuthatch (Sitta pusilla)",-29.4117647058824
 "4197","Brown-headed Nuthatch","Sitta pusilla",2004,9,"Durham","Brown-headed Nuthatch (Sitta pusilla)",-25
 "4198","Brown-headed Nuthatch","Sitta pusilla",2005,18,"Durham","Brown-headed Nuthatch (Sitta pusilla)",100
@@ -4214,7 +4214,7 @@
 "4213","Brown-headed Nuthatch","Sitta pusilla",2021,8,"Durham","Brown-headed Nuthatch (Sitta pusilla)",-11.1111111111111
 "4214","Brown-headed Nuthatch","Sitta pusilla",2022,11,"Durham","Brown-headed Nuthatch (Sitta pusilla)",37.5
 "4215","Brown-headed Nuthatch","Sitta pusilla",2023,12,"Durham","Brown-headed Nuthatch (Sitta pusilla)",9.09090909090909
-"4216","Canada Goose","Branta canadensis",2002,8,"Durham","Canada Goose (Branta canadensis)",0
+"4216","Canada Goose","Branta canadensis",2002,8,"Durham","Canada Goose (Branta canadensis)",NA
 "4217","Canada Goose","Branta canadensis",2003,32,"Durham","Canada Goose (Branta canadensis)",300
 "4218","Canada Goose","Branta canadensis",2004,34,"Durham","Canada Goose (Branta canadensis)",6.25
 "4219","Canada Goose","Branta canadensis",2005,39,"Durham","Canada Goose (Branta canadensis)",14.7058823529412
@@ -4236,7 +4236,7 @@
 "4235","Canada Goose","Branta canadensis",2021,30,"Durham","Canada Goose (Branta canadensis)",87.5
 "4236","Canada Goose","Branta canadensis",2022,20,"Durham","Canada Goose (Branta canadensis)",-33.3333333333333
 "4237","Canada Goose","Branta canadensis",2023,112,"Durham","Canada Goose (Branta canadensis)",460
-"4238","Carolina Chickadee","Poecile carolinensis",2002,55,"Durham","Carolina Chickadee (Poecile carolinensis)",-28.5714285714286
+"4238","Carolina Chickadee","Poecile carolinensis",2002,55,"Durham","Carolina Chickadee (Poecile carolinensis)",NA
 "4239","Carolina Chickadee","Poecile carolinensis",2003,49,"Durham","Carolina Chickadee (Poecile carolinensis)",-10.9090909090909
 "4240","Carolina Chickadee","Poecile carolinensis",2004,30,"Durham","Carolina Chickadee (Poecile carolinensis)",-38.7755102040816
 "4241","Carolina Chickadee","Poecile carolinensis",2005,41,"Durham","Carolina Chickadee (Poecile carolinensis)",36.6666666666667
@@ -4258,7 +4258,7 @@
 "4257","Carolina Chickadee","Poecile carolinensis",2021,86,"Durham","Carolina Chickadee (Poecile carolinensis)",43.3333333333333
 "4258","Carolina Chickadee","Poecile carolinensis",2022,55,"Durham","Carolina Chickadee (Poecile carolinensis)",-36.046511627907
 "4259","Carolina Chickadee","Poecile carolinensis",2023,50,"Durham","Carolina Chickadee (Poecile carolinensis)",-9.09090909090909
-"4260","Carolina Wren","Thryothorus ludovicianus",2002,89,"Durham","Carolina Wren (Thryothorus ludovicianus)",-53.8860103626943
+"4260","Carolina Wren","Thryothorus ludovicianus",2002,89,"Durham","Carolina Wren (Thryothorus ludovicianus)",NA
 "4261","Carolina Wren","Thryothorus ludovicianus",2003,52,"Durham","Carolina Wren (Thryothorus ludovicianus)",-41.5730337078652
 "4262","Carolina Wren","Thryothorus ludovicianus",2004,85,"Durham","Carolina Wren (Thryothorus ludovicianus)",63.4615384615385
 "4263","Carolina Wren","Thryothorus ludovicianus",2005,112,"Durham","Carolina Wren (Thryothorus ludovicianus)",31.7647058823529
@@ -4280,12 +4280,12 @@
 "4279","Carolina Wren","Thryothorus ludovicianus",2021,124,"Durham","Carolina Wren (Thryothorus ludovicianus)",-3.125
 "4280","Carolina Wren","Thryothorus ludovicianus",2022,136,"Durham","Carolina Wren (Thryothorus ludovicianus)",9.67741935483871
 "4281","Carolina Wren","Thryothorus ludovicianus",2023,120,"Durham","Carolina Wren (Thryothorus ludovicianus)",-11.7647058823529
-"4282","Cedar Waxwing","Bombycilla cedrorum",2004,6,"Durham","Cedar Waxwing (Bombycilla cedrorum)",0
+"4282","Cedar Waxwing","Bombycilla cedrorum",2004,6,"Durham","Cedar Waxwing (Bombycilla cedrorum)",NA
 "4283","Cedar Waxwing","Bombycilla cedrorum",2005,1,"Durham","Cedar Waxwing (Bombycilla cedrorum)",-83.3333333333333
 "4284","Cedar Waxwing","Bombycilla cedrorum",2007,7,"Durham","Cedar Waxwing (Bombycilla cedrorum)",600
 "4285","Cedar Waxwing","Bombycilla cedrorum",2011,3,"Durham","Cedar Waxwing (Bombycilla cedrorum)",-57.1428571428571
 "4286","Cedar Waxwing","Bombycilla cedrorum",2020,4,"Durham","Cedar Waxwing (Bombycilla cedrorum)",33.3333333333333
-"4287","Chimney Swift","Chaetura pelagica",2002,81,"Durham","Chimney Swift (Chaetura pelagica)",285.714285714286
+"4287","Chimney Swift","Chaetura pelagica",2002,81,"Durham","Chimney Swift (Chaetura pelagica)",NA
 "4288","Chimney Swift","Chaetura pelagica",2003,45,"Durham","Chimney Swift (Chaetura pelagica)",-44.4444444444444
 "4289","Chimney Swift","Chaetura pelagica",2004,48,"Durham","Chimney Swift (Chaetura pelagica)",6.66666666666667
 "4290","Chimney Swift","Chaetura pelagica",2005,51,"Durham","Chimney Swift (Chaetura pelagica)",6.25
@@ -4307,7 +4307,7 @@
 "4306","Chimney Swift","Chaetura pelagica",2021,18,"Durham","Chimney Swift (Chaetura pelagica)",-28
 "4307","Chimney Swift","Chaetura pelagica",2022,27,"Durham","Chimney Swift (Chaetura pelagica)",50
 "4308","Chimney Swift","Chaetura pelagica",2023,23,"Durham","Chimney Swift (Chaetura pelagica)",-14.8148148148148
-"4309","Chipping Sparrow","Spizella passerina",2002,71,"Durham","Chipping Sparrow (Spizella passerina)",-52.3489932885906
+"4309","Chipping Sparrow","Spizella passerina",2002,71,"Durham","Chipping Sparrow (Spizella passerina)",NA
 "4310","Chipping Sparrow","Spizella passerina",2003,75,"Durham","Chipping Sparrow (Spizella passerina)",5.63380281690141
 "4311","Chipping Sparrow","Spizella passerina",2004,62,"Durham","Chipping Sparrow (Spizella passerina)",-17.3333333333333
 "4312","Chipping Sparrow","Spizella passerina",2005,64,"Durham","Chipping Sparrow (Spizella passerina)",3.2258064516129
@@ -4329,10 +4329,10 @@
 "4328","Chipping Sparrow","Spizella passerina",2021,105,"Durham","Chipping Sparrow (Spizella passerina)",25
 "4329","Chipping Sparrow","Spizella passerina",2022,111,"Durham","Chipping Sparrow (Spizella passerina)",5.71428571428571
 "4330","Chipping Sparrow","Spizella passerina",2023,132,"Durham","Chipping Sparrow (Spizella passerina)",18.9189189189189
-"4331","Chuck-will's-widow","Antrostomus carolinensis",2014,1,"Durham","Chuck-will's-widow (Antrostomus carolinensis)",0
+"4331","Chuck-will's-widow","Antrostomus carolinensis",2014,1,"Durham","Chuck-will's-widow (Antrostomus carolinensis)",NA
 "4332","Chuck-will's-widow","Antrostomus carolinensis",2019,1,"Durham","Chuck-will's-widow (Antrostomus carolinensis)",0
 "4333","Chuck-will's-widow","Antrostomus carolinensis",2023,1,"Durham","Chuck-will's-widow (Antrostomus carolinensis)",0
-"4334","Common Grackle","Quiscalus quiscula",2002,123,"Durham","Common Grackle (Quiscalus quiscula)",485.714285714286
+"4334","Common Grackle","Quiscalus quiscula",2002,123,"Durham","Common Grackle (Quiscalus quiscula)",NA
 "4335","Common Grackle","Quiscalus quiscula",2003,63,"Durham","Common Grackle (Quiscalus quiscula)",-48.780487804878
 "4336","Common Grackle","Quiscalus quiscula",2004,65,"Durham","Common Grackle (Quiscalus quiscula)",3.17460317460317
 "4337","Common Grackle","Quiscalus quiscula",2005,44,"Durham","Common Grackle (Quiscalus quiscula)",-32.3076923076923
@@ -4355,7 +4355,7 @@
 "4354","Common Grackle","Quiscalus quiscula",2022,30,"Durham","Common Grackle (Quiscalus quiscula)",11.1111111111111
 "4355","Common Grackle","Quiscalus quiscula",2023,7,"Durham","Common Grackle (Quiscalus quiscula)",-76.6666666666667
 "4356","Common Nighthawk","Chordeiles minor",2002,1,"Durham","Common Nighthawk (Chordeiles minor)",NA
-"4357","Common Yellowthroat","Geothlypis trichas",2002,11,"Durham","Common Yellowthroat (Geothlypis trichas)",22.2222222222222
+"4357","Common Yellowthroat","Geothlypis trichas",2002,11,"Durham","Common Yellowthroat (Geothlypis trichas)",NA
 "4358","Common Yellowthroat","Geothlypis trichas",2003,10,"Durham","Common Yellowthroat (Geothlypis trichas)",-9.09090909090909
 "4359","Common Yellowthroat","Geothlypis trichas",2004,16,"Durham","Common Yellowthroat (Geothlypis trichas)",60
 "4360","Common Yellowthroat","Geothlypis trichas",2005,9,"Durham","Common Yellowthroat (Geothlypis trichas)",-43.75
@@ -4377,17 +4377,17 @@
 "4376","Common Yellowthroat","Geothlypis trichas",2021,13,"Durham","Common Yellowthroat (Geothlypis trichas)",44.4444444444444
 "4377","Common Yellowthroat","Geothlypis trichas",2022,11,"Durham","Common Yellowthroat (Geothlypis trichas)",-15.3846153846154
 "4378","Common Yellowthroat","Geothlypis trichas",2023,5,"Durham","Common Yellowthroat (Geothlypis trichas)",-54.5454545454545
-"4379","Cooper's Hawk","Accipiter cooperii",2004,1,"Durham","Cooper's Hawk (Accipiter cooperii)",0
+"4379","Cooper's Hawk","Accipiter cooperii",2004,1,"Durham","Cooper's Hawk (Accipiter cooperii)",NA
 "4380","Cooper's Hawk","Accipiter cooperii",2008,2,"Durham","Cooper's Hawk (Accipiter cooperii)",100
 "4381","Cooper's Hawk","Accipiter cooperii",2015,1,"Durham","Cooper's Hawk (Accipiter cooperii)",-50
 "4382","Cooper's Hawk","Accipiter cooperii",2018,1,"Durham","Cooper's Hawk (Accipiter cooperii)",0
 "4383","Cooper's Hawk","Accipiter cooperii",2022,1,"Durham","Cooper's Hawk (Accipiter cooperii)",0
 "4384","Cooper's Hawk","Accipiter cooperii",2023,2,"Durham","Cooper's Hawk (Accipiter cooperii)",100
-"4385","Double-crested Cormorant","Nannopterum auritum",2002,2,"Durham","Double-crested Cormorant (Nannopterum auritum)",100
+"4385","Double-crested Cormorant","Nannopterum auritum",2002,2,"Durham","Double-crested Cormorant (Nannopterum auritum)",NA
 "4386","Double-crested Cormorant","Nannopterum auritum",2009,2,"Durham","Double-crested Cormorant (Nannopterum auritum)",0
 "4387","Double-crested Cormorant","Nannopterum auritum",2013,5,"Durham","Double-crested Cormorant (Nannopterum auritum)",150
 "4388","Double-crested Cormorant","Nannopterum auritum",2014,1,"Durham","Double-crested Cormorant (Nannopterum auritum)",-80
-"4389","Downy Woodpecker","Dryobates pubescens",2002,15,"Durham","Downy Woodpecker (Dryobates pubescens)",-31.8181818181818
+"4389","Downy Woodpecker","Dryobates pubescens",2002,15,"Durham","Downy Woodpecker (Dryobates pubescens)",NA
 "4390","Downy Woodpecker","Dryobates pubescens",2003,7,"Durham","Downy Woodpecker (Dryobates pubescens)",-53.3333333333333
 "4391","Downy Woodpecker","Dryobates pubescens",2004,17,"Durham","Downy Woodpecker (Dryobates pubescens)",142.857142857143
 "4392","Downy Woodpecker","Dryobates pubescens",2005,11,"Durham","Downy Woodpecker (Dryobates pubescens)",-35.2941176470588
@@ -4409,7 +4409,7 @@
 "4408","Downy Woodpecker","Dryobates pubescens",2021,14,"Durham","Downy Woodpecker (Dryobates pubescens)",16.6666666666667
 "4409","Downy Woodpecker","Dryobates pubescens",2022,15,"Durham","Downy Woodpecker (Dryobates pubescens)",7.14285714285714
 "4410","Downy Woodpecker","Dryobates pubescens",2023,23,"Durham","Downy Woodpecker (Dryobates pubescens)",53.3333333333333
-"4411","Eastern Bluebird","Sialia sialis",2002,33,"Durham","Eastern Bluebird (Sialia sialis)",-69.4444444444444
+"4411","Eastern Bluebird","Sialia sialis",2002,33,"Durham","Eastern Bluebird (Sialia sialis)",NA
 "4412","Eastern Bluebird","Sialia sialis",2003,21,"Durham","Eastern Bluebird (Sialia sialis)",-36.3636363636364
 "4413","Eastern Bluebird","Sialia sialis",2004,39,"Durham","Eastern Bluebird (Sialia sialis)",85.7142857142857
 "4414","Eastern Bluebird","Sialia sialis",2005,34,"Durham","Eastern Bluebird (Sialia sialis)",-12.8205128205128
@@ -4431,7 +4431,7 @@
 "4430","Eastern Bluebird","Sialia sialis",2021,46,"Durham","Eastern Bluebird (Sialia sialis)",-6.12244897959184
 "4431","Eastern Bluebird","Sialia sialis",2022,73,"Durham","Eastern Bluebird (Sialia sialis)",58.695652173913
 "4432","Eastern Bluebird","Sialia sialis",2023,58,"Durham","Eastern Bluebird (Sialia sialis)",-20.5479452054795
-"4433","Eastern Kingbird","Tyrannus tyrannus",2004,1,"Durham","Eastern Kingbird (Tyrannus tyrannus)",-50
+"4433","Eastern Kingbird","Tyrannus tyrannus",2004,1,"Durham","Eastern Kingbird (Tyrannus tyrannus)",NA
 "4434","Eastern Kingbird","Tyrannus tyrannus",2007,1,"Durham","Eastern Kingbird (Tyrannus tyrannus)",0
 "4435","Eastern Kingbird","Tyrannus tyrannus",2008,1,"Durham","Eastern Kingbird (Tyrannus tyrannus)",0
 "4436","Eastern Kingbird","Tyrannus tyrannus",2009,1,"Durham","Eastern Kingbird (Tyrannus tyrannus)",0
@@ -4441,7 +4441,7 @@
 "4440","Eastern Kingbird","Tyrannus tyrannus",2020,3,"Durham","Eastern Kingbird (Tyrannus tyrannus)",-25
 "4441","Eastern Kingbird","Tyrannus tyrannus",2022,5,"Durham","Eastern Kingbird (Tyrannus tyrannus)",66.6666666666667
 "4442","Eastern Kingbird","Tyrannus tyrannus",2023,2,"Durham","Eastern Kingbird (Tyrannus tyrannus)",-60
-"4443","Eastern Meadowlark","Sturnella magna",2002,3,"Durham","Eastern Meadowlark (Sturnella magna)",-88.4615384615385
+"4443","Eastern Meadowlark","Sturnella magna",2002,3,"Durham","Eastern Meadowlark (Sturnella magna)",NA
 "4444","Eastern Meadowlark","Sturnella magna",2003,7,"Durham","Eastern Meadowlark (Sturnella magna)",133.333333333333
 "4445","Eastern Meadowlark","Sturnella magna",2004,8,"Durham","Eastern Meadowlark (Sturnella magna)",14.2857142857143
 "4446","Eastern Meadowlark","Sturnella magna",2005,10,"Durham","Eastern Meadowlark (Sturnella magna)",25
@@ -4462,7 +4462,7 @@
 "4461","Eastern Meadowlark","Sturnella magna",2021,6,"Durham","Eastern Meadowlark (Sturnella magna)",100
 "4462","Eastern Meadowlark","Sturnella magna",2022,9,"Durham","Eastern Meadowlark (Sturnella magna)",50
 "4463","Eastern Meadowlark","Sturnella magna",2023,9,"Durham","Eastern Meadowlark (Sturnella magna)",0
-"4464","Eastern Phoebe","Sayornis phoebe",2002,14,"Durham","Eastern Phoebe (Sayornis phoebe)",-46.1538461538462
+"4464","Eastern Phoebe","Sayornis phoebe",2002,14,"Durham","Eastern Phoebe (Sayornis phoebe)",NA
 "4465","Eastern Phoebe","Sayornis phoebe",2003,5,"Durham","Eastern Phoebe (Sayornis phoebe)",-64.2857142857143
 "4466","Eastern Phoebe","Sayornis phoebe",2004,7,"Durham","Eastern Phoebe (Sayornis phoebe)",40
 "4467","Eastern Phoebe","Sayornis phoebe",2005,7,"Durham","Eastern Phoebe (Sayornis phoebe)",0
@@ -4484,7 +4484,7 @@
 "4483","Eastern Phoebe","Sayornis phoebe",2021,24,"Durham","Eastern Phoebe (Sayornis phoebe)",33.3333333333333
 "4484","Eastern Phoebe","Sayornis phoebe",2022,14,"Durham","Eastern Phoebe (Sayornis phoebe)",-41.6666666666667
 "4485","Eastern Phoebe","Sayornis phoebe",2023,11,"Durham","Eastern Phoebe (Sayornis phoebe)",-21.4285714285714
-"4486","Eastern Towhee","Pipilo erythrophthalmus",2002,79,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",132.352941176471
+"4486","Eastern Towhee","Pipilo erythrophthalmus",2002,79,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",NA
 "4487","Eastern Towhee","Pipilo erythrophthalmus",2003,62,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",-21.5189873417722
 "4488","Eastern Towhee","Pipilo erythrophthalmus",2004,77,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",24.1935483870968
 "4489","Eastern Towhee","Pipilo erythrophthalmus",2005,66,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",-14.2857142857143
@@ -4506,11 +4506,11 @@
 "4505","Eastern Towhee","Pipilo erythrophthalmus",2021,45,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",-15.0943396226415
 "4506","Eastern Towhee","Pipilo erythrophthalmus",2022,40,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",-11.1111111111111
 "4507","Eastern Towhee","Pipilo erythrophthalmus",2023,40,"Durham","Eastern Towhee (Pipilo erythrophthalmus)",0
-"4508","Eastern Whip-poor-will","Antrostomus vociferus",2003,1,"Durham","Eastern Whip-poor-will (Antrostomus vociferus)",0
+"4508","Eastern Whip-poor-will","Antrostomus vociferus",2003,1,"Durham","Eastern Whip-poor-will (Antrostomus vociferus)",NA
 "4509","Eastern Whip-poor-will","Antrostomus vociferus",2007,1,"Durham","Eastern Whip-poor-will (Antrostomus vociferus)",0
 "4510","Eastern Whip-poor-will","Antrostomus vociferus",2008,1,"Durham","Eastern Whip-poor-will (Antrostomus vociferus)",0
 "4511","Eastern Whip-poor-will","Antrostomus vociferus",2010,2,"Durham","Eastern Whip-poor-will (Antrostomus vociferus)",100
-"4512","Eastern Wood-Pewee","Contopus virens",2002,14,"Durham","Eastern Wood-Pewee (Contopus virens)",-44
+"4512","Eastern Wood-Pewee","Contopus virens",2002,14,"Durham","Eastern Wood-Pewee (Contopus virens)",NA
 "4513","Eastern Wood-Pewee","Contopus virens",2003,6,"Durham","Eastern Wood-Pewee (Contopus virens)",-57.1428571428571
 "4514","Eastern Wood-Pewee","Contopus virens",2004,10,"Durham","Eastern Wood-Pewee (Contopus virens)",66.6666666666667
 "4515","Eastern Wood-Pewee","Contopus virens",2005,9,"Durham","Eastern Wood-Pewee (Contopus virens)",-10
@@ -4532,7 +4532,7 @@
 "4531","Eastern Wood-Pewee","Contopus virens",2021,21,"Durham","Eastern Wood-Pewee (Contopus virens)",16.6666666666667
 "4532","Eastern Wood-Pewee","Contopus virens",2022,17,"Durham","Eastern Wood-Pewee (Contopus virens)",-19.047619047619
 "4533","Eastern Wood-Pewee","Contopus virens",2023,19,"Durham","Eastern Wood-Pewee (Contopus virens)",11.7647058823529
-"4534","European Starling","Sturnus vulgaris",2002,88,"Durham","European Starling (Sturnus vulgaris)",114.634146341463
+"4534","European Starling","Sturnus vulgaris",2002,88,"Durham","European Starling (Sturnus vulgaris)",NA
 "4535","European Starling","Sturnus vulgaris",2003,25,"Durham","European Starling (Sturnus vulgaris)",-71.5909090909091
 "4536","European Starling","Sturnus vulgaris",2004,28,"Durham","European Starling (Sturnus vulgaris)",12
 "4537","European Starling","Sturnus vulgaris",2005,31,"Durham","European Starling (Sturnus vulgaris)",10.7142857142857
@@ -4554,7 +4554,7 @@
 "4553","European Starling","Sturnus vulgaris",2021,28,"Durham","European Starling (Sturnus vulgaris)",250
 "4554","European Starling","Sturnus vulgaris",2022,40,"Durham","European Starling (Sturnus vulgaris)",42.8571428571429
 "4555","European Starling","Sturnus vulgaris",2023,12,"Durham","European Starling (Sturnus vulgaris)",-70
-"4556","Field Sparrow","Spizella pusilla",2002,8,"Durham","Field Sparrow (Spizella pusilla)",-11.1111111111111
+"4556","Field Sparrow","Spizella pusilla",2002,8,"Durham","Field Sparrow (Spizella pusilla)",NA
 "4557","Field Sparrow","Spizella pusilla",2003,3,"Durham","Field Sparrow (Spizella pusilla)",-62.5
 "4558","Field Sparrow","Spizella pusilla",2004,2,"Durham","Field Sparrow (Spizella pusilla)",-33.3333333333333
 "4559","Field Sparrow","Spizella pusilla",2005,7,"Durham","Field Sparrow (Spizella pusilla)",250
@@ -4573,7 +4573,7 @@
 "4572","Field Sparrow","Spizella pusilla",2021,2,"Durham","Field Sparrow (Spizella pusilla)",0
 "4573","Field Sparrow","Spizella pusilla",2022,1,"Durham","Field Sparrow (Spizella pusilla)",-50
 "4574","Field Sparrow","Spizella pusilla",2023,1,"Durham","Field Sparrow (Spizella pusilla)",0
-"4575","Fish Crow","Corvus ossifragus",2002,6,"Durham","Fish Crow (Corvus ossifragus)",-64.7058823529412
+"4575","Fish Crow","Corvus ossifragus",2002,6,"Durham","Fish Crow (Corvus ossifragus)",NA
 "4576","Fish Crow","Corvus ossifragus",2003,3,"Durham","Fish Crow (Corvus ossifragus)",-50
 "4577","Fish Crow","Corvus ossifragus",2004,8,"Durham","Fish Crow (Corvus ossifragus)",166.666666666667
 "4578","Fish Crow","Corvus ossifragus",2005,4,"Durham","Fish Crow (Corvus ossifragus)",-50
@@ -4595,7 +4595,7 @@
 "4594","Fish Crow","Corvus ossifragus",2021,16,"Durham","Fish Crow (Corvus ossifragus)",33.3333333333333
 "4595","Fish Crow","Corvus ossifragus",2022,19,"Durham","Fish Crow (Corvus ossifragus)",18.75
 "4596","Fish Crow","Corvus ossifragus",2023,17,"Durham","Fish Crow (Corvus ossifragus)",-10.5263157894737
-"4597","Grasshopper Sparrow","Ammodramus savannarum",2002,1,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",-85.7142857142857
+"4597","Grasshopper Sparrow","Ammodramus savannarum",2002,1,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",NA
 "4598","Grasshopper Sparrow","Ammodramus savannarum",2003,3,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",200
 "4599","Grasshopper Sparrow","Ammodramus savannarum",2005,2,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",-33.3333333333333
 "4600","Grasshopper Sparrow","Ammodramus savannarum",2006,1,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",-50
@@ -4607,7 +4607,7 @@
 "4606","Grasshopper Sparrow","Ammodramus savannarum",2015,2,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",0
 "4607","Grasshopper Sparrow","Ammodramus savannarum",2021,2,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",0
 "4608","Grasshopper Sparrow","Ammodramus savannarum",2023,2,"Durham","Grasshopper Sparrow (Ammodramus savannarum)",0
-"4609","Gray Catbird","Dumetella carolinensis",2002,10,"Durham","Gray Catbird (Dumetella carolinensis)",-16.6666666666667
+"4609","Gray Catbird","Dumetella carolinensis",2002,10,"Durham","Gray Catbird (Dumetella carolinensis)",NA
 "4610","Gray Catbird","Dumetella carolinensis",2003,7,"Durham","Gray Catbird (Dumetella carolinensis)",-30
 "4611","Gray Catbird","Dumetella carolinensis",2004,7,"Durham","Gray Catbird (Dumetella carolinensis)",0
 "4612","Gray Catbird","Dumetella carolinensis",2005,15,"Durham","Gray Catbird (Dumetella carolinensis)",114.285714285714
@@ -4629,7 +4629,7 @@
 "4628","Gray Catbird","Dumetella carolinensis",2021,8,"Durham","Gray Catbird (Dumetella carolinensis)",33.3333333333333
 "4629","Gray Catbird","Dumetella carolinensis",2022,11,"Durham","Gray Catbird (Dumetella carolinensis)",37.5
 "4630","Gray Catbird","Dumetella carolinensis",2023,7,"Durham","Gray Catbird (Dumetella carolinensis)",-36.3636363636364
-"4631","Great Blue Heron","Ardea herodias",2002,4,"Durham","Great Blue Heron (Ardea herodias)",-20
+"4631","Great Blue Heron","Ardea herodias",2002,4,"Durham","Great Blue Heron (Ardea herodias)",NA
 "4632","Great Blue Heron","Ardea herodias",2003,1,"Durham","Great Blue Heron (Ardea herodias)",-75
 "4633","Great Blue Heron","Ardea herodias",2004,6,"Durham","Great Blue Heron (Ardea herodias)",500
 "4634","Great Blue Heron","Ardea herodias",2005,13,"Durham","Great Blue Heron (Ardea herodias)",116.666666666667
@@ -4650,7 +4650,7 @@
 "4649","Great Blue Heron","Ardea herodias",2021,2,"Durham","Great Blue Heron (Ardea herodias)",-50
 "4650","Great Blue Heron","Ardea herodias",2022,8,"Durham","Great Blue Heron (Ardea herodias)",300
 "4651","Great Blue Heron","Ardea herodias",2023,5,"Durham","Great Blue Heron (Ardea herodias)",-37.5
-"4652","Great Crested Flycatcher","Myiarchus crinitus",2002,12,"Durham","Great Crested Flycatcher (Myiarchus crinitus)",-55.5555555555556
+"4652","Great Crested Flycatcher","Myiarchus crinitus",2002,12,"Durham","Great Crested Flycatcher (Myiarchus crinitus)",NA
 "4653","Great Crested Flycatcher","Myiarchus crinitus",2003,2,"Durham","Great Crested Flycatcher (Myiarchus crinitus)",-83.3333333333333
 "4654","Great Crested Flycatcher","Myiarchus crinitus",2004,13,"Durham","Great Crested Flycatcher (Myiarchus crinitus)",550
 "4655","Great Crested Flycatcher","Myiarchus crinitus",2005,8,"Durham","Great Crested Flycatcher (Myiarchus crinitus)",-38.4615384615385
@@ -4675,10 +4675,10 @@
 "4674","Great Egret","Ardea alba",2006,1,"Durham","Great Egret (Ardea alba)",NA
 "4675","Great Egret","Ardea alba",2013,1,"Durham","Great Egret (Ardea alba)",0
 "4676","Great Egret","Ardea alba",2023,1,"Durham","Great Egret (Ardea alba)",0
-"4677","Great Horned Owl","Bubo virginianus",2007,2,"Durham","Great Horned Owl (Bubo virginianus)",100
+"4677","Great Horned Owl","Bubo virginianus",2007,2,"Durham","Great Horned Owl (Bubo virginianus)",NA
 "4678","Great Horned Owl","Bubo virginianus",2009,1,"Durham","Great Horned Owl (Bubo virginianus)",-50
 "4679","Great Horned Owl","Bubo virginianus",2014,2,"Durham","Great Horned Owl (Bubo virginianus)",100
-"4680","Green Heron","Butorides virescens",2002,2,"Durham","Green Heron (Butorides virescens)",100
+"4680","Green Heron","Butorides virescens",2002,2,"Durham","Green Heron (Butorides virescens)",NA
 "4681","Green Heron","Butorides virescens",2003,3,"Durham","Green Heron (Butorides virescens)",50
 "4682","Green Heron","Butorides virescens",2004,4,"Durham","Green Heron (Butorides virescens)",33.3333333333333
 "4683","Green Heron","Butorides virescens",2005,2,"Durham","Green Heron (Butorides virescens)",-50
@@ -4692,7 +4692,7 @@
 "4691","Green Heron","Butorides virescens",2017,3,"Durham","Green Heron (Butorides virescens)",200
 "4692","Green Heron","Butorides virescens",2020,1,"Durham","Green Heron (Butorides virescens)",-66.6666666666667
 "4693","Green Heron","Butorides virescens",2023,2,"Durham","Green Heron (Butorides virescens)",100
-"4694","Hairy Woodpecker","Dryobates villosus",2002,1,"Durham","Hairy Woodpecker (Dryobates villosus)",0
+"4694","Hairy Woodpecker","Dryobates villosus",2002,1,"Durham","Hairy Woodpecker (Dryobates villosus)",NA
 "4695","Hairy Woodpecker","Dryobates villosus",2004,2,"Durham","Hairy Woodpecker (Dryobates villosus)",100
 "4696","Hairy Woodpecker","Dryobates villosus",2005,1,"Durham","Hairy Woodpecker (Dryobates villosus)",-50
 "4697","Hairy Woodpecker","Dryobates villosus",2007,1,"Durham","Hairy Woodpecker (Dryobates villosus)",0
@@ -4704,7 +4704,7 @@
 "4703","Hairy Woodpecker","Dryobates villosus",2021,2,"Durham","Hairy Woodpecker (Dryobates villosus)",100
 "4704","Hairy Woodpecker","Dryobates villosus",2022,2,"Durham","Hairy Woodpecker (Dryobates villosus)",0
 "4705","Hairy Woodpecker","Dryobates villosus",2023,3,"Durham","Hairy Woodpecker (Dryobates villosus)",50
-"4706","Hooded Warbler","Setophaga citrina",2002,3,"Durham","Hooded Warbler (Setophaga citrina)",0
+"4706","Hooded Warbler","Setophaga citrina",2002,3,"Durham","Hooded Warbler (Setophaga citrina)",NA
 "4707","Hooded Warbler","Setophaga citrina",2003,5,"Durham","Hooded Warbler (Setophaga citrina)",66.6666666666667
 "4708","Hooded Warbler","Setophaga citrina",2005,2,"Durham","Hooded Warbler (Setophaga citrina)",-60
 "4709","Hooded Warbler","Setophaga citrina",2006,4,"Durham","Hooded Warbler (Setophaga citrina)",100
@@ -4723,8 +4723,8 @@
 "4722","Hooded Warbler","Setophaga citrina",2021,3,"Durham","Hooded Warbler (Setophaga citrina)",50
 "4723","Hooded Warbler","Setophaga citrina",2022,1,"Durham","Hooded Warbler (Setophaga citrina)",-66.6666666666667
 "4724","Hooded Warbler","Setophaga citrina",2023,1,"Durham","Hooded Warbler (Setophaga citrina)",0
-"4725","Horned Lark","Eremophila alpestris",2015,1,"Durham","Horned Lark (Eremophila alpestris)",0
-"4726","House Finch","Haemorhous mexicanus",2002,38,"Durham","House Finch (Haemorhous mexicanus)",2.7027027027027
+"4725","Horned Lark","Eremophila alpestris",2015,1,"Durham","Horned Lark (Eremophila alpestris)",NA
+"4726","House Finch","Haemorhous mexicanus",2002,38,"Durham","House Finch (Haemorhous mexicanus)",NA
 "4727","House Finch","Haemorhous mexicanus",2003,33,"Durham","House Finch (Haemorhous mexicanus)",-13.1578947368421
 "4728","House Finch","Haemorhous mexicanus",2004,48,"Durham","House Finch (Haemorhous mexicanus)",45.4545454545455
 "4729","House Finch","Haemorhous mexicanus",2005,21,"Durham","House Finch (Haemorhous mexicanus)",-56.25
@@ -4746,7 +4746,7 @@
 "4745","House Finch","Haemorhous mexicanus",2021,30,"Durham","House Finch (Haemorhous mexicanus)",-43.3962264150943
 "4746","House Finch","Haemorhous mexicanus",2022,65,"Durham","House Finch (Haemorhous mexicanus)",116.666666666667
 "4747","House Finch","Haemorhous mexicanus",2023,70,"Durham","House Finch (Haemorhous mexicanus)",7.69230769230769
-"4748","House Sparrow","Passer domesticus",2002,11,"Durham","House Sparrow (Passer domesticus)",450
+"4748","House Sparrow","Passer domesticus",2002,11,"Durham","House Sparrow (Passer domesticus)",NA
 "4749","House Sparrow","Passer domesticus",2003,10,"Durham","House Sparrow (Passer domesticus)",-9.09090909090909
 "4750","House Sparrow","Passer domesticus",2004,4,"Durham","House Sparrow (Passer domesticus)",-60
 "4751","House Sparrow","Passer domesticus",2005,7,"Durham","House Sparrow (Passer domesticus)",75
@@ -4767,7 +4767,7 @@
 "4766","House Sparrow","Passer domesticus",2021,10,"Durham","House Sparrow (Passer domesticus)",66.6666666666667
 "4767","House Sparrow","Passer domesticus",2022,4,"Durham","House Sparrow (Passer domesticus)",-60
 "4768","House Sparrow","Passer domesticus",2023,7,"Durham","House Sparrow (Passer domesticus)",75
-"4769","House Wren","Troglodytes aedon",2002,6,"Durham","House Wren (Troglodytes aedon)",100
+"4769","House Wren","Troglodytes aedon",2002,6,"Durham","House Wren (Troglodytes aedon)",NA
 "4770","House Wren","Troglodytes aedon",2003,9,"Durham","House Wren (Troglodytes aedon)",50
 "4771","House Wren","Troglodytes aedon",2004,7,"Durham","House Wren (Troglodytes aedon)",-22.2222222222222
 "4772","House Wren","Troglodytes aedon",2005,5,"Durham","House Wren (Troglodytes aedon)",-28.5714285714286
@@ -4788,7 +4788,7 @@
 "4787","House Wren","Troglodytes aedon",2020,3,"Durham","House Wren (Troglodytes aedon)",-57.1428571428571
 "4788","House Wren","Troglodytes aedon",2021,5,"Durham","House Wren (Troglodytes aedon)",66.6666666666667
 "4789","House Wren","Troglodytes aedon",2022,5,"Durham","House Wren (Troglodytes aedon)",0
-"4790","Indigo Bunting","Passerina cyanea",2002,68,"Durham","Indigo Bunting (Passerina cyanea)",6.25
+"4790","Indigo Bunting","Passerina cyanea",2002,68,"Durham","Indigo Bunting (Passerina cyanea)",NA
 "4791","Indigo Bunting","Passerina cyanea",2003,76,"Durham","Indigo Bunting (Passerina cyanea)",11.7647058823529
 "4792","Indigo Bunting","Passerina cyanea",2004,48,"Durham","Indigo Bunting (Passerina cyanea)",-36.8421052631579
 "4793","Indigo Bunting","Passerina cyanea",2005,56,"Durham","Indigo Bunting (Passerina cyanea)",16.6666666666667
@@ -4810,11 +4810,11 @@
 "4809","Indigo Bunting","Passerina cyanea",2021,40,"Durham","Indigo Bunting (Passerina cyanea)",0
 "4810","Indigo Bunting","Passerina cyanea",2022,47,"Durham","Indigo Bunting (Passerina cyanea)",17.5
 "4811","Indigo Bunting","Passerina cyanea",2023,53,"Durham","Indigo Bunting (Passerina cyanea)",12.7659574468085
-"4812","Kentucky Warbler","Geothlypis formosa",2018,1,"Durham","Kentucky Warbler (Geothlypis formosa)",0
+"4812","Kentucky Warbler","Geothlypis formosa",2018,1,"Durham","Kentucky Warbler (Geothlypis formosa)",NA
 "4813","Kentucky Warbler","Geothlypis formosa",2021,2,"Durham","Kentucky Warbler (Geothlypis formosa)",100
 "4814","Kentucky Warbler","Geothlypis formosa",2022,1,"Durham","Kentucky Warbler (Geothlypis formosa)",-50
 "4815","Kentucky Warbler","Geothlypis formosa",2023,2,"Durham","Kentucky Warbler (Geothlypis formosa)",100
-"4816","Killdeer","Charadrius vociferus",2002,3,"Durham","Killdeer (Charadrius vociferus)",-62.5
+"4816","Killdeer","Charadrius vociferus",2002,3,"Durham","Killdeer (Charadrius vociferus)",NA
 "4817","Killdeer","Charadrius vociferus",2003,4,"Durham","Killdeer (Charadrius vociferus)",33.3333333333333
 "4818","Killdeer","Charadrius vociferus",2004,5,"Durham","Killdeer (Charadrius vociferus)",25
 "4819","Killdeer","Charadrius vociferus",2005,3,"Durham","Killdeer (Charadrius vociferus)",-40
@@ -4835,13 +4835,13 @@
 "4834","Killdeer","Charadrius vociferus",2021,3,"Durham","Killdeer (Charadrius vociferus)",0
 "4835","Killdeer","Charadrius vociferus",2022,9,"Durham","Killdeer (Charadrius vociferus)",200
 "4836","Killdeer","Charadrius vociferus",2023,10,"Durham","Killdeer (Charadrius vociferus)",11.1111111111111
-"4837","Loggerhead Shrike","Lanius ludovicianus",2014,1,"Durham","Loggerhead Shrike (Lanius ludovicianus)",Inf
+"4837","Loggerhead Shrike","Lanius ludovicianus",2014,1,"Durham","Loggerhead Shrike (Lanius ludovicianus)",NA
 "4838","Loggerhead Shrike","Lanius ludovicianus",2017,1,"Durham","Loggerhead Shrike (Lanius ludovicianus)",0
-"4839","Louisiana Waterthrush","Parkesia motacilla",2011,1,"Durham","Louisiana Waterthrush (Parkesia motacilla)",0
+"4839","Louisiana Waterthrush","Parkesia motacilla",2011,1,"Durham","Louisiana Waterthrush (Parkesia motacilla)",NA
 "4840","Louisiana Waterthrush","Parkesia motacilla",2014,1,"Durham","Louisiana Waterthrush (Parkesia motacilla)",0
 "4841","Louisiana Waterthrush","Parkesia motacilla",2021,1,"Durham","Louisiana Waterthrush (Parkesia motacilla)",0
 "4842","Louisiana Waterthrush","Parkesia motacilla",2023,2,"Durham","Louisiana Waterthrush (Parkesia motacilla)",100
-"4843","Mallard","Anas platyrhynchos",2002,3,"Durham","Mallard (Anas platyrhynchos)",0
+"4843","Mallard","Anas platyrhynchos",2002,3,"Durham","Mallard (Anas platyrhynchos)",NA
 "4844","Mallard","Anas platyrhynchos",2003,5,"Durham","Mallard (Anas platyrhynchos)",66.6666666666667
 "4845","Mallard","Anas platyrhynchos",2004,1,"Durham","Mallard (Anas platyrhynchos)",-80
 "4846","Mallard","Anas platyrhynchos",2005,15,"Durham","Mallard (Anas platyrhynchos)",1400
@@ -4851,7 +4851,7 @@
 "4850","Mallard","Anas platyrhynchos",2017,2,"Durham","Mallard (Anas platyrhynchos)",-60
 "4851","Mallard","Anas platyrhynchos",2018,4,"Durham","Mallard (Anas platyrhynchos)",100
 "4852","Mississippi Kite","Ictinia mississippiensis",2022,2,"Durham","Mississippi Kite (Ictinia mississippiensis)",NA
-"4853","Mourning Dove","Zenaida macroura",2002,113,"Durham","Mourning Dove (Zenaida macroura)",-28.4810126582279
+"4853","Mourning Dove","Zenaida macroura",2002,113,"Durham","Mourning Dove (Zenaida macroura)",NA
 "4854","Mourning Dove","Zenaida macroura",2003,82,"Durham","Mourning Dove (Zenaida macroura)",-27.4336283185841
 "4855","Mourning Dove","Zenaida macroura",2004,92,"Durham","Mourning Dove (Zenaida macroura)",12.1951219512195
 "4856","Mourning Dove","Zenaida macroura",2005,90,"Durham","Mourning Dove (Zenaida macroura)",-2.17391304347826
@@ -4873,7 +4873,7 @@
 "4872","Mourning Dove","Zenaida macroura",2021,79,"Durham","Mourning Dove (Zenaida macroura)",-17.7083333333333
 "4873","Mourning Dove","Zenaida macroura",2022,92,"Durham","Mourning Dove (Zenaida macroura)",16.4556962025316
 "4874","Mourning Dove","Zenaida macroura",2023,77,"Durham","Mourning Dove (Zenaida macroura)",-16.304347826087
-"4875","Northern Bobwhite","Colinus virginianus",2002,3,"Durham","Northern Bobwhite (Colinus virginianus)",200
+"4875","Northern Bobwhite","Colinus virginianus",2002,3,"Durham","Northern Bobwhite (Colinus virginianus)",NA
 "4876","Northern Bobwhite","Colinus virginianus",2003,4,"Durham","Northern Bobwhite (Colinus virginianus)",33.3333333333333
 "4877","Northern Bobwhite","Colinus virginianus",2004,6,"Durham","Northern Bobwhite (Colinus virginianus)",50
 "4878","Northern Bobwhite","Colinus virginianus",2005,7,"Durham","Northern Bobwhite (Colinus virginianus)",16.6666666666667
@@ -4885,7 +4885,7 @@
 "4884","Northern Bobwhite","Colinus virginianus",2012,3,"Durham","Northern Bobwhite (Colinus virginianus)",50
 "4885","Northern Bobwhite","Colinus virginianus",2014,1,"Durham","Northern Bobwhite (Colinus virginianus)",-66.6666666666667
 "4886","Northern Bobwhite","Colinus virginianus",2017,1,"Durham","Northern Bobwhite (Colinus virginianus)",0
-"4887","Northern Cardinal","Cardinalis cardinalis",2002,202,"Durham","Northern Cardinal (Cardinalis cardinalis)",-17.2131147540984
+"4887","Northern Cardinal","Cardinalis cardinalis",2002,202,"Durham","Northern Cardinal (Cardinalis cardinalis)",NA
 "4888","Northern Cardinal","Cardinalis cardinalis",2003,186,"Durham","Northern Cardinal (Cardinalis cardinalis)",-7.92079207920792
 "4889","Northern Cardinal","Cardinalis cardinalis",2004,218,"Durham","Northern Cardinal (Cardinalis cardinalis)",17.2043010752688
 "4890","Northern Cardinal","Cardinalis cardinalis",2005,225,"Durham","Northern Cardinal (Cardinalis cardinalis)",3.21100917431193
@@ -4907,7 +4907,7 @@
 "4906","Northern Cardinal","Cardinalis cardinalis",2021,161,"Durham","Northern Cardinal (Cardinalis cardinalis)",-16.580310880829
 "4907","Northern Cardinal","Cardinalis cardinalis",2022,195,"Durham","Northern Cardinal (Cardinalis cardinalis)",21.1180124223602
 "4908","Northern Cardinal","Cardinalis cardinalis",2023,192,"Durham","Northern Cardinal (Cardinalis cardinalis)",-1.53846153846154
-"4909","Northern Flicker","Colaptes auratus",2002,6,"Durham","Northern Flicker (Colaptes auratus)",500
+"4909","Northern Flicker","Colaptes auratus",2002,6,"Durham","Northern Flicker (Colaptes auratus)",NA
 "4910","Northern Flicker","Colaptes auratus",2003,1,"Durham","Northern Flicker (Colaptes auratus)",-83.3333333333333
 "4911","Northern Flicker","Colaptes auratus",2004,3,"Durham","Northern Flicker (Colaptes auratus)",200
 "4912","Northern Flicker","Colaptes auratus",2005,6,"Durham","Northern Flicker (Colaptes auratus)",100
@@ -4924,7 +4924,7 @@
 "4923","Northern Flicker","Colaptes auratus",2020,1,"Durham","Northern Flicker (Colaptes auratus)",0
 "4924","Northern Flicker","Colaptes auratus",2021,1,"Durham","Northern Flicker (Colaptes auratus)",0
 "4925","Northern Flicker","Colaptes auratus",2023,2,"Durham","Northern Flicker (Colaptes auratus)",100
-"4926","Northern Mockingbird","Mimus polyglottos",2002,86,"Durham","Northern Mockingbird (Mimus polyglottos)",38.7096774193548
+"4926","Northern Mockingbird","Mimus polyglottos",2002,86,"Durham","Northern Mockingbird (Mimus polyglottos)",NA
 "4927","Northern Mockingbird","Mimus polyglottos",2003,61,"Durham","Northern Mockingbird (Mimus polyglottos)",-29.0697674418605
 "4928","Northern Mockingbird","Mimus polyglottos",2004,56,"Durham","Northern Mockingbird (Mimus polyglottos)",-8.19672131147541
 "4929","Northern Mockingbird","Mimus polyglottos",2005,64,"Durham","Northern Mockingbird (Mimus polyglottos)",14.2857142857143
@@ -4946,7 +4946,7 @@
 "4945","Northern Mockingbird","Mimus polyglottos",2021,59,"Durham","Northern Mockingbird (Mimus polyglottos)",-6.34920634920635
 "4946","Northern Mockingbird","Mimus polyglottos",2022,59,"Durham","Northern Mockingbird (Mimus polyglottos)",0
 "4947","Northern Mockingbird","Mimus polyglottos",2023,37,"Durham","Northern Mockingbird (Mimus polyglottos)",-37.2881355932203
-"4948","Northern Parula","Setophaga americana",2002,3,"Durham","Northern Parula (Setophaga americana)",-57.1428571428571
+"4948","Northern Parula","Setophaga americana",2002,3,"Durham","Northern Parula (Setophaga americana)",NA
 "4949","Northern Parula","Setophaga americana",2003,6,"Durham","Northern Parula (Setophaga americana)",100
 "4950","Northern Parula","Setophaga americana",2004,4,"Durham","Northern Parula (Setophaga americana)",-33.3333333333333
 "4951","Northern Parula","Setophaga americana",2005,4,"Durham","Northern Parula (Setophaga americana)",0
@@ -4968,7 +4968,7 @@
 "4967","Northern Parula","Setophaga americana",2021,17,"Durham","Northern Parula (Setophaga americana)",30.7692307692308
 "4968","Northern Parula","Setophaga americana",2022,18,"Durham","Northern Parula (Setophaga americana)",5.88235294117647
 "4969","Northern Parula","Setophaga americana",2023,12,"Durham","Northern Parula (Setophaga americana)",-33.3333333333333
-"4970","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2003,11,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",266.666666666667
+"4970","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2003,11,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",NA
 "4971","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2004,1,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",-90.9090909090909
 "4972","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2005,1,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",0
 "4973","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2009,4,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",300
@@ -4980,7 +4980,7 @@
 "4979","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2018,6,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",100
 "4980","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2019,2,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",-66.6666666666667
 "4981","Northern Rough-winged Swallow","Stelgidopteryx serripennis",2022,1,"Durham","Northern Rough-winged Swallow (Stelgidopteryx serripennis)",-50
-"4982","Ovenbird","Seiurus aurocapilla",2002,14,"Durham","Ovenbird (Seiurus aurocapilla)",-6.66666666666667
+"4982","Ovenbird","Seiurus aurocapilla",2002,14,"Durham","Ovenbird (Seiurus aurocapilla)",NA
 "4983","Ovenbird","Seiurus aurocapilla",2003,7,"Durham","Ovenbird (Seiurus aurocapilla)",-50
 "4984","Ovenbird","Seiurus aurocapilla",2004,7,"Durham","Ovenbird (Seiurus aurocapilla)",0
 "4985","Ovenbird","Seiurus aurocapilla",2005,5,"Durham","Ovenbird (Seiurus aurocapilla)",-28.5714285714286
@@ -5002,7 +5002,7 @@
 "5001","Ovenbird","Seiurus aurocapilla",2021,8,"Durham","Ovenbird (Seiurus aurocapilla)",-50
 "5002","Ovenbird","Seiurus aurocapilla",2022,18,"Durham","Ovenbird (Seiurus aurocapilla)",125
 "5003","Ovenbird","Seiurus aurocapilla",2023,7,"Durham","Ovenbird (Seiurus aurocapilla)",-61.1111111111111
-"5004","Pileated Woodpecker","Dryocopus pileatus",2003,1,"Durham","Pileated Woodpecker (Dryocopus pileatus)",-66.6666666666667
+"5004","Pileated Woodpecker","Dryocopus pileatus",2003,1,"Durham","Pileated Woodpecker (Dryocopus pileatus)",NA
 "5005","Pileated Woodpecker","Dryocopus pileatus",2005,1,"Durham","Pileated Woodpecker (Dryocopus pileatus)",0
 "5006","Pileated Woodpecker","Dryocopus pileatus",2006,3,"Durham","Pileated Woodpecker (Dryocopus pileatus)",200
 "5007","Pileated Woodpecker","Dryocopus pileatus",2007,1,"Durham","Pileated Woodpecker (Dryocopus pileatus)",-66.6666666666667
@@ -5019,7 +5019,7 @@
 "5018","Pileated Woodpecker","Dryocopus pileatus",2020,3,"Durham","Pileated Woodpecker (Dryocopus pileatus)",0
 "5019","Pileated Woodpecker","Dryocopus pileatus",2022,2,"Durham","Pileated Woodpecker (Dryocopus pileatus)",-33.3333333333333
 "5020","Pileated Woodpecker","Dryocopus pileatus",2023,3,"Durham","Pileated Woodpecker (Dryocopus pileatus)",50
-"5021","Pine Warbler","Setophaga pinus",2002,42,"Durham","Pine Warbler (Setophaga pinus)",-20.7547169811321
+"5021","Pine Warbler","Setophaga pinus",2002,42,"Durham","Pine Warbler (Setophaga pinus)",NA
 "5022","Pine Warbler","Setophaga pinus",2003,27,"Durham","Pine Warbler (Setophaga pinus)",-35.7142857142857
 "5023","Pine Warbler","Setophaga pinus",2004,17,"Durham","Pine Warbler (Setophaga pinus)",-37.037037037037
 "5024","Pine Warbler","Setophaga pinus",2005,33,"Durham","Pine Warbler (Setophaga pinus)",94.1176470588235
@@ -5041,7 +5041,7 @@
 "5040","Pine Warbler","Setophaga pinus",2021,40,"Durham","Pine Warbler (Setophaga pinus)",8.10810810810811
 "5041","Pine Warbler","Setophaga pinus",2022,65,"Durham","Pine Warbler (Setophaga pinus)",62.5
 "5042","Pine Warbler","Setophaga pinus",2023,42,"Durham","Pine Warbler (Setophaga pinus)",-35.3846153846154
-"5043","Prairie Warbler","Setophaga discolor",2002,6,"Durham","Prairie Warbler (Setophaga discolor)",20
+"5043","Prairie Warbler","Setophaga discolor",2002,6,"Durham","Prairie Warbler (Setophaga discolor)",NA
 "5044","Prairie Warbler","Setophaga discolor",2003,7,"Durham","Prairie Warbler (Setophaga discolor)",16.6666666666667
 "5045","Prairie Warbler","Setophaga discolor",2004,4,"Durham","Prairie Warbler (Setophaga discolor)",-42.8571428571429
 "5046","Prairie Warbler","Setophaga discolor",2005,6,"Durham","Prairie Warbler (Setophaga discolor)",50
@@ -5057,7 +5057,7 @@
 "5056","Prairie Warbler","Setophaga discolor",2020,2,"Durham","Prairie Warbler (Setophaga discolor)",0
 "5057","Prairie Warbler","Setophaga discolor",2021,5,"Durham","Prairie Warbler (Setophaga discolor)",150
 "5058","Prairie Warbler","Setophaga discolor",2022,3,"Durham","Prairie Warbler (Setophaga discolor)",-40
-"5059","Prothonotary Warbler","Protonotaria citrea",2004,1,"Durham","Prothonotary Warbler (Protonotaria citrea)",0
+"5059","Prothonotary Warbler","Protonotaria citrea",2004,1,"Durham","Prothonotary Warbler (Protonotaria citrea)",NA
 "5060","Prothonotary Warbler","Protonotaria citrea",2012,1,"Durham","Prothonotary Warbler (Protonotaria citrea)",0
 "5061","Prothonotary Warbler","Protonotaria citrea",2013,1,"Durham","Prothonotary Warbler (Protonotaria citrea)",0
 "5062","Prothonotary Warbler","Protonotaria citrea",2014,2,"Durham","Prothonotary Warbler (Protonotaria citrea)",100
@@ -5065,7 +5065,7 @@
 "5064","Prothonotary Warbler","Protonotaria citrea",2019,1,"Durham","Prothonotary Warbler (Protonotaria citrea)",0
 "5065","Prothonotary Warbler","Protonotaria citrea",2020,1,"Durham","Prothonotary Warbler (Protonotaria citrea)",0
 "5066","Prothonotary Warbler","Protonotaria citrea",2022,1,"Durham","Prothonotary Warbler (Protonotaria citrea)",0
-"5067","Purple Martin","Progne subis",2003,12,"Durham","Purple Martin (Progne subis)",500
+"5067","Purple Martin","Progne subis",2003,12,"Durham","Purple Martin (Progne subis)",NA
 "5068","Purple Martin","Progne subis",2004,2,"Durham","Purple Martin (Progne subis)",-83.3333333333333
 "5069","Purple Martin","Progne subis",2006,15,"Durham","Purple Martin (Progne subis)",650
 "5070","Purple Martin","Progne subis",2007,10,"Durham","Purple Martin (Progne subis)",-33.3333333333333
@@ -5084,7 +5084,7 @@
 "5083","Purple Martin","Progne subis",2021,6,"Durham","Purple Martin (Progne subis)",50
 "5084","Purple Martin","Progne subis",2022,8,"Durham","Purple Martin (Progne subis)",33.3333333333333
 "5085","Purple Martin","Progne subis",2023,11,"Durham","Purple Martin (Progne subis)",37.5
-"5086","Red-bellied Woodpecker","Melanerpes carolinus",2002,48,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",-28.3582089552239
+"5086","Red-bellied Woodpecker","Melanerpes carolinus",2002,48,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",NA
 "5087","Red-bellied Woodpecker","Melanerpes carolinus",2003,41,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",-14.5833333333333
 "5088","Red-bellied Woodpecker","Melanerpes carolinus",2004,34,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",-17.0731707317073
 "5089","Red-bellied Woodpecker","Melanerpes carolinus",2005,31,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",-8.82352941176471
@@ -5106,7 +5106,7 @@
 "5105","Red-bellied Woodpecker","Melanerpes carolinus",2021,27,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",-43.75
 "5106","Red-bellied Woodpecker","Melanerpes carolinus",2022,53,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",96.2962962962963
 "5107","Red-bellied Woodpecker","Melanerpes carolinus",2023,31,"Durham","Red-bellied Woodpecker (Melanerpes carolinus)",-41.5094339622642
-"5108","Red-eyed Vireo","Vireo olivaceus",2002,39,"Durham","Red-eyed Vireo (Vireo olivaceus)",-50
+"5108","Red-eyed Vireo","Vireo olivaceus",2002,39,"Durham","Red-eyed Vireo (Vireo olivaceus)",NA
 "5109","Red-eyed Vireo","Vireo olivaceus",2003,48,"Durham","Red-eyed Vireo (Vireo olivaceus)",23.0769230769231
 "5110","Red-eyed Vireo","Vireo olivaceus",2004,43,"Durham","Red-eyed Vireo (Vireo olivaceus)",-10.4166666666667
 "5111","Red-eyed Vireo","Vireo olivaceus",2005,38,"Durham","Red-eyed Vireo (Vireo olivaceus)",-11.6279069767442
@@ -5128,7 +5128,7 @@
 "5127","Red-eyed Vireo","Vireo olivaceus",2021,42,"Durham","Red-eyed Vireo (Vireo olivaceus)",-23.6363636363636
 "5128","Red-eyed Vireo","Vireo olivaceus",2022,67,"Durham","Red-eyed Vireo (Vireo olivaceus)",59.5238095238095
 "5129","Red-eyed Vireo","Vireo olivaceus",2023,63,"Durham","Red-eyed Vireo (Vireo olivaceus)",-5.97014925373134
-"5130","Red-headed Woodpecker","Melanerpes erythrocephalus",2002,1,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",0
+"5130","Red-headed Woodpecker","Melanerpes erythrocephalus",2002,1,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",NA
 "5131","Red-headed Woodpecker","Melanerpes erythrocephalus",2003,2,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",100
 "5132","Red-headed Woodpecker","Melanerpes erythrocephalus",2004,2,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",0
 "5133","Red-headed Woodpecker","Melanerpes erythrocephalus",2005,1,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",-50
@@ -5136,7 +5136,7 @@
 "5135","Red-headed Woodpecker","Melanerpes erythrocephalus",2009,2,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",0
 "5136","Red-headed Woodpecker","Melanerpes erythrocephalus",2018,1,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",-50
 "5137","Red-headed Woodpecker","Melanerpes erythrocephalus",2019,1,"Durham","Red-headed Woodpecker (Melanerpes erythrocephalus)",0
-"5138","Red-shouldered Hawk","Buteo lineatus",2002,6,"Durham","Red-shouldered Hawk (Buteo lineatus)",-60
+"5138","Red-shouldered Hawk","Buteo lineatus",2002,6,"Durham","Red-shouldered Hawk (Buteo lineatus)",NA
 "5139","Red-shouldered Hawk","Buteo lineatus",2003,4,"Durham","Red-shouldered Hawk (Buteo lineatus)",-33.3333333333333
 "5140","Red-shouldered Hawk","Buteo lineatus",2004,2,"Durham","Red-shouldered Hawk (Buteo lineatus)",-50
 "5141","Red-shouldered Hawk","Buteo lineatus",2006,6,"Durham","Red-shouldered Hawk (Buteo lineatus)",200
@@ -5157,7 +5157,7 @@
 "5156","Red-shouldered Hawk","Buteo lineatus",2021,5,"Durham","Red-shouldered Hawk (Buteo lineatus)",-50
 "5157","Red-shouldered Hawk","Buteo lineatus",2022,14,"Durham","Red-shouldered Hawk (Buteo lineatus)",180
 "5158","Red-shouldered Hawk","Buteo lineatus",2023,14,"Durham","Red-shouldered Hawk (Buteo lineatus)",0
-"5159","Red-tailed Hawk","Buteo jamaicensis",2002,1,"Durham","Red-tailed Hawk (Buteo jamaicensis)",-80
+"5159","Red-tailed Hawk","Buteo jamaicensis",2002,1,"Durham","Red-tailed Hawk (Buteo jamaicensis)",NA
 "5160","Red-tailed Hawk","Buteo jamaicensis",2003,2,"Durham","Red-tailed Hawk (Buteo jamaicensis)",100
 "5161","Red-tailed Hawk","Buteo jamaicensis",2004,4,"Durham","Red-tailed Hawk (Buteo jamaicensis)",100
 "5162","Red-tailed Hawk","Buteo jamaicensis",2005,1,"Durham","Red-tailed Hawk (Buteo jamaicensis)",-75
@@ -5175,7 +5175,7 @@
 "5174","Red-tailed Hawk","Buteo jamaicensis",2021,7,"Durham","Red-tailed Hawk (Buteo jamaicensis)",600
 "5175","Red-tailed Hawk","Buteo jamaicensis",2022,5,"Durham","Red-tailed Hawk (Buteo jamaicensis)",-28.5714285714286
 "5176","Red-tailed Hawk","Buteo jamaicensis",2023,1,"Durham","Red-tailed Hawk (Buteo jamaicensis)",-80
-"5177","Red-winged Blackbird","Agelaius phoeniceus",2002,1,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",-90.9090909090909
+"5177","Red-winged Blackbird","Agelaius phoeniceus",2002,1,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",NA
 "5178","Red-winged Blackbird","Agelaius phoeniceus",2003,6,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",500
 "5179","Red-winged Blackbird","Agelaius phoeniceus",2004,5,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",-16.6666666666667
 "5180","Red-winged Blackbird","Agelaius phoeniceus",2005,4,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",-20
@@ -5196,7 +5196,7 @@
 "5195","Red-winged Blackbird","Agelaius phoeniceus",2021,4,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",-33.3333333333333
 "5196","Red-winged Blackbird","Agelaius phoeniceus",2022,5,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",25
 "5197","Red-winged Blackbird","Agelaius phoeniceus",2023,26,"Durham","Red-winged Blackbird (Agelaius phoeniceus)",420
-"5198","Rock Pigeon","Columba livia",2005,9,"Durham","Rock Pigeon (Columba livia)",800
+"5198","Rock Pigeon","Columba livia",2005,9,"Durham","Rock Pigeon (Columba livia)",NA
 "5199","Rock Pigeon","Columba livia",2006,3,"Durham","Rock Pigeon (Columba livia)",-66.6666666666667
 "5200","Rock Pigeon","Columba livia",2007,5,"Durham","Rock Pigeon (Columba livia)",66.6666666666667
 "5201","Rock Pigeon","Columba livia",2009,5,"Durham","Rock Pigeon (Columba livia)",0
@@ -5206,7 +5206,7 @@
 "5205","Rock Pigeon","Columba livia",2021,9,"Durham","Rock Pigeon (Columba livia)",50
 "5206","Rock Pigeon","Columba livia",2022,1,"Durham","Rock Pigeon (Columba livia)",-88.8888888888889
 "5207","Rock Pigeon","Columba livia",2023,2,"Durham","Rock Pigeon (Columba livia)",100
-"5208","Ruby-throated Hummingbird","Archilochus colubris",2002,4,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",100
+"5208","Ruby-throated Hummingbird","Archilochus colubris",2002,4,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",NA
 "5209","Ruby-throated Hummingbird","Archilochus colubris",2003,2,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",-50
 "5210","Ruby-throated Hummingbird","Archilochus colubris",2004,6,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",200
 "5211","Ruby-throated Hummingbird","Archilochus colubris",2005,6,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",0
@@ -5227,7 +5227,7 @@
 "5226","Ruby-throated Hummingbird","Archilochus colubris",2021,1,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",-50
 "5227","Ruby-throated Hummingbird","Archilochus colubris",2022,2,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",100
 "5228","Ruby-throated Hummingbird","Archilochus colubris",2023,3,"Durham","Ruby-throated Hummingbird (Archilochus colubris)",50
-"5229","Scarlet Tanager","Piranga olivacea",2002,5,"Durham","Scarlet Tanager (Piranga olivacea)",150
+"5229","Scarlet Tanager","Piranga olivacea",2002,5,"Durham","Scarlet Tanager (Piranga olivacea)",NA
 "5230","Scarlet Tanager","Piranga olivacea",2003,4,"Durham","Scarlet Tanager (Piranga olivacea)",-20
 "5231","Scarlet Tanager","Piranga olivacea",2004,4,"Durham","Scarlet Tanager (Piranga olivacea)",0
 "5232","Scarlet Tanager","Piranga olivacea",2005,1,"Durham","Scarlet Tanager (Piranga olivacea)",-75
@@ -5247,10 +5247,10 @@
 "5246","Scarlet Tanager","Piranga olivacea",2019,5,"Durham","Scarlet Tanager (Piranga olivacea)",400
 "5247","Scarlet Tanager","Piranga olivacea",2020,2,"Durham","Scarlet Tanager (Piranga olivacea)",-60
 "5248","Scarlet Tanager","Piranga olivacea",2022,3,"Durham","Scarlet Tanager (Piranga olivacea)",50
-"5249","Sharp-shinned Hawk","Accipiter striatus",2005,1,"Durham","Sharp-shinned Hawk (Accipiter striatus)",Inf
+"5249","Sharp-shinned Hawk","Accipiter striatus",2005,1,"Durham","Sharp-shinned Hawk (Accipiter striatus)",NA
 "5250","Sharp-shinned Hawk","Accipiter striatus",2015,1,"Durham","Sharp-shinned Hawk (Accipiter striatus)",0
 "5251","Sharp-shinned/Cooper's Hawk","Accipiter striatus/cooperii",2023,1,"Durham","Sharp-shinned/Cooper's Hawk (Accipiter striatus/cooperii)",NA
-"5252","Summer Tanager","Piranga rubra",2002,15,"Durham","Summer Tanager (Piranga rubra)",-11.7647058823529
+"5252","Summer Tanager","Piranga rubra",2002,15,"Durham","Summer Tanager (Piranga rubra)",NA
 "5253","Summer Tanager","Piranga rubra",2003,13,"Durham","Summer Tanager (Piranga rubra)",-13.3333333333333
 "5254","Summer Tanager","Piranga rubra",2004,13,"Durham","Summer Tanager (Piranga rubra)",0
 "5255","Summer Tanager","Piranga rubra",2005,10,"Durham","Summer Tanager (Piranga rubra)",-23.0769230769231
@@ -5272,7 +5272,7 @@
 "5271","Summer Tanager","Piranga rubra",2021,15,"Durham","Summer Tanager (Piranga rubra)",-54.5454545454545
 "5272","Summer Tanager","Piranga rubra",2022,28,"Durham","Summer Tanager (Piranga rubra)",86.6666666666667
 "5273","Summer Tanager","Piranga rubra",2023,22,"Durham","Summer Tanager (Piranga rubra)",-21.4285714285714
-"5274","Tree Swallow","Tachycineta bicolor",2011,2,"Durham","Tree Swallow (Tachycineta bicolor)",-33.3333333333333
+"5274","Tree Swallow","Tachycineta bicolor",2011,2,"Durham","Tree Swallow (Tachycineta bicolor)",NA
 "5275","Tree Swallow","Tachycineta bicolor",2013,2,"Durham","Tree Swallow (Tachycineta bicolor)",0
 "5276","Tree Swallow","Tachycineta bicolor",2014,1,"Durham","Tree Swallow (Tachycineta bicolor)",-50
 "5277","Tree Swallow","Tachycineta bicolor",2015,3,"Durham","Tree Swallow (Tachycineta bicolor)",200
@@ -5283,7 +5283,7 @@
 "5282","Tree Swallow","Tachycineta bicolor",2021,12,"Durham","Tree Swallow (Tachycineta bicolor)",100
 "5283","Tree Swallow","Tachycineta bicolor",2022,1,"Durham","Tree Swallow (Tachycineta bicolor)",-91.6666666666667
 "5284","Tree Swallow","Tachycineta bicolor",2023,5,"Durham","Tree Swallow (Tachycineta bicolor)",400
-"5285","Tufted Titmouse","Baeolophus bicolor",2002,73,"Durham","Tufted Titmouse (Baeolophus bicolor)",-51.3333333333333
+"5285","Tufted Titmouse","Baeolophus bicolor",2002,73,"Durham","Tufted Titmouse (Baeolophus bicolor)",NA
 "5286","Tufted Titmouse","Baeolophus bicolor",2003,81,"Durham","Tufted Titmouse (Baeolophus bicolor)",10.958904109589
 "5287","Tufted Titmouse","Baeolophus bicolor",2004,63,"Durham","Tufted Titmouse (Baeolophus bicolor)",-22.2222222222222
 "5288","Tufted Titmouse","Baeolophus bicolor",2005,38,"Durham","Tufted Titmouse (Baeolophus bicolor)",-39.6825396825397
@@ -5305,7 +5305,7 @@
 "5304","Tufted Titmouse","Baeolophus bicolor",2021,83,"Durham","Tufted Titmouse (Baeolophus bicolor)",9.21052631578947
 "5305","Tufted Titmouse","Baeolophus bicolor",2022,89,"Durham","Tufted Titmouse (Baeolophus bicolor)",7.2289156626506
 "5306","Tufted Titmouse","Baeolophus bicolor",2023,98,"Durham","Tufted Titmouse (Baeolophus bicolor)",10.1123595505618
-"5307","Turkey Vulture","Cathartes aura",2003,2,"Durham","Turkey Vulture (Cathartes aura)",-60
+"5307","Turkey Vulture","Cathartes aura",2003,2,"Durham","Turkey Vulture (Cathartes aura)",NA
 "5308","Turkey Vulture","Cathartes aura",2005,2,"Durham","Turkey Vulture (Cathartes aura)",0
 "5309","Turkey Vulture","Cathartes aura",2007,3,"Durham","Turkey Vulture (Cathartes aura)",50
 "5310","Turkey Vulture","Cathartes aura",2009,4,"Durham","Turkey Vulture (Cathartes aura)",33.3333333333333
@@ -5317,8 +5317,8 @@
 "5316","Turkey Vulture","Cathartes aura",2020,3,"Durham","Turkey Vulture (Cathartes aura)",-40
 "5317","Turkey Vulture","Cathartes aura",2021,4,"Durham","Turkey Vulture (Cathartes aura)",33.3333333333333
 "5318","Turkey Vulture","Cathartes aura",2023,4,"Durham","Turkey Vulture (Cathartes aura)",0
-"5319","Warbling Vireo","Vireo gilvus",2017,1,"Durham","Warbling Vireo (Vireo gilvus)",Inf
-"5320","White-breasted Nuthatch","Sitta carolinensis",2002,10,"Durham","White-breasted Nuthatch (Sitta carolinensis)",-54.5454545454545
+"5319","Warbling Vireo","Vireo gilvus",2017,1,"Durham","Warbling Vireo (Vireo gilvus)",NA
+"5320","White-breasted Nuthatch","Sitta carolinensis",2002,10,"Durham","White-breasted Nuthatch (Sitta carolinensis)",NA
 "5321","White-breasted Nuthatch","Sitta carolinensis",2003,7,"Durham","White-breasted Nuthatch (Sitta carolinensis)",-30
 "5322","White-breasted Nuthatch","Sitta carolinensis",2004,11,"Durham","White-breasted Nuthatch (Sitta carolinensis)",57.1428571428571
 "5323","White-breasted Nuthatch","Sitta carolinensis",2005,9,"Durham","White-breasted Nuthatch (Sitta carolinensis)",-18.1818181818182
@@ -5340,7 +5340,7 @@
 "5339","White-breasted Nuthatch","Sitta carolinensis",2021,14,"Durham","White-breasted Nuthatch (Sitta carolinensis)",-26.3157894736842
 "5340","White-breasted Nuthatch","Sitta carolinensis",2022,11,"Durham","White-breasted Nuthatch (Sitta carolinensis)",-21.4285714285714
 "5341","White-breasted Nuthatch","Sitta carolinensis",2023,11,"Durham","White-breasted Nuthatch (Sitta carolinensis)",0
-"5342","White-eyed Vireo","Vireo griseus",2002,3,"Durham","White-eyed Vireo (Vireo griseus)",-83.3333333333333
+"5342","White-eyed Vireo","Vireo griseus",2002,3,"Durham","White-eyed Vireo (Vireo griseus)",NA
 "5343","White-eyed Vireo","Vireo griseus",2003,2,"Durham","White-eyed Vireo (Vireo griseus)",-33.3333333333333
 "5344","White-eyed Vireo","Vireo griseus",2005,3,"Durham","White-eyed Vireo (Vireo griseus)",50
 "5345","White-eyed Vireo","Vireo griseus",2006,1,"Durham","White-eyed Vireo (Vireo griseus)",-66.6666666666667
@@ -5361,7 +5361,7 @@
 "5360","White-eyed Vireo","Vireo griseus",2021,13,"Durham","White-eyed Vireo (Vireo griseus)",18.1818181818182
 "5361","White-eyed Vireo","Vireo griseus",2022,13,"Durham","White-eyed Vireo (Vireo griseus)",0
 "5362","White-eyed Vireo","Vireo griseus",2023,10,"Durham","White-eyed Vireo (Vireo griseus)",-23.0769230769231
-"5363","Wild Turkey","Meleagris gallopavo",2002,1,"Durham","Wild Turkey (Meleagris gallopavo)",-50
+"5363","Wild Turkey","Meleagris gallopavo",2002,1,"Durham","Wild Turkey (Meleagris gallopavo)",NA
 "5364","Wild Turkey","Meleagris gallopavo",2008,1,"Durham","Wild Turkey (Meleagris gallopavo)",0
 "5365","Wild Turkey","Meleagris gallopavo",2009,1,"Durham","Wild Turkey (Meleagris gallopavo)",0
 "5366","Wild Turkey","Meleagris gallopavo",2014,1,"Durham","Wild Turkey (Meleagris gallopavo)",0
@@ -5369,7 +5369,7 @@
 "5368","Wild Turkey","Meleagris gallopavo",2019,8,"Durham","Wild Turkey (Meleagris gallopavo)",700
 "5369","Wild Turkey","Meleagris gallopavo",2021,4,"Durham","Wild Turkey (Meleagris gallopavo)",-50
 "5370","Wild Turkey","Meleagris gallopavo",2022,4,"Durham","Wild Turkey (Meleagris gallopavo)",0
-"5371","Wood Thrush","Hylocichla mustelina",2002,39,"Durham","Wood Thrush (Hylocichla mustelina)",290
+"5371","Wood Thrush","Hylocichla mustelina",2002,39,"Durham","Wood Thrush (Hylocichla mustelina)",NA
 "5372","Wood Thrush","Hylocichla mustelina",2003,31,"Durham","Wood Thrush (Hylocichla mustelina)",-20.5128205128205
 "5373","Wood Thrush","Hylocichla mustelina",2004,49,"Durham","Wood Thrush (Hylocichla mustelina)",58.0645161290323
 "5374","Wood Thrush","Hylocichla mustelina",2005,44,"Durham","Wood Thrush (Hylocichla mustelina)",-10.2040816326531
@@ -5392,10 +5392,10 @@
 "5391","Wood Thrush","Hylocichla mustelina",2022,8,"Durham","Wood Thrush (Hylocichla mustelina)",33.3333333333333
 "5392","Wood Thrush","Hylocichla mustelina",2023,15,"Durham","Wood Thrush (Hylocichla mustelina)",87.5
 "5393","Worm-eating Warbler","Helmitheros vermivorum",2022,1,"Durham","Worm-eating Warbler (Helmitheros vermivorum)",NA
-"5394","Yellow Warbler","Setophaga petechia",2018,1,"Durham","Yellow Warbler (Setophaga petechia)",0
+"5394","Yellow Warbler","Setophaga petechia",2018,1,"Durham","Yellow Warbler (Setophaga petechia)",NA
 "5395","Yellow Warbler","Setophaga petechia",2019,1,"Durham","Yellow Warbler (Setophaga petechia)",0
 "5396","Yellow Warbler","Setophaga petechia",2020,1,"Durham","Yellow Warbler (Setophaga petechia)",0
-"5397","Yellow-billed Cuckoo","Coccyzus americanus",2002,1,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",-83.3333333333333
+"5397","Yellow-billed Cuckoo","Coccyzus americanus",2002,1,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",NA
 "5398","Yellow-billed Cuckoo","Coccyzus americanus",2003,2,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",100
 "5399","Yellow-billed Cuckoo","Coccyzus americanus",2004,5,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",150
 "5400","Yellow-billed Cuckoo","Coccyzus americanus",2005,11,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",120
@@ -5417,7 +5417,7 @@
 "5416","Yellow-billed Cuckoo","Coccyzus americanus",2021,3,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",-50
 "5417","Yellow-billed Cuckoo","Coccyzus americanus",2022,7,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",133.333333333333
 "5418","Yellow-billed Cuckoo","Coccyzus americanus",2023,1,"Durham","Yellow-billed Cuckoo (Coccyzus americanus)",-85.7142857142857
-"5419","Yellow-breasted Chat","Icteria virens",2002,14,"Durham","Yellow-breasted Chat (Icteria virens)",40
+"5419","Yellow-breasted Chat","Icteria virens",2002,14,"Durham","Yellow-breasted Chat (Icteria virens)",NA
 "5420","Yellow-breasted Chat","Icteria virens",2003,10,"Durham","Yellow-breasted Chat (Icteria virens)",-28.5714285714286
 "5421","Yellow-breasted Chat","Icteria virens",2004,8,"Durham","Yellow-breasted Chat (Icteria virens)",-20
 "5422","Yellow-breasted Chat","Icteria virens",2005,15,"Durham","Yellow-breasted Chat (Icteria virens)",87.5
@@ -5439,7 +5439,7 @@
 "5438","Yellow-breasted Chat","Icteria virens",2021,7,"Durham","Yellow-breasted Chat (Icteria virens)",0
 "5439","Yellow-breasted Chat","Icteria virens",2022,5,"Durham","Yellow-breasted Chat (Icteria virens)",-28.5714285714286
 "5440","Yellow-breasted Chat","Icteria virens",2023,2,"Durham","Yellow-breasted Chat (Icteria virens)",-60
-"5441","Yellow-throated Vireo","Vireo flavifrons",2002,4,"Durham","Yellow-throated Vireo (Vireo flavifrons)",33.3333333333333
+"5441","Yellow-throated Vireo","Vireo flavifrons",2002,4,"Durham","Yellow-throated Vireo (Vireo flavifrons)",NA
 "5442","Yellow-throated Vireo","Vireo flavifrons",2003,3,"Durham","Yellow-throated Vireo (Vireo flavifrons)",-25
 "5443","Yellow-throated Vireo","Vireo flavifrons",2004,3,"Durham","Yellow-throated Vireo (Vireo flavifrons)",0
 "5444","Yellow-throated Vireo","Vireo flavifrons",2005,1,"Durham","Yellow-throated Vireo (Vireo flavifrons)",-66.6666666666667
@@ -5459,7 +5459,7 @@
 "5458","Yellow-throated Vireo","Vireo flavifrons",2021,5,"Durham","Yellow-throated Vireo (Vireo flavifrons)",150
 "5459","Yellow-throated Vireo","Vireo flavifrons",2022,3,"Durham","Yellow-throated Vireo (Vireo flavifrons)",-40
 "5460","Yellow-throated Vireo","Vireo flavifrons",2023,4,"Durham","Yellow-throated Vireo (Vireo flavifrons)",33.3333333333333
-"5461","Yellow-throated Warbler","Setophaga dominica",2002,3,"Durham","Yellow-throated Warbler (Setophaga dominica)",-75
+"5461","Yellow-throated Warbler","Setophaga dominica",2002,3,"Durham","Yellow-throated Warbler (Setophaga dominica)",NA
 "5462","Yellow-throated Warbler","Setophaga dominica",2003,1,"Durham","Yellow-throated Warbler (Setophaga dominica)",-66.6666666666667
 "5463","Yellow-throated Warbler","Setophaga dominica",2004,1,"Durham","Yellow-throated Warbler (Setophaga dominica)",0
 "5464","Yellow-throated Warbler","Setophaga dominica",2005,2,"Durham","Yellow-throated Warbler (Setophaga dominica)",100
