@@ -20807,7 +20807,7 @@
         "count": "1",
         "County": "Orange",
         "Species_Scientific": "American Redstart (Setophaga ruticilla)",
-        "Percent_change_from_previous_year": "-50"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2082",
@@ -21147,7 +21147,7 @@
         "count": "0",
         "County": "Orange",
         "Species_Scientific": "Bald Eagle (Haliaeetus leucocephalus)",
-        "Percent_change_from_previous_year": "-100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2116",
@@ -21957,7 +21957,7 @@
         "count": "2",
         "County": "Orange",
         "Species_Scientific": "Black-and-white Warbler (Mniotilta varia)",
-        "Percent_change_from_previous_year": "-77.7777777777778"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2197",
@@ -22757,7 +22757,7 @@
         "count": "0",
         "County": "Orange",
         "Species_Scientific": "Blue-headed Vireo (Vireo solitarius)",
-        "Percent_change_from_previous_year": "-100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2277",
@@ -22767,7 +22767,7 @@
         "count": "2",
         "County": "Orange",
         "Species_Scientific": "Broad-winged Hawk (Buteo platypterus)",
-        "Percent_change_from_previous_year": "Inf"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2278",
@@ -25697,7 +25697,7 @@
         "count": "0",
         "County": "Orange",
         "Species_Scientific": "Double-crested Cormorant (Nannopterum auritum)",
-        "Percent_change_from_previous_year": "-100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2571",
@@ -26957,7 +26957,7 @@
         "count": "0",
         "County": "Orange",
         "Species_Scientific": "Eastern Screech-Owl (Megascops asio)",
-        "Percent_change_from_previous_year": "-100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2697",
@@ -29377,7 +29377,7 @@
         "count": "2",
         "County": "Orange",
         "Species_Scientific": "Great Horned Owl (Bubo virginianus)",
-        "Percent_change_from_previous_year": "100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "2939",
@@ -34247,7 +34247,7 @@
         "count": "1",
         "County": "Orange",
         "Species_Scientific": "Prothonotary Warbler (Protonotaria citrea)",
-        "Percent_change_from_previous_year": "-50"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3426",
@@ -34297,7 +34297,7 @@
         "count": "2",
         "County": "Orange",
         "Species_Scientific": "Purple Martin (Progne subis)",
-        "Percent_change_from_previous_year": "-83.3333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3431",
@@ -36717,7 +36717,7 @@
         "count": "0",
         "County": "Orange",
         "Species_Scientific": "Tree Swallow (Tachycineta bicolor)",
-        "Percent_change_from_previous_year": "-100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3673",
@@ -38317,7 +38317,7 @@
         "count": "1",
         "County": "Orange",
         "Species_Scientific": "Yellow Warbler (Setophaga petechia)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3833",
@@ -39317,7 +39317,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "Acadian Flycatcher (Empidonax virescens)",
-        "Percent_change_from_previous_year": "-73.9130434782609"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3933",
@@ -39537,7 +39537,7 @@
         "count": "125",
         "County": "Durham",
         "Species_Scientific": "American Crow (Corvus brachyrhynchos)",
-        "Percent_change_from_previous_year": "-54.3795620437956"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3955",
@@ -39757,7 +39757,7 @@
         "count": "56",
         "County": "Durham",
         "Species_Scientific": "American Goldfinch (Spinus tristis)",
-        "Percent_change_from_previous_year": "133.333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3977",
@@ -39977,7 +39977,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "American Redstart (Setophaga ruticilla)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "3999",
@@ -40077,7 +40077,7 @@
         "count": "82",
         "County": "Durham",
         "Species_Scientific": "American Robin (Turdus migratorius)",
-        "Percent_change_from_previous_year": "331.578947368421"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4009",
@@ -40307,7 +40307,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Bald Eagle (Haliaeetus leucocephalus)",
-        "Percent_change_from_previous_year": "Inf"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4032",
@@ -40327,7 +40327,7 @@
         "count": "26",
         "County": "Durham",
         "Species_Scientific": "Barn Swallow (Hirundo rustica)",
-        "Percent_change_from_previous_year": "13.0434782608696"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4034",
@@ -40547,7 +40547,7 @@
         "count": "2",
         "County": "Durham",
         "Species_Scientific": "Barred Owl (Strix varia)",
-        "Percent_change_from_previous_year": "-77.7777777777778"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4056",
@@ -40657,7 +40657,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Belted Kingfisher (Megaceryle alcyon)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4067",
@@ -40707,7 +40707,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "Black Vulture (Coragyps atratus)",
-        "Percent_change_from_previous_year": "200"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4072",
@@ -40797,7 +40797,7 @@
         "count": "4",
         "County": "Durham",
         "Species_Scientific": "Blue Grosbeak (Passerina caerulea)",
-        "Percent_change_from_previous_year": "-89.4736842105263"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4081",
@@ -41017,7 +41017,7 @@
         "count": "43",
         "County": "Durham",
         "Species_Scientific": "Blue Jay (Cyanocitta cristata)",
-        "Percent_change_from_previous_year": "22.8571428571429"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4103",
@@ -41237,7 +41237,7 @@
         "count": "56",
         "County": "Durham",
         "Species_Scientific": "Blue-gray Gnatcatcher (Polioptila caerulea)",
-        "Percent_change_from_previous_year": "-16.4179104477612"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4125",
@@ -41457,7 +41457,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Blue-headed Vireo (Vireo solitarius)",
-        "Percent_change_from_previous_year": "Inf"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4147",
@@ -41497,7 +41497,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Broad-winged Hawk (Buteo platypterus)",
-        "Percent_change_from_previous_year": "-50"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4151",
@@ -41507,7 +41507,7 @@
         "count": "10",
         "County": "Durham",
         "Species_Scientific": "Brown Thrasher (Toxostoma rufum)",
-        "Percent_change_from_previous_year": "-33.3333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4152",
@@ -41727,7 +41727,7 @@
         "count": "25",
         "County": "Durham",
         "Species_Scientific": "Brown-headed Cowbird (Molothrus ater)",
-        "Percent_change_from_previous_year": "-19.3548387096774"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4174",
@@ -41947,7 +41947,7 @@
         "count": "17",
         "County": "Durham",
         "Species_Scientific": "Brown-headed Nuthatch (Sitta pusilla)",
-        "Percent_change_from_previous_year": "-15"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4196",
@@ -42157,7 +42157,7 @@
         "count": "8",
         "County": "Durham",
         "Species_Scientific": "Canada Goose (Branta canadensis)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4217",
@@ -42377,7 +42377,7 @@
         "count": "55",
         "County": "Durham",
         "Species_Scientific": "Carolina Chickadee (Poecile carolinensis)",
-        "Percent_change_from_previous_year": "-28.5714285714286"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4239",
@@ -42597,7 +42597,7 @@
         "count": "89",
         "County": "Durham",
         "Species_Scientific": "Carolina Wren (Thryothorus ludovicianus)",
-        "Percent_change_from_previous_year": "-53.8860103626943"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4261",
@@ -42817,7 +42817,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "Cedar Waxwing (Bombycilla cedrorum)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4283",
@@ -42867,7 +42867,7 @@
         "count": "81",
         "County": "Durham",
         "Species_Scientific": "Chimney Swift (Chaetura pelagica)",
-        "Percent_change_from_previous_year": "285.714285714286"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4288",
@@ -43087,7 +43087,7 @@
         "count": "71",
         "County": "Durham",
         "Species_Scientific": "Chipping Sparrow (Spizella passerina)",
-        "Percent_change_from_previous_year": "-52.3489932885906"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4310",
@@ -43307,7 +43307,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Chuck-will's-widow (Antrostomus carolinensis)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4332",
@@ -43337,7 +43337,7 @@
         "count": "123",
         "County": "Durham",
         "Species_Scientific": "Common Grackle (Quiscalus quiscula)",
-        "Percent_change_from_previous_year": "485.714285714286"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4335",
@@ -43567,7 +43567,7 @@
         "count": "11",
         "County": "Durham",
         "Species_Scientific": "Common Yellowthroat (Geothlypis trichas)",
-        "Percent_change_from_previous_year": "22.2222222222222"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4358",
@@ -43787,7 +43787,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Cooper's Hawk (Accipiter cooperii)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4380",
@@ -43847,7 +43847,7 @@
         "count": "2",
         "County": "Durham",
         "Species_Scientific": "Double-crested Cormorant (Nannopterum auritum)",
-        "Percent_change_from_previous_year": "100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4386",
@@ -43887,7 +43887,7 @@
         "count": "15",
         "County": "Durham",
         "Species_Scientific": "Downy Woodpecker (Dryobates pubescens)",
-        "Percent_change_from_previous_year": "-31.8181818181818"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4390",
@@ -44107,7 +44107,7 @@
         "count": "33",
         "County": "Durham",
         "Species_Scientific": "Eastern Bluebird (Sialia sialis)",
-        "Percent_change_from_previous_year": "-69.4444444444444"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4412",
@@ -44327,7 +44327,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Eastern Kingbird (Tyrannus tyrannus)",
-        "Percent_change_from_previous_year": "-50"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4434",
@@ -44427,7 +44427,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "Eastern Meadowlark (Sturnella magna)",
-        "Percent_change_from_previous_year": "-88.4615384615385"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4444",
@@ -44637,7 +44637,7 @@
         "count": "14",
         "County": "Durham",
         "Species_Scientific": "Eastern Phoebe (Sayornis phoebe)",
-        "Percent_change_from_previous_year": "-46.1538461538462"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4465",
@@ -44857,7 +44857,7 @@
         "count": "79",
         "County": "Durham",
         "Species_Scientific": "Eastern Towhee (Pipilo erythrophthalmus)",
-        "Percent_change_from_previous_year": "132.352941176471"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4487",
@@ -45077,7 +45077,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Eastern Whip-poor-will (Antrostomus vociferus)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4509",
@@ -45117,7 +45117,7 @@
         "count": "14",
         "County": "Durham",
         "Species_Scientific": "Eastern Wood-Pewee (Contopus virens)",
-        "Percent_change_from_previous_year": "-44"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4513",
@@ -45337,7 +45337,7 @@
         "count": "88",
         "County": "Durham",
         "Species_Scientific": "European Starling (Sturnus vulgaris)",
-        "Percent_change_from_previous_year": "114.634146341463"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4535",
@@ -45557,7 +45557,7 @@
         "count": "8",
         "County": "Durham",
         "Species_Scientific": "Field Sparrow (Spizella pusilla)",
-        "Percent_change_from_previous_year": "-11.1111111111111"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4557",
@@ -45747,7 +45747,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "Fish Crow (Corvus ossifragus)",
-        "Percent_change_from_previous_year": "-64.7058823529412"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4576",
@@ -45967,7 +45967,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Grasshopper Sparrow (Ammodramus savannarum)",
-        "Percent_change_from_previous_year": "-85.7142857142857"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4598",
@@ -46087,7 +46087,7 @@
         "count": "10",
         "County": "Durham",
         "Species_Scientific": "Gray Catbird (Dumetella carolinensis)",
-        "Percent_change_from_previous_year": "-16.6666666666667"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4610",
@@ -46307,7 +46307,7 @@
         "count": "4",
         "County": "Durham",
         "Species_Scientific": "Great Blue Heron (Ardea herodias)",
-        "Percent_change_from_previous_year": "-20"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4632",
@@ -46517,7 +46517,7 @@
         "count": "12",
         "County": "Durham",
         "Species_Scientific": "Great Crested Flycatcher (Myiarchus crinitus)",
-        "Percent_change_from_previous_year": "-55.5555555555556"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4653",
@@ -46767,7 +46767,7 @@
         "count": "2",
         "County": "Durham",
         "Species_Scientific": "Great Horned Owl (Bubo virginianus)",
-        "Percent_change_from_previous_year": "100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4678",
@@ -46797,7 +46797,7 @@
         "count": "2",
         "County": "Durham",
         "Species_Scientific": "Green Heron (Butorides virescens)",
-        "Percent_change_from_previous_year": "100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4681",
@@ -46937,7 +46937,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Hairy Woodpecker (Dryobates villosus)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4695",
@@ -47057,7 +47057,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "Hooded Warbler (Setophaga citrina)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4707",
@@ -47247,7 +47247,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Horned Lark (Eremophila alpestris)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4726",
@@ -47257,7 +47257,7 @@
         "count": "38",
         "County": "Durham",
         "Species_Scientific": "House Finch (Haemorhous mexicanus)",
-        "Percent_change_from_previous_year": "2.7027027027027"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4727",
@@ -47477,7 +47477,7 @@
         "count": "11",
         "County": "Durham",
         "Species_Scientific": "House Sparrow (Passer domesticus)",
-        "Percent_change_from_previous_year": "450"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4749",
@@ -47687,7 +47687,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "House Wren (Troglodytes aedon)",
-        "Percent_change_from_previous_year": "100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4770",
@@ -47897,7 +47897,7 @@
         "count": "68",
         "County": "Durham",
         "Species_Scientific": "Indigo Bunting (Passerina cyanea)",
-        "Percent_change_from_previous_year": "6.25"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4791",
@@ -48117,7 +48117,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Kentucky Warbler (Geothlypis formosa)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4813",
@@ -48157,7 +48157,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "Killdeer (Charadrius vociferus)",
-        "Percent_change_from_previous_year": "-62.5"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4817",
@@ -48367,7 +48367,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Loggerhead Shrike (Lanius ludovicianus)",
-        "Percent_change_from_previous_year": "Inf"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4838",
@@ -48387,7 +48387,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Louisiana Waterthrush (Parkesia motacilla)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4840",
@@ -48427,7 +48427,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "Mallard (Anas platyrhynchos)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4844",
@@ -48527,7 +48527,7 @@
         "count": "113",
         "County": "Durham",
         "Species_Scientific": "Mourning Dove (Zenaida macroura)",
-        "Percent_change_from_previous_year": "-28.4810126582279"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4854",
@@ -48747,7 +48747,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "Northern Bobwhite (Colinus virginianus)",
-        "Percent_change_from_previous_year": "200"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4876",
@@ -48867,7 +48867,7 @@
         "count": "202",
         "County": "Durham",
         "Species_Scientific": "Northern Cardinal (Cardinalis cardinalis)",
-        "Percent_change_from_previous_year": "-17.2131147540984"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4888",
@@ -49087,7 +49087,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "Northern Flicker (Colaptes auratus)",
-        "Percent_change_from_previous_year": "500"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4910",
@@ -49257,7 +49257,7 @@
         "count": "86",
         "County": "Durham",
         "Species_Scientific": "Northern Mockingbird (Mimus polyglottos)",
-        "Percent_change_from_previous_year": "38.7096774193548"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4927",
@@ -49477,7 +49477,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "Northern Parula (Setophaga americana)",
-        "Percent_change_from_previous_year": "-57.1428571428571"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4949",
@@ -49697,7 +49697,7 @@
         "count": "11",
         "County": "Durham",
         "Species_Scientific": "Northern Rough-winged Swallow (Stelgidopteryx serripennis)",
-        "Percent_change_from_previous_year": "266.666666666667"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4971",
@@ -49817,7 +49817,7 @@
         "count": "14",
         "County": "Durham",
         "Species_Scientific": "Ovenbird (Seiurus aurocapilla)",
-        "Percent_change_from_previous_year": "-6.66666666666667"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "4983",
@@ -50037,7 +50037,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Pileated Woodpecker (Dryocopus pileatus)",
-        "Percent_change_from_previous_year": "-66.6666666666667"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5005",
@@ -50207,7 +50207,7 @@
         "count": "42",
         "County": "Durham",
         "Species_Scientific": "Pine Warbler (Setophaga pinus)",
-        "Percent_change_from_previous_year": "-20.7547169811321"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5022",
@@ -50427,7 +50427,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "Prairie Warbler (Setophaga discolor)",
-        "Percent_change_from_previous_year": "20"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5044",
@@ -50587,7 +50587,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Prothonotary Warbler (Protonotaria citrea)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5060",
@@ -50667,7 +50667,7 @@
         "count": "12",
         "County": "Durham",
         "Species_Scientific": "Purple Martin (Progne subis)",
-        "Percent_change_from_previous_year": "500"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5068",
@@ -50857,7 +50857,7 @@
         "count": "48",
         "County": "Durham",
         "Species_Scientific": "Red-bellied Woodpecker (Melanerpes carolinus)",
-        "Percent_change_from_previous_year": "-28.3582089552239"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5087",
@@ -51077,7 +51077,7 @@
         "count": "39",
         "County": "Durham",
         "Species_Scientific": "Red-eyed Vireo (Vireo olivaceus)",
-        "Percent_change_from_previous_year": "-50"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5109",
@@ -51297,7 +51297,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Red-headed Woodpecker (Melanerpes erythrocephalus)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5131",
@@ -51377,7 +51377,7 @@
         "count": "6",
         "County": "Durham",
         "Species_Scientific": "Red-shouldered Hawk (Buteo lineatus)",
-        "Percent_change_from_previous_year": "-60"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5139",
@@ -51587,7 +51587,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Red-tailed Hawk (Buteo jamaicensis)",
-        "Percent_change_from_previous_year": "-80"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5160",
@@ -51767,7 +51767,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Red-winged Blackbird (Agelaius phoeniceus)",
-        "Percent_change_from_previous_year": "-90.9090909090909"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5178",
@@ -51977,7 +51977,7 @@
         "count": "9",
         "County": "Durham",
         "Species_Scientific": "Rock Pigeon (Columba livia)",
-        "Percent_change_from_previous_year": "800"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5199",
@@ -52077,7 +52077,7 @@
         "count": "4",
         "County": "Durham",
         "Species_Scientific": "Ruby-throated Hummingbird (Archilochus colubris)",
-        "Percent_change_from_previous_year": "100"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5209",
@@ -52287,7 +52287,7 @@
         "count": "5",
         "County": "Durham",
         "Species_Scientific": "Scarlet Tanager (Piranga olivacea)",
-        "Percent_change_from_previous_year": "150"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5230",
@@ -52487,7 +52487,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Sharp-shinned Hawk (Accipiter striatus)",
-        "Percent_change_from_previous_year": "Inf"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5250",
@@ -52517,7 +52517,7 @@
         "count": "15",
         "County": "Durham",
         "Species_Scientific": "Summer Tanager (Piranga rubra)",
-        "Percent_change_from_previous_year": "-11.7647058823529"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5253",
@@ -52737,7 +52737,7 @@
         "count": "2",
         "County": "Durham",
         "Species_Scientific": "Tree Swallow (Tachycineta bicolor)",
-        "Percent_change_from_previous_year": "-33.3333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5275",
@@ -52847,7 +52847,7 @@
         "count": "73",
         "County": "Durham",
         "Species_Scientific": "Tufted Titmouse (Baeolophus bicolor)",
-        "Percent_change_from_previous_year": "-51.3333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5286",
@@ -53067,7 +53067,7 @@
         "count": "2",
         "County": "Durham",
         "Species_Scientific": "Turkey Vulture (Cathartes aura)",
-        "Percent_change_from_previous_year": "-60"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5308",
@@ -53187,7 +53187,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Warbling Vireo (Vireo gilvus)",
-        "Percent_change_from_previous_year": "Inf"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5320",
@@ -53197,7 +53197,7 @@
         "count": "10",
         "County": "Durham",
         "Species_Scientific": "White-breasted Nuthatch (Sitta carolinensis)",
-        "Percent_change_from_previous_year": "-54.5454545454545"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5321",
@@ -53417,7 +53417,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "White-eyed Vireo (Vireo griseus)",
-        "Percent_change_from_previous_year": "-83.3333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5343",
@@ -53627,7 +53627,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Wild Turkey (Meleagris gallopavo)",
-        "Percent_change_from_previous_year": "-50"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5364",
@@ -53707,7 +53707,7 @@
         "count": "39",
         "County": "Durham",
         "Species_Scientific": "Wood Thrush (Hylocichla mustelina)",
-        "Percent_change_from_previous_year": "290"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5372",
@@ -53937,7 +53937,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Yellow Warbler (Setophaga petechia)",
-        "Percent_change_from_previous_year": "0"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5395",
@@ -53967,7 +53967,7 @@
         "count": "1",
         "County": "Durham",
         "Species_Scientific": "Yellow-billed Cuckoo (Coccyzus americanus)",
-        "Percent_change_from_previous_year": "-83.3333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5398",
@@ -54187,7 +54187,7 @@
         "count": "14",
         "County": "Durham",
         "Species_Scientific": "Yellow-breasted Chat (Icteria virens)",
-        "Percent_change_from_previous_year": "40"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5420",
@@ -54407,7 +54407,7 @@
         "count": "4",
         "County": "Durham",
         "Species_Scientific": "Yellow-throated Vireo (Vireo flavifrons)",
-        "Percent_change_from_previous_year": "33.3333333333333"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5442",
@@ -54607,7 +54607,7 @@
         "count": "3",
         "County": "Durham",
         "Species_Scientific": "Yellow-throated Warbler (Setophaga dominica)",
-        "Percent_change_from_previous_year": "-75"
+        "Percent_change_from_previous_year": "NA"
     },
     {
         "": "5462",
